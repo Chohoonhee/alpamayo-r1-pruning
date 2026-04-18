@@ -1,0 +1,22 @@
+{
+  "strategy": "last",
+  "n_drop": 13,
+  "n_keep": 23,
+  "dropped_layers": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B",
+  "scores_file": null
+}
