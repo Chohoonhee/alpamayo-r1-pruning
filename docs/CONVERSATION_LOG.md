@@ -159,9 +159,26 @@ At the 13-drop level, no — random is within noise. Hypotheses:
    cliff — need aggressive pruning to see the signal.
 3. Angular distance is a weaker-than-gradient importance metric.
 
-Launched angular-24/28 + random-24/28 to test hypothesis (2). Results
-in progress at time of repo snapshot; see `results/nuscenes_zeroshot/`
-for latest JSONs.
+Launched angular-24/28 + random-24/28 to test hypothesis (2). **Results now in:**
+
+| Variant      | Keep | Δ total params | Avg L2 | Δ vs orig |
+|--------------|:----:|:--------------:|:------:|:---------:|
+| orig         | 36   | —              | 1.458  | — |
+| angular-24   | 12   | −41.8 %        | 1.443  | −0.015 |
+| random-24    | 12   | −41.8 %        | 1.452  | −0.006 |
+| angular-28   |  8   | −48.7 %        | 1.455  | −0.003 |
+| random-28    |  8   | −48.7 %        | 1.465  | +0.007 |
+
+**Dropping 28 of 36 layers moved Avg L2 by −0.003 m.** Zero-shot nuScenes
+cannot distinguish any of our pruning strategies — not even full-random vs
+angular at 78% text-layer drop. This strongly implies R1's text backbone is
+**functionally inactive** on nuScenes zero-shot: the trajectory head +
+ego-history path carries all the signal. The remaining text layers behave
+like a minimum-necessary conduit for vision tokens to reach the action head.
+
+**Research direction pivot:** the SFT recovery experiment is now the
+only way to produce a meaningful comparison between strategies. Zero-shot
+on OOD data was a red herring.
 
 ## 6 — SFT infrastructure
 

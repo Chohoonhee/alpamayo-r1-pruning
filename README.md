@@ -36,6 +36,17 @@ pass?
 | last-13    | 23 | −22.6 % | 1.458 m | 0.000 |
 | random-13  | 23 | −22.6 % | 1.445 m | −0.013 |
 | angular-18 | 18 | −31.4 % | 1.485 m | +0.027 |
+| angular-24 | 12 | −41.8 % | 1.443 m | −0.015 |
+| random-24  | 12 | −41.8 % | 1.452 m | −0.006 |
+| **angular-28** | **8** | **−48.7 %** | **1.455 m** | **−0.003** |
+| random-28  |  8 | −48.7 % | 1.465 m | +0.007 |
+
+**Shocking finding:** dropping **28 of 36 text layers (78 %)** changes zero-shot
+L2 by −0.003 m. Zero-shot on nuScenes cannot discriminate between pruning
+strategies. R1's text pathway appears to contribute almost nothing when the
+input domain is OOD — the trajectory head + ego history carries essentially
+all the predictive signal. The decisive experiment is SFT recovery on the
+target domain, not zero-shot retention.
 
 ## Repository map
 
