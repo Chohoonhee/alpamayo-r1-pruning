@@ -1,0 +1,74 @@
+defaults:
+  - sft_base
+  - /models/ar1_base@model
+  - _self_
+
+# nuScenes SFT experiment: pruned R1 + small data fine-tune
+# Usage:
+#   cd /home/irteam/ws/alpamayo_bench2drive
+#   source alpamayo/src/a1_5_venv/bin/activate  # or bench2drive venv with alpamayo_r1
+#   python -m finetune.sft.train_hf \
+#       --config-path finetune/sft/configs --config-name sft_nuscenes \
+#       model.checkpoint_path=/path/to/pruned/weights \
+#       data.train_dataset.n_samples=500 \
+#       paths.output_dir=output_nuscenes_angular13_n500
+
+model:
+  checkpoint_path: /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B
+
+data:
+  collate_fn:
+    _target_: alpamayo_r1.processor.qwen_processor.collate_fn_from_model_config
+    _partial_: true
+  train_dataset:
+    _recursive_: false
+    _target_: scripts.nuscenes_sft_dataset.NuScenesSFTDataset
+    split: train
+    n_samples: 500      # override via CLI: data.train_dataset.n_samples=100
+    nusc_root: /home/irteam/ws/nuscenes/raw_extracted
+    version: v1.0-trainval
+    vla_preprocess_args:
+      generation_mode: false
+  val_dataset:
+    _recursive_: false
+    _target_: scripts.nuscenes_sft_dataset.NuScenesSFTDataset
+    split: val
+    n_samples: 100
+    nusc_root: /home/irteam/ws/nuscenes/raw_extracted
+    version: v1.0-trainval
+    vla_preprocess_args:
+      generation_mode: true
+
+paths:
+  output_dir: output_nuscenes_sft
+
+trainer:
+  output_dir: ${paths.output_dir}
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 8   # effective batch = 8 per GPU
+  learning_rate: 5e-5
+  warmup_steps: 50
+  logging_steps: 5
+  save_steps: 200
+  save_total_limit: 3
+  num_train_epochs: 5
+  bf16: true
+  dataloader_pin_memory: false
+  dataloader_num_workers: 2
+  remove_unused_columns: false
+  report_to: none
+  lr_scheduler_type: cosine_warmup_with_min_lr
+  lr_scheduler_kwargs:
+    min_lr: 5e-7
+  # Fine-tune action head & top text layers; freeze vision encoder
+  lr_multiplier:
+    vlm.model.visual: 0.0      # freeze vision encoder
+    vlm.language_model: 1.0    # full lr for text layers
+  ddp_find_unused_parameters: false
+  gradient_checkpointing: true
+  gradient_checkpointing_kwargs:
+    use_reentrant: false
+
+task_name: alpamayo_r1_sft_nuscenes
+run_name: ${task_name}_${now:%Y%m%d}_${now:%H%M%S}
