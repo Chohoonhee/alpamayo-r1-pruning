@@ -1,0 +1,21 @@
+{
+  "strategy": "random",
+  "n_drop": 13,
+  "n_keep": 23,
+  "dropped_layers": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    14,
+    15,
+    17,
+    18,
+    21,
+    23,
+    29,
+    33
+  ],
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B"
+}

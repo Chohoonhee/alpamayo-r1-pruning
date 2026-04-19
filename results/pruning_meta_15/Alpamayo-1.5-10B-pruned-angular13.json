@@ -1,0 +1,22 @@
+{
+  "strategy": "angular",
+  "n_drop": 13,
+  "n_keep": 23,
+  "dropped_layers": [
+    2,
+    3,
+    7,
+    8,
+    9,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    32,
+    33
+  ],
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B",
+  "scores_file": "/home/irteam/ws/alpamayo_pruning/scripts/angular_scores_15.json"
+}

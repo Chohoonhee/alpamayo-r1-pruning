@@ -1,14 +1,19 @@
-# Alpamayo R1 — Layer Pruning + Fast Domain Adaptation
+# Alpamayo R1 / 1.5 — Layer Pruning + Backbone Comparison
 
-Research experiments on **pruning NVIDIA Alpamayo R1** (10 B VLA) via
-angular-distance layer importance, and preparing for rapid fine-tuning on
-small in-domain data (nuScenes).
+Research experiments on **pruning NVIDIA Alpamayo VLA models** (R1 &
+1.5, each 10 B) via angular-distance layer importance scoring, revealing
+that **pruning sensitivity depends on the VLM backbone's training objective**.
 
-**Motivation.** We observed a large OOD gap for Alpamayo R1 on NAVSIM
-benchmarks (PDMS 0.49 vs Alpamayo 1.5 at 0.70). R1's text backbone appears
-redundant on OOD data, so we ask: can we drop a large fraction of text
-layers without catastrophic loss, then recover any gap with a small SFT
-pass?
+**Key finding.** Identical 36-layer Qwen3VL topology, but:
+- **R1** (vanilla Qwen3VL base) — text pathway essentially dormant on OOD
+  nuScenes. Drop 13 / 28 layers in any way → Avg L2 changes by only ≤ 0.06 m.
+- **1.5** (NVIDIA **Cosmos-Reason2-8B** base, same arch, reasoning-fine-tuned)
+  — text pathway actively used. Dropping the wrong layer 1 → +0.226 m L2.
+
+Angular-distance scoring is weak signal on R1 but **strongly discriminative
+on 1.5** (angular-13 = +0.004 m, random-13 = +0.226 m → 55× gap).
+
+See [docs/KEY_FINDING.md](docs/KEY_FINDING.md) for the full write-up.
 
 ## TL;DR
 
@@ -28,25 +33,32 @@ pass?
 | Alpamayo 1.5 (1 sample)  | 0.7002 |
 | Alpamayo R1 (1 sample)   | **0.4901** |
 
-### nuScenes zero-shot L2 (100 val samples)
-| Variant    | Keep | Δparams | Avg L2 | Δ vs orig |
-|------------|:----:|:-------:|:------:|:---------:|
-| R1 original | 36 | — | **1.458 m** | — |
-| angular-13 | 23 | −22.6 % | 1.478 m | +0.020 |
-| last-13    | 23 | −22.6 % | 1.458 m | 0.000 |
-| random-13  | 23 | −22.6 % | 1.445 m | −0.013 |
-| angular-18 | 18 | −31.4 % | 1.485 m | +0.027 |
-| angular-24 | 12 | −41.8 % | 1.443 m | −0.015 |
-| random-24  | 12 | −41.8 % | 1.452 m | −0.006 |
-| **angular-28** | **8** | **−48.7 %** | **1.455 m** | **−0.003** |
-| random-28  |  8 | −48.7 % | 1.465 m | +0.007 |
+### nuScenes zero-shot L2 (100 val samples, runtime identity-bypass pruning)
 
-**Shocking finding:** dropping **28 of 36 text layers (78 %)** changes zero-shot
-L2 by −0.003 m. Zero-shot on nuScenes cannot discriminate between pruning
-strategies. R1's text pathway appears to contribute almost nothing when the
-input domain is OOD — the trajectory head + ego history carries essentially
-all the predictive signal. The decisive experiment is SFT recovery on the
-target domain, not zero-shot retention.
+| variant        | R1 AvgL2 (Δ) | 1.5 AvgL2 (Δ) |
+|----------------|:------------:|:-------------:|
+| orig (36L)     | 1.465        | 1.476         |
+| angular-13     | 1.509 (+0.045) | **1.480 (+0.004)** |
+| random-13      | 1.525 (+0.061) | **1.701 (+0.226)** |
+| angular-28     | 1.467 (+0.002) | 1.477 (+0.001) |
+| random_safe-28 | 1.460 (−0.004) | 1.482 (+0.006) |
+
+### ⚠️ Important bug discovered and corrected
+
+The first pass of results (now in `results/nuscenes_zeroshot/`) used
+`prune_r1.py` with `save_pretrained()`. This silently broke pruning: the
+checkpoint wrote only the kept layers (re-indexed 0…n-1) but the model
+config still said `num_hidden_layers = 36`. `from_pretrained` re-created
+the architecture at 36 layers and **randomly initialised** the dropped
+positions.
+
+All original "pruned" numbers were therefore `(kept weights + random
+decoder layers)`, not a true smaller model. The random layers behaved
+roughly as identity → the old numbers showed suspicious preservation at
+28-drop. Fixed by switching to **runtime identity-bypass** in the server
+(`--drop_layers_json` in `scripts/alpamayo_infer_server_*.py`).
+
+The corrected numbers are the "runtime" row above.
 
 ## Repository map
 
