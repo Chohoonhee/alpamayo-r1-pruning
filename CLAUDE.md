@@ -171,6 +171,7 @@ stop — they were tried or considered and rejected.
 | `alpamayo_pruning/navsim_workspace/` | NAVSIM devkit fork (separate Python 3.9 venv) |
 | `alpamayo_pruning_share/` | **this directory** — sharing copy of code/docs/configs/results |
 | `github.com/Chohoonhee/alpamayo-r1-pruning` | this repo (branch: `master`) |
+| `gdrive:alpamayo-conversation-transcripts/` | raw + alpamayo-filtered transcript of the Claude session covering both this project and the ViPE one (for audit / nostalgia — not required to resume) |
 | `/home/irteam/ws/vipe_test/nuscenes_zero_shot.py` | eval harness shared with the ViPE project — keep in mind it has the `NUSC_ROOT`/`VERSION` constants |
 | `/home/irteam/ws/nuscenes/raw_extracted/` | nuScenes data |
 
