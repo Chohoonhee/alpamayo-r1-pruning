@@ -434,7 +434,107 @@ In priority order:
 
 ---
 
-## 10. How to evolve this document
+## 10. Competitive landscape — who else publishes in this space
+
+**Caveat: this section was written with a 2026-01 knowledge cutoff.**
+Real publication situation may have shifted by the time you read this. Do
+a fresh arxiv / venue search before committing to a paper angle.
+
+### Groups to actively watch
+
+- **OpenDriveLab (Shanghai AI Lab)** — most prolific driving-VLM group.
+  Track record: UniAD (CVPR 2023 best paper), DriveLM (CVPR 2024,
+  benchmark + dataset), OmniDrive (3D occupancy + VLM), VAD-v2,
+  BEV-Planner. Pattern: **they propose new models or benchmarks**, not
+  analysis of existing models. They probably haven't done the R1 vs 1.5
+  controlled comparison because they don't focus on NVIDIA's Alpamayo
+  specifically.
+- **UCLA / Berkeley / CMU driving labs** — less concentrated than
+  OpenDriveLab but consistent output. Bolei Zhou (MetaDrive,
+  ScenarioNet) is simulator-side; others vary.
+- **NVIDIA themselves** — they own Alpamayo and could publish their own
+  ablations + extensions at any time. Highest scoop risk if they do
+  pruning analysis internally.
+
+### Realistic scenario distribution (subjective, pre-search)
+
+| Scenario | P (subjective) | Impact on our paper |
+|---|---|---|
+| Some group already did "driving VLA + layer pruning" generic ablation | 60% | Cite + extend. Our R1 vs 1.5 controlled contrast still unique. |
+| OpenDriveLab released a paper with identical R1 vs 1.5 finding | 10% | Scoop. Need to pivot. |
+| Nobody has done a controlled two-backbone comparison on driving VLA | 70% | Our headline result survives. |
+| Someone published "VLM is mostly dormant in driving VLA" claim | 30% | We become "we confirm + explain why". Still publishable. |
+| NVIDIA themselves released Alpamayo follow-up with pruning | 15% | Scoop on the model side, but our analysis angle survives. |
+
+(Probabilities are subjective and not mutually exclusive — they're
+event-likelihoods, not partition probabilities.)
+
+### Why our R1 vs 1.5 contrast is probably still safe
+
+- Both backbones (vanilla Qwen3VL fine-tuned for R1, Cosmos-Reason2
+  fine-tuned for 1.5) must be **on the same hardware with the same
+  evaluation harness** to do the controlled comparison.
+- Cosmos-Reason2 is NVIDIA-internal-flavored; not every lab can or
+  bothers to set both up.
+- Most groups propose new models; ablation-only papers are rarer.
+- Even if pruning has been done, doing it **across two backbones with
+  intentional contrast** is a specific methodological angle.
+
+### What would scoop us
+
+- A paper saying "X% of VLA VLM layers are redundant for driving"
+  (regardless of method) — that's the same headline category. Need to
+  find this before submitting.
+- An Alpamayo follow-up by NVIDIA that includes pruning ablations.
+- Any paper that contrasts reasoning-tuned vs vanilla backbones for
+  ANY VLA task (manipulation or driving) — would force us to position
+  as "we extend this principle to driving".
+
+### Defensive moves (do these THIS WEEK)
+
+1. **Literature reconnaissance** via arxiv + Google Scholar with these queries:
+   - `"driving VLA" pruning`
+   - `"vision-language-action" compression driving`
+   - `Alpamayo` (any follow-up)
+   - `"Cosmos-Reason"` ablation
+   - `driving VLM` `layer importance` OR `redundancy`
+   - OpenDriveLab Github publications list (last 12 months)
+   - NVIDIA driving research / Alpamayo-related arxiv submissions
+2. **Identify 3-5 most-related published papers** and decide:
+   - Cite + extend? (most likely outcome)
+   - Pivot angle? (if direct overlap exists)
+3. **Decide submission venue and deadline before doing more experiments**
+   so the experimental priorities follow the venue requirements.
+
+### Fall-back if scooped
+
+- **Cross-domain angle**: re-run the same pruning analysis on a
+  manipulation VLA (OpenVLA, π0). If the "OOD VLM dormancy" pattern
+  also holds in manipulation, the contribution becomes "general
+  principle across VLA domains" — much higher value, less domain-specific.
+  This is genuinely the strongest fall-back, leveraging the user's
+  ongoing work in manipulation VLA (MemVLA, VLA-Adapter).
+- **Theoretical angle**: explain via attention-flow / hidden-state
+  analysis why reasoning fine-tuning makes a backbone less prunable.
+  Less "engineering paper", more "analysis paper" — fits NeurIPS
+  analysis-track better than method-track.
+
+### Venue success probability (subjective, conditional on no scoop)
+
+| Venue | P (accept) | What pushes it up |
+|---|---|---|
+| Workshop @ NeurIPS/CoRL (efficient VLA / OOD generalization) | 90% | Current results are enough |
+| CoRL 2026 main | 55% | Stage 2 v2 SFT recovery succeeds |
+| NeurIPS 2026 main (analysis track) | 30% | Hidden-state probing + 1 additional backbone comparison |
+| ICLR 2027 main | 25% | Theoretical explanation + multi-domain (manipulation) extension |
+| CVPR/ICCV | 8% | Vision conferences less receptive to driving-VLA niche |
+
+These are honest, somewhat-pessimistic estimates. Reality usually lower
+than the writer's gut feel.
+
+---
+
+## 11. How to evolve this document
 
 - If new experiments confirm or refute an item above, edit in-place with
   a `[2026-MM-DD]` annotation.
