@@ -165,7 +165,7 @@ stop — they were tried or considered and rejected.
 | `alpamayo_pruning/scripts/` | all training/eval/scoring scripts + `NOTES.md` |
 | `alpamayo_pruning/weights/Alpamayo-{R1,1.5}-10B/` | base models |
 | `alpamayo_pruning/weights/Alpamayo-1.5-10B-pruned-*/` | each variant has `pruning_meta.json` |
-| `alpamayo_pruning/weights/sft_stage2_full/lora_final` | last Stage 2 LoRA checkpoint |
+| `alpamayo_pruning/weights/sft_stage2_full/lora_final` | last Stage 2 LoRA checkpoint (21 GB; also on `gdrive:alpamayo-pruning-artifacts/sft_stage2_full/lora_final`) |
 | `alpamayo_pruning/weights/eval_stage2_result.json` | Stage 2 eval (100 nuScenes val samples) |
 | `alpamayo_pruning/alpamayo1.5/` | Alpamayo 1.5 source (cloned), has `a1_5_venv` |
 | `alpamayo_pruning/navsim_workspace/` | NAVSIM devkit fork (separate Python 3.9 venv) |

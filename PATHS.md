@@ -71,6 +71,23 @@ on that machine. The defaults in `paths.py` reproduce the old layout. The
 env-var system is additive: opt in by exporting variables, opt out by doing
 nothing.
 
+## External artifacts (not in git)
+
+A few large items live on Google Drive instead of the repo:
+
+| Artifact | Size | Drive path |
+|---|---|---|
+| `sft_stage2_full/lora_final` (Stage 2 LoRA, 21 GB merged shards) | 21 GB | `gdrive:alpamayo-pruning-artifacts/sft_stage2_full/lora_final` |
+| `eval_stage2_result.json` + train/eval logs | < 50 KB | `gdrive:alpamayo-pruning-artifacts/` |
+
+Fetch them with `rclone` once the `gdrive` remote is configured against the
+project account. The same commands are in
+[`docs/REPRODUCE.md`](docs/REPRODUCE.md) under "Stage 2 SFT checkpoint".
+
+Alpamayo 1.5 base weights (`nvidia/Alpamayo-1.5-10B`) and Cosmos-Reason2-8B
+are gated HuggingFace repos — not redistributable via gdrive. See REPRODUCE.md
+for the access-request flow.
+
 ## Vendored helper modules
 
 These were originally in `/home/irteam/ws/vipe_test/` (the sister

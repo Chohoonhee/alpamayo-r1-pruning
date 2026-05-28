@@ -47,17 +47,74 @@ git clone https://github.com/NVlabs/alpamayo "$ALPAMAYO_R1_SRC"
 # (project's internal fork — clone into "$NAVSIM_WORKSPACE/navsim")
 ```
 
-Download weights into `"$ALPAMAYO_WEIGHTS_DIR"`:
+### Base model weights
 
 ```bash
 mkdir -p "$ALPAMAYO_WEIGHTS_DIR"
+
+# Alpamayo R1 — public HF repo
 huggingface-cli download nvidia/Alpamayo-R1-10B \
     --local-dir "$ALPAMAYO_WEIGHTS_DIR/Alpamayo-R1-10B"
-
-# Alpamayo 1.5 weights — gated HF repo, request access first
-huggingface-cli download nvidia/Alpamayo-1.5-10B \
-    --local-dir "$ALPAMAYO_WEIGHTS_DIR/Alpamayo-1.5-10B"
 ```
+
+#### Alpamayo 1.5 weights (gated)
+
+`nvidia/Alpamayo-1.5-10B` is a **gated** HuggingFace repo and the supporting
+processor pulls `nvidia/Cosmos-Reason2-8B` which is also gated. Both need a
+manual access request before the download succeeds.
+
+1. Visit https://huggingface.co/nvidia/Alpamayo-1.5-10B and
+   https://huggingface.co/nvidia/Cosmos-Reason2-8B and click **"Request access"**
+   on each. Approval is usually same-day if your HF account has a real name + org.
+2. Once approved, log in locally:
+   ```bash
+   huggingface-cli login   # paste an HF token with `read` scope
+   ```
+3. Download:
+   ```bash
+   huggingface-cli download nvidia/Alpamayo-1.5-10B \
+       --local-dir "$ALPAMAYO_WEIGHTS_DIR/Alpamayo-1.5-10B"
+   ```
+4. **Run with `HF_HUB_OFFLINE=1`** every time afterward so the processor
+   doesn't try to re-fetch Cosmos-Reason2 at import time (which causes
+   403 errors even when you have access):
+   ```bash
+   export HF_HUB_OFFLINE=1
+   ```
+
+If you only need to reproduce the R1 results (angular vs random pruning,
+~half the entries in `docs/KEY_FINDING.md`), you can skip the 1.5 download
+entirely.
+
+### Stage 2 SFT checkpoint (optional, for skipping the 20h train)
+
+The current Stage 2 SFT result (`ea_vlm28 + joint CE+diffusion LoRA`,
+L2 1.622 — see `weights/eval_stage2_result.json` in this repo) was produced
+by `sft_stage2_full/lora_final`. That's a 21 GB merged-model checkpoint
+(safetensors shards) and is not in git.
+
+Download it from the project's Google Drive (if you have the `gdrive` rclone
+remote configured):
+
+```bash
+mkdir -p "$ALPAMAYO_WEIGHTS_DIR/sft_stage2_full"
+rclone copy --progress --transfers 4 \
+    gdrive:alpamayo-pruning-artifacts/sft_stage2_full/lora_final \
+    "$ALPAMAYO_WEIGHTS_DIR/sft_stage2_full/lora_final"
+
+# Also fetch the eval result + train logs (small)
+rclone copy gdrive:alpamayo-pruning-artifacts/ \
+    "$ALPAMAYO_WEIGHTS_DIR/" \
+    --include "{eval_stage2_result.json,sft_stage2_eval.log,sft_stage2_full_train.log}"
+```
+
+Don't have the gdrive remote? Either run `rclone config` to create a Google
+Drive remote named `gdrive` and point it at the account that owns the
+artifacts, or re-train (see "Stage 2 SFT" in `scripts/NOTES.md` —
+roughly 20h on 4 GPUs).
+
+Intermediate checkpoints `lora_step_{500,1000,1500,2000,2500}` are **not**
+uploaded; they exist only for training-resume and aren't needed for eval.
 
 ## 2 — Python environments
 
