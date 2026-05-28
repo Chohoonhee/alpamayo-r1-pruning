@@ -1,3 +1,4 @@
+
 """
 alpamayo_infer_server.py  –  Python 3.12 / Alpamayo env
 ==========================================================
@@ -23,6 +24,10 @@ Usage:
 
 from __future__ import annotations
 
+from paths import (
+    ALPAMAYO_R1_WEIGHTS,
+)
+
 import argparse
 import json
 import os
@@ -46,7 +51,7 @@ from PIL import Image as PILImage
 # Defaults
 # ---------------------------------------------------------------------------
 DEFAULT_MODEL  = os.environ.get("ALPAMAYO_MODEL",
-                                "/home/irteam/ws/alpamayo_bench2drive/alpamayo_weights")
+                                str(ALPAMAYO_R1_WEIGHTS))
 DEFAULT_PORT   = int(os.environ.get("INFER_PORT", "5556"))
 N_TRAJ_SAMPLES = int(os.environ.get("ALPAMAYO_TRAJ_SAMPLES", "4"))  # 4 samples for nav-based selection
 DEVICE         = os.environ.get("ALPAMAYO_DEVICE", "cuda:0")

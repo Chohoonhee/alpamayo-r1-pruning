@@ -1,0 +1,23 @@
+{
+  "strategy": "pilot_joint_expert",
+  "n_drop": 13,
+  "n_keep": 23,
+  "dropped_layers": [
+    3,
+    14,
+    17,
+    18,
+    19,
+    20,
+    22,
+    24,
+    26,
+    29,
+    31,
+    32,
+    33
+  ],
+  "drop_target": "expert",
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B",
+  "note": "13 layers selected from 1.5 coupling probe (smallest 'both' damage)"
+}

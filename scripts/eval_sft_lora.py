@@ -1,9 +1,16 @@
+
 """Evaluate Phase B SFT'd LoRA model on nuScenes.
 
 Properly loads: base 1.5 → runtime prune → re-inject LoRA → load saved state.
 Then runs inference (same as nuscenes_zero_shot.py but in-process).
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, os, sys, json, math, time
 
 import numpy as np
@@ -12,8 +19,6 @@ from PIL import Image
 from pyquaternion import Quaternion
 from safetensors.torch import load_file
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -21,7 +26,6 @@ from sft_phase_b import apply_joint_prune, apply_lora_both
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.splits import create_splits_scenes
 
-sys.path.insert(0, "/home/irteam/ws/vipe_test")
 from nuscenes_zero_shot import (
     PlanningMetric, get_ego_in_world, get_gt_future, get_past_history,
     extract_front_cams, get_agent_boxes_in_ego, get_nav_text,
@@ -44,6 +48,7 @@ def load_trained_model(orig_weights, drop_pairs_json, lora_checkpoint,
     print(f"[load] loading state dict from {lora_checkpoint}", flush=True)
     sd = {}
     import glob
+
     for shard in sorted(glob.glob(f"{lora_checkpoint}/model-*.safetensors")):
         sd.update(load_file(shard, device=device))
     missing, unexpected = m.load_state_dict(sd, strict=False)
@@ -96,7 +101,7 @@ def run_inference_trajectory(model, processor, frames_np, ego_xyz, ego_rot,
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--orig_weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--orig_weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_pairs_json", required=True)
     ap.add_argument("--lora_checkpoint", required=True)
     ap.add_argument("--lora_r", type=int, default=8)

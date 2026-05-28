@@ -1,3 +1,4 @@
+
 """Layer coupling probe for Alpamayo VLA (R1 or 1.5).
 
 Tests the hypothesis: in Alpamayo architecture, VLM layer k and Expert layer k
@@ -16,6 +17,14 @@ If independent: L2_both[k] ≈ L2_vlm[k] + L2_expert[k] (additive).
 Runs a small nuScenes subset (N=10 default) to keep it fast.
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    ALPAMAYO_R1_WEIGHTS,
+    NUSC_ROOT,
+    OUTPUTS_DIR,
+    add_alpamayo_to_syspath,
+)
 import argparse
 import json
 import os
@@ -30,8 +39,7 @@ from pyquaternion import Quaternion
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.splits import create_splits_scenes
 
-
-NUSC_ROOT = "/home/irteam/ws/nuscenes/raw_extracted"
+NUSC_ROOT = str(NUSC_ROOT)
 VERSION = "v1.0-trainval"
 
 
@@ -121,11 +129,11 @@ def get_gt_future(nusc, sample_token, n_future=6, dt=0.5):
 
 def load_model_and_helper(variant, weights_path, device):
     if variant == "1.5":
-        sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
+        add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
         from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5 as ModelCls
         from alpamayo1_5 import helper as H
     else:  # r1
-        sys.path.insert(0, "/home/irteam/ws/alpamayo_bench2drive/alpamayo/src")
+        add_alpamayo_to_syspath(r1=True)  # was: sys.path.insert(R1 src)
         from alpamayo_r1.models.alpamayo_r1 import AlpamayoR1 as ModelCls
         from alpamayo_r1 import helper as H
     model = ModelCls.from_pretrained(weights_path, dtype=torch.bfloat16).to(device)
@@ -342,11 +350,11 @@ def main():
 
     if args.weights is None:
         args.weights = (
-            "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B" if args.variant == "1.5"
-            else "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B"
+            str(ALPAMAYO_15_WEIGHTS) if args.variant == "1.5"
+            else str(ALPAMAYO_R1_WEIGHTS)
         )
     if args.out is None:
-        args.out = f"/home/irteam/ws/alpamayo_pruning/scripts/coupling_probe_{args.variant}.json"
+        args.out = str(OUTPUTS_DIR / f'coupling_probe_{args.variant}.json')
 
     probe(args.variant, args.weights, args.n_samples, args.device, args.out)
 

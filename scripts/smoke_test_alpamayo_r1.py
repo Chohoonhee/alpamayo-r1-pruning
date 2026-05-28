@@ -1,8 +1,13 @@
+
 """Smoke test: load Alpamayo R1 from local weights and run inference with dummy inputs.
 
 Falls back to R1 because Alpamayo 1.5 requires gated Cosmos-Reason2-8B processor.
-Local R1 weights: /home/irteam/ws/alpamayo_bench2drive/alpamayo_weights/
+Local R1 weights: $ALPAMAYO_R1_WEIGHTS/
 """
+
+from paths import (
+    ALPAMAYO_R1_WEIGHTS,
+)
 import os
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "1")
 os.environ.setdefault("HF_HUB_OFFLINE", "0")
@@ -13,8 +18,7 @@ import torch
 from alpamayo_r1.models.alpamayo_r1 import AlpamayoR1
 from alpamayo_r1 import helper
 
-
-WEIGHTS = "/home/irteam/ws/alpamayo_bench2drive/alpamayo_weights"
+WEIGHTS = str(ALPAMAYO_R1_WEIGHTS)
 
 
 def build_dummy_data(n_cameras: int = 4,

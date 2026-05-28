@@ -1,0 +1,31 @@
+{
+  "strategy": "bothsel_vlm",
+  "n_drop": 22,
+  "n_keep": 14,
+  "dropped_layers": [
+    3,
+    6,
+    7,
+    8,
+    11,
+    12,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "drop_target": "vlm",
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B"
+}

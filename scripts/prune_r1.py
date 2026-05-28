@@ -1,3 +1,4 @@
+
 """Prune Alpamayo R1 by dropping text layers, save a new model checkpoint.
 
 Strategies:
@@ -6,17 +7,23 @@ Strategies:
   - random:   randomly drop N layers (fixed seed)
 
 Usage:
-    source /home/irteam/ws/alpamayo_pruning/alpamayo1.5/a1_5_venv/bin/activate
+    source $ALPAMAYO_15_SRC/a1_5_venv/bin/activate
     python prune_r1.py \
         --scores angular_scores_r1.json \
         --strategy angular --n_drop 13 \
-        --out /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B-pruned-angular13
+        --out $ALPAMAYO_WEIGHTS_DIR/Alpamayo-R1-10B-pruned-angular13
 
     # Or without scores file (last / random):
     python prune_r1.py --strategy last --n_drop 13 \
-        --out /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B-pruned-last13
+        --out $ALPAMAYO_WEIGHTS_DIR/Alpamayo-R1-10B-pruned-last13
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_R1_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(r1=True)  # was: sys.path.insert(R1 src)
 import argparse
 import json
 import os
@@ -26,11 +33,10 @@ import sys
 
 import torch
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_bench2drive/alpamayo/src")
 
 from alpamayo_r1.models.alpamayo_r1 import AlpamayoR1
 
-WEIGHTS_PATH = "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B"
+WEIGHTS_PATH = str(ALPAMAYO_R1_WEIGHTS)
 DEVICE = "cuda:0"
 N_LAYERS = 36
 

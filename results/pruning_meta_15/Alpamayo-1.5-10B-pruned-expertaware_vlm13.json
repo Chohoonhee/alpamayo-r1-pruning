@@ -1,0 +1,23 @@
+{
+  "strategy": "expertaware_vlm",
+  "n_drop": 13,
+  "n_keep": 23,
+  "dropped_layers": [
+    3,
+    4,
+    6,
+    7,
+    10,
+    19,
+    20,
+    21,
+    22,
+    25,
+    26,
+    28,
+    30
+  ],
+  "drop_target": "vlm",
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B",
+  "note": "Selected by smallest VLM_only delta from coupling probe: expert doesn't need these VLM layers"
+}

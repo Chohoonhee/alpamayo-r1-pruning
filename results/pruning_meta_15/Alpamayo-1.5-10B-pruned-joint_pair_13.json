@@ -1,0 +1,23 @@
+{
+  "strategy": "joint_pair_both_delta",
+  "n_drop": 13,
+  "n_keep": 23,
+  "dropped_layers": [
+    3,
+    14,
+    17,
+    18,
+    19,
+    20,
+    22,
+    24,
+    26,
+    29,
+    31,
+    32,
+    33
+  ],
+  "drop_target": "both",
+  "source_weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B",
+  "note": "Pairs (VLM[k], Expert[k]) selected by smallest Both-delta, excl 0,1,35"
+}

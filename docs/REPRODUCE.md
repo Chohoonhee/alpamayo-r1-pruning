@@ -2,31 +2,62 @@
 
 Step-by-step to rebuild every result in this repo from scratch.
 
+> **Portable paths.** Every script reads paths from environment variables
+> (see [`PATHS.md`](../PATHS.md) for the full contract). The commands below
+> use those env vars so they work on any machine, not just the dev server.
+
 ## 0 — Expected environment
 
 - Linux, CUDA-capable GPU(s) with ≥ 22 GB free VRAM per R1 server
 - conda + uv (or pip)
-- Alpamayo source repos (see below)
+- Alpamayo source repos (see step 1)
 - External datasets:
-  - nuScenes v1.0-trainval (default mount `/home/irteam/ws/nuscenes/raw_extracted`)
-  - NAVSIM navtest split (default mount `/home/irteam/ws/alpamayo_pruning/navsim_workspace/dataset`)
+  - nuScenes v1.0-trainval
+  - NAVSIM navtest split
+
+Pick a root and export it once — every other path can derive from it:
+
+```bash
+export ALPAMAYO_ROOT="$HOME/alpamayo_workspace"   # or wherever
+mkdir -p "$ALPAMAYO_ROOT"
+
+# These point the repo's scripts at the right places. Defaults match the
+# dev server's /home/irteam/ws/ layout, so on that machine you can skip them.
+export ALPAMAYO_R1_SRC="$ALPAMAYO_ROOT/alpamayo"
+export ALPAMAYO_15_SRC="$ALPAMAYO_ROOT/alpamayo1.5"
+export ALPAMAYO_WEIGHTS_DIR="$ALPAMAYO_ROOT/weights"
+export NUSC_ROOT="$ALPAMAYO_ROOT/nuscenes/raw_extracted"
+export NAVSIM_WORKSPACE="$ALPAMAYO_ROOT/navsim_workspace"
+export OUTPUTS_DIR="$ALPAMAYO_ROOT/outputs"
+```
+
+Verify with `python scripts/paths.py` — every line should show
+`exists=True` once you've completed the downloads in steps 1–2.
 
 ## 1 — Clone Alpamayo repos
 
 ```bash
 # Alpamayo R1 source (has alpamayo_r1 python package + ZMQ servers)
-git clone <alpamayo-r1-source> /home/irteam/ws/alpamayo_bench2drive
+git clone https://github.com/NVlabs/alpamayo "$ALPAMAYO_R1_SRC"
 
-# Alpamayo 1.5 source (has alpamayo1_5 python package, separate venv)
-git clone <alpamayo-1.5-source> /home/irteam/ws/alpamayo_pruning/alpamayo1.5
+# Alpamayo 1.5 source (private — request access from NVIDIA, then clone into:)
+# "$ALPAMAYO_15_SRC"
 
-# NAVSIM devkit (customised to use alpamayo_agent)
-git clone <navsim-fork> /home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim
+# NAVSIM devkit fork (customised to use alpamayo_agent)
+# (project's internal fork — clone into "$NAVSIM_WORKSPACE/navsim")
 ```
 
-Download weights into `/home/irteam/ws/alpamayo_pruning/weights/`:
-- `Alpamayo-R1-10B/`
-- `Alpamayo-1.5-10B/`
+Download weights into `"$ALPAMAYO_WEIGHTS_DIR"`:
+
+```bash
+mkdir -p "$ALPAMAYO_WEIGHTS_DIR"
+huggingface-cli download nvidia/Alpamayo-R1-10B \
+    --local-dir "$ALPAMAYO_WEIGHTS_DIR/Alpamayo-R1-10B"
+
+# Alpamayo 1.5 weights — gated HF repo, request access first
+huggingface-cli download nvidia/Alpamayo-1.5-10B \
+    --local-dir "$ALPAMAYO_WEIGHTS_DIR/Alpamayo-1.5-10B"
+```
 
 ## 2 — Python environments
 
@@ -36,17 +67,17 @@ Two isolated envs:
 # (a) R1 + nuScenes tooling
 conda create -n alpamayo_b2d python=3.12 -y
 conda activate alpamayo_b2d
-pip install -e /home/irteam/ws/alpamayo_bench2drive/alpamayo   # installs alpamayo_r1
-pip install nuscenes-devkit pyquaternion zmq torch transformers
+pip install -e "$ALPAMAYO_R1_SRC"   # installs alpamayo_r1
+pip install nuscenes-devkit pyquaternion zmq torch transformers peft einops
 
 # (b) Alpamayo 1.5 (has its own uv-managed venv)
-cd /home/irteam/ws/alpamayo_pruning/alpamayo1.5
+cd "$ALPAMAYO_15_SRC"
 uv venv a1_5_venv
 source a1_5_venv/bin/activate
 uv pip install -e .
 
 # (c) NAVSIM venv (Python 3.9)
-cd /home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim
+cd "$NAVSIM_WORKSPACE/navsim"
 python3.9 -m venv navsim_venv
 source navsim_venv/bin/activate
 pip install -e .

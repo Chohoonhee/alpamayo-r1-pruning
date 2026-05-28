@@ -1,8 +1,14 @@
+
 """ZMQ REP server: Alpamayo 1.5 (or R1) inference for NAVSIM agent.
 
 Model is selected via ALPAMAYO_VARIANT env var: "1.5" (default) or "r1".
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    ALPAMAYO_R1_WEIGHTS,
+)
 import argparse
 import os
 import pickle
@@ -17,11 +23,12 @@ VARIANT = os.environ.get("ALPAMAYO_VARIANT", "1.5").lower()
 if VARIANT in ("1.5", "a1.5", "alpamayo1.5"):
     from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5 as ModelCls
     from alpamayo1_5 import helper
-    DEFAULT_WEIGHTS = "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B"
+    DEFAULT_WEIGHTS = str(ALPAMAYO_15_WEIGHTS)
 else:
     from alpamayo_r1.models.alpamayo_r1 import AlpamayoR1 as ModelCls
     from alpamayo_r1 import helper
-    DEFAULT_WEIGHTS = "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B"
+
+    DEFAULT_WEIGHTS = str(ALPAMAYO_R1_WEIGHTS)
 
 DEFAULT_PORT = int(os.environ.get("ALPAMAYO_PORT", "5557"))
 DEVICE = os.environ.get("ALPAMAYO_DEVICE", "cuda:0")

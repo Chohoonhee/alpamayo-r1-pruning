@@ -1,8 +1,15 @@
+
 """
 Inference server for Alpamayo 1.5.
 Same protocol as v1 infer server but uses alpamayo1_5 module.
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 
 import argparse, json, os, sys, time, traceback
 import numpy as np
@@ -10,14 +17,13 @@ import torch
 import zmq
 
 # Add 1.5 source path
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
 
 from alpamayo1_5 import helper
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 
 
 DEFAULT_MODEL  = os.environ.get("ALPAMAYO_MODEL",
-                                "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+                                str(ALPAMAYO_15_WEIGHTS))
 DEFAULT_PORT   = int(os.environ.get("INFER_PORT", "5556"))
 N_TRAJ_SAMPLES = int(os.environ.get("ALPAMAYO_TRAJ_SAMPLES", "4"))
 DEVICE         = os.environ.get("ALPAMAYO_DEVICE", "cuda:0")
@@ -32,6 +38,7 @@ def load_model(model_name: str, drop_layers_json: str | None = None):
 
     if drop_layers_json:
         import json as _json
+
         with open(drop_layers_json) as _f:
             meta = _json.load(_f)
         drop_idx = sorted(set(meta["dropped_layers"]))

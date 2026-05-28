@@ -1,3 +1,4 @@
+
 """Phase A SFT: runtime prune + LoRA on expert + nuScenes full trainset.
 
 Fine-tunes Alpamayo 1.5 after identity-bypassing `drop_layers_json` VLM layers.
@@ -8,14 +9,20 @@ Alpamayo official TrainableReasoningVLA).
 
 Usage:
     HF_HUB_OFFLINE=1 CUDA_VISIBLE_DEVICES=0 \\
-        /home/irteam/ws/alpamayo_pruning/alpamayo1.5/a1_5_venv/bin/python \\
+        $ALPAMAYO_15_SRC/a1_5_venv/bin/python \\
         scripts/sft_phase_a.py \\
         --drop_layers_json .../Alpamayo-1.5-10B-pruned-expertaware_vlm22/pruning_meta.json \\
         --train_samples 28000 \\
         --epochs 3 \\
-        --out_dir /home/irteam/ws/alpamayo_pruning/weights/sft_ea_vlm22_fullset
+        --out_dir $ALPAMAYO_WEIGHTS_DIR/sft_ea_vlm22_fullset
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, math, os, sys, time
 from contextlib import nullcontext
 
@@ -24,8 +31,6 @@ import torch
 from torch.utils.data import DataLoader
 
 # --- Paths ---
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -37,6 +42,7 @@ IGNORE_INDEX = -100
 
 def apply_runtime_prune(model, drop_layers_json: str):
     import json as _json
+
     with open(drop_layers_json) as f:
         meta = _json.load(f)
     drop_idx = sorted(set(meta["dropped_layers"]))
@@ -207,7 +213,7 @@ def train_step(model, tokenizer, processor, sample, device):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True)
     ap.add_argument("--lora_target", default="vlm_text",
                     choices=["expert", "expert_mlp", "vlm_text"],

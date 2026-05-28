@@ -1,3 +1,4 @@
+
 """nuScenes → Alpamayo R1 SFT dataset adapter.
 
 Produces the same sample dict as Bench2DriveDataset so it can plug
@@ -23,6 +24,10 @@ nuScenes notes:
 """
 from __future__ import annotations
 
+from paths import (
+    NUSC_ROOT,
+)
+
 import math
 import os
 import sys
@@ -38,7 +43,7 @@ from torch.utils.data import Dataset
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.splits import create_splits_scenes
 
-NUSC_ROOT = "/home/irteam/ws/nuscenes/raw_extracted"
+NUSC_ROOT = str(NUSC_ROOT)
 VERSION = "v1.0-trainval"
 
 # Alpamayo / nuScenes camera slot mapping (same as bench2drive)

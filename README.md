@@ -14,9 +14,10 @@ Angular-distance scoring is weak signal on R1 but **strongly discriminative
 on 1.5** (angular-13 = +0.004 m, random-13 = +0.226 m → 55× gap).
 
 See [docs/KEY_FINDING.md](docs/KEY_FINDING.md) for the full write-up,
-[docs/REPRODUCE.md](docs/REPRODUCE.md) for setup + run commands, and
-[CLAUDE.md](CLAUDE.md) if a language-model agent is picking this up in a
-new session.
+[docs/REPRODUCE.md](docs/REPRODUCE.md) for setup + run commands,
+[PATHS.md](PATHS.md) for the env-var contract that makes scripts portable,
+and [CLAUDE.md](CLAUDE.md) if a language-model agent is picking this up
+in a new session.
 
 ## TL;DR
 

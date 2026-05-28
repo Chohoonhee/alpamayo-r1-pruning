@@ -1,17 +1,21 @@
+
 """Angular distance scoring for Expert layers on ea-pruned VLM model.
 
 Loads ea_vlm-pruned model, scores Expert layers by angular distance.
 Low score = layer barely transforms input = candidate for zero-shot drop.
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, json, os, sys, math
 
 import numpy as np
 import torch
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
-sys.path.insert(0, "/home/irteam/ws/vipe_test")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -19,6 +23,7 @@ from sft_phase_c import apply_vlm_only_prune
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.splits import create_splits_scenes
 from nuscenes_zero_shot import (
+
     get_past_history, extract_front_cams, get_nav_text, NUSC_ROOT, VERSION,
 )
 
@@ -53,7 +58,7 @@ def angular_distance(h_in, h_out):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True, help="ea VLM pruning meta json")
     ap.add_argument("--n_samples", type=int, default=100)
     ap.add_argument("--out", required=True)

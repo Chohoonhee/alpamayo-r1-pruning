@@ -1,3 +1,4 @@
+
 """Physical VLM layer removal: actually deletes weights from ModuleList.
 
 Unlike runtime identity bypass, this:
@@ -13,16 +14,19 @@ Usage:
         --verify
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, json, sys, os
 
 import torch
 import torch.nn as nn
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
-
 
 def physical_prune_vlm(model, drop_layers_json: str):
     with open(drop_layers_json) as f:
@@ -65,7 +69,7 @@ def physical_prune_vlm(model, drop_layers_json: str):
 def verify_inference(model, device="cuda:0"):
     """Quick sanity check: run a dummy forward pass."""
     import numpy as np
-    sys.path.insert(0, "/home/irteam/ws/vipe_test")
+    # nuscenes_zero_shot.py is vendored into scripts/ — no extra sys.path needed
     from alpamayo1_5 import helper
     from nuscenes_zero_shot import get_past_history, extract_front_cams, get_nav_text, NUSC_ROOT, VERSION
     from nuscenes.nuscenes import NuScenes
@@ -112,7 +116,7 @@ def verify_inference(model, device="cuda:0"):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True)
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--device", default="cuda:0")

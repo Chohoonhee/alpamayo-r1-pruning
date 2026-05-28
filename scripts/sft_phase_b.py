@@ -1,3 +1,4 @@
+
 """Phase B SFT: joint VLM + Expert runtime prune + LoRA on both + diffusion loss.
 
 Step-2 of the paper: prove that we can drop BOTH VLM and Expert layers (at the
@@ -16,12 +17,18 @@ Design notes:
 
 Usage (same CLI as Phase A):
     HF_HUB_OFFLINE=1 CUDA_VISIBLE_DEVICES=0 \\
-        /home/irteam/ws/alpamayo_pruning/alpamayo1.5/a1_5_venv/bin/python \\
+        $ALPAMAYO_15_SRC/a1_5_venv/bin/python \\
         scripts/sft_phase_b.py \\
         --drop_pairs_json .../pairs22.json \\
         --train_samples 28000 --epochs 3 --out_dir .../sft_s2_22pair/
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, os, sys, time, json
 
 import einops
@@ -29,13 +36,10 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
 from nuscenes_sft_dataset import NuScenesSFTDataset
-
 
 IGNORE_INDEX = -100
 
@@ -234,7 +238,7 @@ def collate(batch):
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_pairs_json", required=True,
                     help="pruning_meta.json listing the layer indices to drop "
                          "from BOTH VLM and Expert (paired drop)")

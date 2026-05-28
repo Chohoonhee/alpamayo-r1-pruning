@@ -1,3 +1,4 @@
+
 """Batch-run AlpamayoNAVSIMAgent over N scenes from NAVSIM mini and log results.
 
 Produces `scripts/batch_mini_results.json` with per-scene:
@@ -6,6 +7,11 @@ Produces `scripts/batch_mini_results.json` with per-scene:
 Also prints a summary: #success, mean latency, trajectory sanity (monotonic x, etc).
 """
 from __future__ import annotations
+
+from paths import (
+    NAVSIM_WORKSPACE,
+    OUTPUTS_DIR,
+)
 import argparse
 import json
 import os
@@ -14,19 +20,17 @@ import time
 import traceback
 from pathlib import Path
 
-WS = "/home/irteam/ws/alpamayo_pruning/navsim_workspace"
+WS = str(NAVSIM_WORKSPACE)
 os.environ.setdefault("NAVSIM_DEVKIT_ROOT", f"{WS}/navsim")
 os.environ.setdefault("OPENSCENE_DATA_ROOT", f"{WS}/dataset")
 os.environ.setdefault("NAVSIM_EXP_ROOT", f"{WS}/exp")
 os.environ.setdefault("NUPLAN_MAPS_ROOT", f"{WS}/dataset/maps")
 os.environ.setdefault("NUPLAN_MAP_VERSION", "nuplan-maps-v1.0")
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 import numpy as np
 from navsim.common.dataloader import SceneLoader
 from navsim.common.dataclasses import SceneFilter, SensorConfig
-
 
 def build_loader():
     logs_dir = Path(f"{WS}/dataset/navsim_logs/mini")
@@ -63,7 +67,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("-n", "--num_scenes", type=int, default=50)
     ap.add_argument("--server", default="tcp://127.0.0.1:5557")
-    ap.add_argument("--out", default="/home/irteam/ws/alpamayo_pruning/scripts/batch_mini_results.json")
+    ap.add_argument("--out", default=str(OUTPUTS_DIR / 'batch_mini_results.json'))
     args = ap.parse_args()
 
     from alpamayo_navsim_agent import AlpamayoNAVSIMAgent

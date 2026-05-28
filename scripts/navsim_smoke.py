@@ -1,15 +1,20 @@
+
 """NAVSIM smoke test: load one mini scene, run AlpamayoNAVSIMAgent, print trajectory.
 
 Runs in navsim_venv. Assumes alpamayo_server.py is already running on port 5556.
 """
 from __future__ import annotations
+
+from paths import (
+    NAVSIM_WORKSPACE,
+)
 import os
 import sys
 import time
 from pathlib import Path
 
 # Set NAVSIM env vars before importing navsim
-WS = "/home/irteam/ws/alpamayo_pruning/navsim_workspace"
+WS = str(NAVSIM_WORKSPACE)
 os.environ.setdefault("NAVSIM_DEVKIT_ROOT", f"{WS}/navsim")
 os.environ.setdefault("OPENSCENE_DATA_ROOT", f"{WS}/dataset")
 os.environ.setdefault("NAVSIM_EXP_ROOT", f"{WS}/exp")
@@ -17,7 +22,6 @@ os.environ.setdefault("NUPLAN_MAPS_ROOT", f"{WS}/dataset/maps")
 os.environ.setdefault("NUPLAN_MAP_VERSION", "nuplan-maps-v1.0")
 
 # Make scripts importable
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 import numpy as np
 

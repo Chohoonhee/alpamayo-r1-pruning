@@ -174,7 +174,12 @@ stop — they were tried or considered and rejected.
 | `/home/irteam/ws/vipe_test/nuscenes_zero_shot.py` | eval harness shared with the ViPE project — keep in mind it has the `NUSC_ROOT`/`VERSION` constants |
 | `/home/irteam/ws/nuscenes/raw_extracted/` | nuScenes data |
 
-REPRODUCE.md (in `docs/`) has the full install + dataset + run commands.
+[REPRODUCE.md](docs/REPRODUCE.md) has the full install + dataset + run
+commands. [PATHS.md](PATHS.md) documents the env-var contract — every
+script in `scripts/` reads paths from there via the local `paths.py`
+helper, so no `/home/irteam/...` is hardcoded any more. Run
+`python scripts/paths.py` on a fresh machine to verify your env vars
+before launching anything.
 
 ---
 

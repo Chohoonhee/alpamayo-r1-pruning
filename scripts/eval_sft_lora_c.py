@@ -1,14 +1,18 @@
+
 """Eval Phase C (VLM-only drop + LoRA on kept VLM + all Expert) checkpoints."""
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, os, sys, json, math, time, glob
 
 import numpy as np
 import torch
 from safetensors.torch import load_file
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
-sys.path.insert(0, "/home/irteam/ws/vipe_test")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -21,7 +25,6 @@ from nuscenes_zero_shot import (
     alpamayo_to_nuscenes_traj, NUSC_ROOT, VERSION,
 )
 from eval_sft_lora import run_inference_trajectory
-
 
 def load_trained_model_c(orig_weights, drop_layers_json, lora_checkpoint,
                          lora_r, lora_alpha, device):
@@ -40,7 +43,7 @@ def load_trained_model_c(orig_weights, drop_layers_json, lora_checkpoint,
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--orig_weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--orig_weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True)
     ap.add_argument("--lora_checkpoint", required=True)
     ap.add_argument("--lora_r", type=int, default=8)

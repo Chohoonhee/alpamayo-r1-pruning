@@ -1,3 +1,4 @@
+
 """Phase C SFT: VLM-only runtime prune + LoRA on remaining VLM + all Expert
 + flow-matching diffusion loss (Alpamayo-native training objective).
 
@@ -11,6 +12,12 @@ Differences from Phase B:
 - Everything else (flow-matching training forward, loader, etc.) identical
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, os, sys, time, json
 
 import einops
@@ -18,8 +25,6 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -45,6 +50,7 @@ def apply_vlm_only_prune(model, drop_layers_json: str):
 def apply_lora_vlm_kept_plus_expert(model, drop_idx, r=8, alpha=16, dropout=0.05):
     """LoRA on remaining (un-pruned) VLM layers + ALL Expert layers."""
     from peft import LoraConfig, inject_adapter_in_model
+
     dropped = set(drop_idx)
     real_targets = []
     for name, mod in model.named_modules():
@@ -71,7 +77,7 @@ def apply_lora_vlm_kept_plus_expert(model, drop_idx, r=8, alpha=16, dropout=0.05
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True)
     ap.add_argument("--lora_r", type=int, default=8)
     ap.add_argument("--lora_alpha", type=int, default=16)

@@ -1,3 +1,4 @@
+
 """Stage 2 SFT: physically-pruned VLM + LoRA on VLM(kept) + Expert + joint loss.
 
 Joint loss = VLM CE loss + diffusion flow-matching MSE loss
@@ -17,6 +18,12 @@ Usage (DDP, 2 GPUs):
         --train_samples 28000 --epochs 3 --out_dir .../sft_stage2_full --ddp
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, os, sys, time, json
 
 import einops
@@ -24,8 +31,6 @@ import torch
 import torch.distributed as dist
 from torch.utils.data import DataLoader, DistributedSampler
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -155,7 +160,7 @@ def train_step(model, processor, sample, device):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True, help="ea VLM pruning meta json")
     ap.add_argument("--lora_r", type=int, default=16)
     ap.add_argument("--lora_alpha", type=int, default=32)

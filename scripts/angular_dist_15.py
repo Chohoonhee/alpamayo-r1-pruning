@@ -1,3 +1,4 @@
+
 """Angular-distance layer importance scoring for Alpamayo R1.
 
 For each of the 36 Qwen3VL text layers computes:
@@ -7,11 +8,19 @@ Low score → layer barely transforms its input → safe to drop.
 
 Usage:
     conda run -n alpamayo_b2d python angular_dist_r1.py \
-        --weights /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B \
+        --weights $ALPAMAYO_15_WEIGHTS \
         --n_samples 100 \
         --out angular_scores_15.json
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    NUSC_ROOT,
+    OUTPUTS_DIR,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse
 import json
 import math
@@ -23,7 +32,6 @@ import torch
 from PIL import Image
 
 # ── Path setup ────────────────────────────────────────────────────────────────
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -33,7 +41,7 @@ from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.splits import create_splits_scenes
 from pyquaternion import Quaternion
 
-NUSC_ROOT = "/home/irteam/ws/nuscenes/raw_extracted"
+NUSC_ROOT = str(NUSC_ROOT)
 VERSION = "v1.0-trainval"
 DEVICE = "cuda:0"
 N_LAYERS = 36
@@ -229,9 +237,9 @@ def score_layers(model, processor, samples_data: list[dict],
 def main():
     global DEVICE
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--n_samples", type=int, default=100)
-    ap.add_argument("--out", default="/home/irteam/ws/alpamayo_pruning/scripts/angular_scores_15.json")
+    ap.add_argument("--out", default=str(OUTPUTS_DIR / 'angular_scores_15.json'))
     ap.add_argument("--device", default=DEVICE)
     args = ap.parse_args()
     DEVICE = args.device

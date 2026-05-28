@@ -1,3 +1,4 @@
+
 """Phase D SFT: VLM-only zero-shot prune + Expert-only LoRA alignment.
 
 Pipeline:
@@ -11,13 +12,17 @@ Keeping VLM frozen preserves its autoregressive token generation while the
 Expert LoRA recovers trajectory quality from the pruned VLM features.
 """
 from __future__ import annotations
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+    add_alpamayo_to_syspath,
+)
+add_alpamayo_to_syspath(v15=True)  # was: sys.path.insert(1.5 src)
 import argparse, os, sys, time, json
 
 import torch
 from torch.utils.data import DataLoader
 
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/alpamayo1.5/src")
-sys.path.insert(0, "/home/irteam/ws/alpamayo_pruning/scripts")
 
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
@@ -48,7 +53,7 @@ def apply_lora_expert_only(model, r=16, alpha=32, dropout=0.05):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--weights", default="/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B")
+    ap.add_argument("--weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--drop_layers_json", required=True)
     ap.add_argument("--lora_r", type=int, default=16)
     ap.add_argument("--lora_alpha", type=int, default=32)

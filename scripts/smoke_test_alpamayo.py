@@ -1,4 +1,9 @@
+
 """Smoke test: load Alpamayo 1.5 from local weights and run inference with dummy inputs."""
+
+from paths import (
+    ALPAMAYO_15_WEIGHTS,
+)
 import os
 import sys
 import time
@@ -12,8 +17,7 @@ import torch
 from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5
 from alpamayo1_5 import helper
 
-
-WEIGHTS = "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B"
+WEIGHTS = str(ALPAMAYO_15_WEIGHTS)
 
 
 def build_dummy_data(n_cameras: int = 3,
