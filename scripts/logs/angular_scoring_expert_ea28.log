@@ -1,0 +1,161 @@
+[load] model ...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 71.42it/s]
+[prune] VLM-only drop 28/36: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 30, 31, 32, 33, 34]
+[data] nuScenes val ...
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+[20/100] count=20
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+[40/100] count=40
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+[60/100] count=60
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+[80/100] count=80
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+[100/100] count=100
+
+=== Expert layer scores (on ea-pruned VLM) ===
+  Expert layer  0: 0.730575
+  Expert layer  1: 0.010699
+  Expert layer  2: 1.184921
+  Expert layer  3: 0.035388
+  Expert layer  4: 0.006757
+  Expert layer  5: 0.007322
+  Expert layer  6: 0.004368
+  Expert layer  7: 0.002140
+  Expert layer  8: 0.001925
+  Expert layer  9: 0.001444
+  Expert layer 10: 0.000428
+  Expert layer 11: 0.000355
+  Expert layer 12: 0.000368
+  Expert layer 13: 0.000391
+  Expert layer 14: 0.000256
+  Expert layer 15: 0.000252
+  Expert layer 16: 0.000347
+  Expert layer 17: 0.000160
+  Expert layer 18: 0.000163
+  Expert layer 19: 0.000166
+  Expert layer 20: 0.000160
+  Expert layer 21: 0.000094
+  Expert layer 22: 0.000064
+  Expert layer 23: 0.000184
+  Expert layer 24: 0.000009
+  Expert layer 25: 0.000170
+  Expert layer 26: 0.000102
+  Expert layer 27: 0.000146
+  Expert layer 28: 0.000053
+  Expert layer 29: 0.000012
+  Expert layer 30: 0.000061
+  Expert layer 31: 0.000085
+  Expert layer 32: 0.000102
+  Expert layer 33: 0.000040
+  Expert layer 34: 0.000026
+  Expert layer 35: 0.000050
+
+── Bottom-10 (drop candidates) ──
+  rank  1: layer 24  score=0.000009
+  rank  2: layer 29  score=0.000012
+  rank  3: layer 34  score=0.000026
+  rank  4: layer 33  score=0.000040
+  rank  5: layer 35  score=0.000050
+  rank  6: layer 28  score=0.000053
+  rank  7: layer 30  score=0.000061
+  rank  8: layer 22  score=0.000064
+  rank  9: layer 31  score=0.000085
+  rank 10: layer 21  score=0.000094
+
+Saved to /home/irteam/ws/alpamayo_pruning/scripts/angular_scores_expert_ea28.json

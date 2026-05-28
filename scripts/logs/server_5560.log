@@ -1,0 +1,4 @@
+[server] variant=1.5 loading /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B on cuda:7 ...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 44.89it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 44.73it/s]
+[server] loaded in 26.8s, VRAM=0.0 GB
+[server] ready on tcp://127.0.0.1:5560

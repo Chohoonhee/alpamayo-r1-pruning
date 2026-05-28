@@ -1,0 +1,58 @@
+[batch] loading NAVSIM mini scene loader ...
+Loading logs:   0%|          | 0/64 [00:00<?, ?it/s]Loading logs:   3%|▎         | 2/64 [00:00<00:04, 13.32it/s]Loading logs:   6%|▋         | 4/64 [00:00<00:07,  8.24it/s]Loading logs:   9%|▉         | 6/64 [00:00<00:05, 10.58it/s]Loading logs:  14%|█▍        | 9/64 [00:00<00:03, 14.73it/s]Loading logs:  17%|█▋        | 11/64 [00:00<00:03, 14.32it/s]Loading logs:  20%|██        | 13/64 [00:00<00:03, 14.44it/s]Loading logs:  23%|██▎       | 15/64 [00:01<00:03, 15.47it/s]Loading logs:  27%|██▋       | 17/64 [00:01<00:06,  7.63it/s]Loading logs:  30%|██▉       | 19/64 [00:01<00:04,  9.15it/s]Loading logs:  33%|███▎      | 21/64 [00:01<00:04, 10.34it/s]Loading logs:  36%|███▌      | 23/64 [00:02<00:03, 10.94it/s]Loading logs:  39%|███▉      | 25/64 [00:02<00:03, 12.30it/s]Loading logs:  44%|████▍     | 28/64 [00:02<00:02, 14.07it/s]Loading logs:  47%|████▋     | 30/64 [00:02<00:02, 14.94it/s]Loading logs:  50%|█████     | 32/64 [00:02<00:02, 15.91it/s]Loading logs:  53%|█████▎    | 34/64 [00:03<00:04,  6.36it/s]Loading logs:  58%|█████▊    | 37/64 [00:03<00:03,  8.61it/s]Loading logs:  61%|██████    | 39/64 [00:03<00:02,  9.86it/s]Loading logs:  64%|██████▍   | 41/64 [00:03<00:02, 10.83it/s]Loading logs:  67%|██████▋   | 43/64 [00:03<00:01, 11.85it/s]Loading logs:  70%|███████   | 45/64 [00:04<00:01, 11.89it/s]Loading logs:  73%|███████▎  | 47/64 [00:04<00:01, 13.29it/s]Loading logs:  80%|███████▉  | 51/64 [00:04<00:00, 17.71it/s]Loading logs:  83%|████████▎ | 53/64 [00:05<00:01,  6.40it/s]Loading logs:  89%|████████▉ | 57/64 [00:05<00:00,  9.48it/s]Loading logs:  95%|█████████▌| 61/64 [00:05<00:00, 13.05it/s]Loading logs: 100%|██████████| 64/64 [00:05<00:00, 11.58it/s]
+[batch] 4295 tokens available, sampling first 50
+[  0] ok 2.2s | dx=+0.34m | cot=[['Stop to keep distance to the lead vehicle since it is stopped ahead']]
+[  1] ok 2.5s | dx=+0.04m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+[  2] ok 2.8s | dx=+0.03m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+[  3] ok 2.1s | dx=+0.03m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+[  4] ok 1.9s | dx=+0.03m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+[  5] ok 2.3s | dx=+0.04m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+[  6] ok 2.0s | dx=+0.02m | cot=[['Keep distance to the lead vehicle since it is moving slowly ahead']]
+[  7] ok 2.4s | dx=+0.14m | cot=[['Keep distance to the lead vehicle since it is directly ahead in slow traffic'
+[  8] ok 3.4s | dx=+19.92m | cot=[['Maintain lane and search for a gap to merge right because a car is alongside 
+[  9] ok 1.9s | dx=+41.05m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 10] ok 2.3s | dx=+42.11m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 11] ok 2.8s | dx=+44.08m | cot=[['Keep distance to the cut-in vehicle since it merges into our lane ahead']]
+[ 12] ok 2.1s | dx=+47.30m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 13] ok 3.6s | dx=+45.98m | cot=[['Change lanes to the right due to slower vehicles ahead in the current lane an
+[ 14] ok 2.5s | dx=+41.47m | cot=[['Keep distance to the cut-in vehicle since it merges into our lane ahead']]
+[ 15] ok 2.7s | dx=+37.24m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 16] ok 2.5s | dx=+10.52m | cot=[['Decelerate to maintain a safe distance to the lead vehicle since it is slowin
+[ 17] ok 2.3s | dx=+18.99m | cot=[['Keep distance to the lead vehicle since it is slowing ahead']]
+[ 18] ok 2.7s | dx=+1.27m | cot=[['Keep distance to the lead vehicle since it is slowing ahead']]
+[ 19] ok 2.7s | dx=+0.38m | cot=[['Keep distance to the lead vehicle since it is stopped ahead']]
+[ 20] ok 3.1s | dx=+29.89m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 21] ok 2.3s | dx=+24.59m | cot=[['Keep distance to the lead vehicle since it is moving slowly ahead']]
+[ 22] ok 2.7s | dx=+33.92m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 23] ok 3.1s | dx=+38.68m | cot=[['Accelerate to proceed through the intersection since the straight traffic lig
+[ 24] ok 1.7s | dx=+30.47m | cot=[['Keep distance to the lead vehicle since it is slowing ahead']]
+[ 25] ok 2.2s | dx=+17.88m | cot=[['Keep distance to the lead vehicle since it is moving slowly ahead']]
+[ 26] ok 1.6s | dx=+11.55m | cot=[['Keep distance to the lead vehicle since it is moving slowly ahead']]
+[ 27] ok 2.3s | dx=+3.27m | cot=[['Keep distance to the lead vehicle since it is stopped ahead']]
+[ 28] ok 2.5s | dx=+12.78m | cot=[['Keep distance to the lead vehicle since it is moving slowly ahead']]
+[ 29] ok 2.6s | dx=+23.03m | cot=[['Wait for a gap because a car is coming from behind in the right lane blocking
+[ 30] ok 4.1s | dx=+22.31m | cot=[['Slow down to create a gap for a right-lane merge because a pickup is alongsid
+[ 31] ok 2.4s | dx=+35.25m | cot=[['Accelerate to proceed through the intersection since the straight traffic lig
+[ 32] ok 3.9s | dx=+42.28m | cot=[['Change lanes to the right and gently accelerate due to a slower lead vehicle 
+[ 33] ok 3.3s | dx=+32.11m | cot=[['Create a usable gap for a left lane change because a car is alongside in our 
+[ 34] ok 2.3s | dx=+37.24m | cot=[['Keep distance to the cut-in vehicle since it merges into our lane ahead']]
+[ 35] ok 2.8s | dx=+36.73m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 36] ok 2.5s | dx=+33.00m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 37] ok 2.9s | dx=+24.47m | cot=[['Adapt speed to maintain a safe distance from the lead vehicle since it is dir
+[ 38] ok 2.6s | dx=+29.69m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 39] ok 4.2s | dx=+30.56m | cot=[['Maintain lane and wait for a gap to merge right because a car is traveling al
+[ 40] ok 3.3s | dx=+12.16m | cot=[['Change lanes to the right and yield because a pickup is entering from a right
+[ 41] ok 1.8s | dx=+31.43m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 42] ok 2.5s | dx=+37.62m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 43] ok 2.9s | dx=+39.39m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 44] ok 2.1s | dx=+39.33m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 45] ok 2.1s | dx=+35.70m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 46] ok 1.8s | dx=+22.88m | cot=[['Keep distance to the lead vehicle since it is directly ahead in our lane']]
+[ 47] ok 2.4s | dx=-0.09m | cot=[['Stop to keep distance to the lead vehicle since it is stopped ahead']]
+[ 48] ok 2.8s | dx=+0.01m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+[ 49] ok 3.2s | dx=+0.03m | cot=[['Stop to keep distance to the lead vehicle since it is stationary ahead']]
+
+[batch] 50/50 succeeded in 136.4s (avg 2.7s/scene)
+[batch] latency: mean=2.60s p50=2.50s p95=3.80s
+[batch] trajectory: dx mean=+22.38m, monotonic forward=48/50, large jumps=23
+[batch] wrote /home/irteam/ws/alpamayo_pruning/scripts/batch_mini_results.json

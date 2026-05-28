@@ -1,0 +1,12 @@
+[load] Alpamayo 1.5 ...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 79.55it/s]
+[prune] dropping 28 layers, keeping 8
+[prune] drop: [2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 30, 31, 32, 33, 34]
+[prune] done. remaining VLM layers: 8
+[prune] total params after pruning: 5.68B
+[verify] loading nuScenes sample ...
+No <traj_future_start> token found in generated sequences for sequence 0
+[verify] output shape: torch.Size([1, 1, 1, 64, 3]) — OK
+[save] saving to /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B-physical-vlm28 ...
+[done] saved to /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B-physical-vlm28
+[mem] GPU memory allocated: 11.40 GB

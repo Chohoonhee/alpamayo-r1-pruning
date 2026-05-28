@@ -1,0 +1,1027 @@
+[20:41:55] metric cache exists at /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/metric_cache — skipping
+[20:41:55] running PDM score for Alpamayo on navtest ...
+2026-04-17 20:42:02,699 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2026-04-17 20:42:02,701 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: SingleMachineParallelExecutor
+2026-04-17 20:42:02,701 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 8
+Number of GPUs per node: 0
+Number of threads across all nodes: 8
+2026-04-17 20:42:02,701 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   2%|▏         | 3/136 [00:00<00:06, 19.96it/s]Loading logs:   5%|▌         | 7/136 [00:00<00:04, 27.74it/s]Loading logs:   8%|▊         | 11/136 [00:00<00:07, 17.42it/s]Loading logs:  12%|█▎        | 17/136 [00:00<00:04, 26.35it/s]Loading logs:  18%|█▊        | 24/136 [00:00<00:03, 34.70it/s]Loading logs:  21%|██▏       | 29/136 [00:00<00:02, 35.80it/s]Loading logs:  25%|██▌       | 34/136 [00:01<00:03, 32.28it/s]Loading logs:  29%|██▊       | 39/136 [00:01<00:02, 35.22it/s]Loading logs:  32%|███▏      | 43/136 [00:01<00:04, 20.94it/s]Loading logs:  34%|███▍      | 46/136 [00:01<00:05, 17.10it/s]Loading logs:  36%|███▌      | 49/136 [00:02<00:05, 15.13it/s]Loading logs:  43%|████▎     | 59/136 [00:02<00:02, 26.66it/s]Loading logs:  46%|████▋     | 63/136 [00:02<00:02, 28.44it/s]Loading logs:  49%|████▉     | 67/136 [00:02<00:03, 19.57it/s]Loading logs:  55%|█████▌    | 75/136 [00:02<00:02, 28.30it/s]Loading logs:  62%|██████▏   | 84/136 [00:03<00:01, 38.89it/s]Loading logs:  67%|██████▋   | 91/136 [00:03<00:01, 44.34it/s]Loading logs:  73%|███████▎  | 99/136 [00:03<00:00, 43.85it/s]Loading logs:  77%|███████▋  | 105/136 [00:03<00:01, 24.10it/s]Loading logs:  84%|████████▍ | 114/136 [00:04<00:00, 31.84it/s]Loading logs:  88%|████████▊ | 120/136 [00:04<00:00, 32.46it/s]Loading logs:  92%|█████████▏| 125/136 [00:04<00:00, 34.56it/s]Loading logs:  96%|█████████▌| 130/136 [00:04<00:00, 37.04it/s]Loading logs: 100%|██████████| 136/136 [00:04<00:00, 30.07it/s]
+2026-04-17 20:42:07,580 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:354}  Starting pdm scoring of 12146 scenarios...
+2026-04-17 20:42:07,597 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:42:07,607 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:42:07,609 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:42:07,610 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:42:07,617 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:42:07,619 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:42:07,621 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:42:07,622 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:46}  Starting worker in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s]
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A
+
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A[A
+
+
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A[A[A
+
+
+
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A[A[A[A
+
+
+
+
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A[A[A[A[A
+
+
+
+
+
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A[A[A[A[A[A
+
+
+
+
+
+
+Loading logs:   0%|          | 0/17 [00:00<?, ?it/s][A[A[A[A[A[A[A
+
+
+
+
+
+
+Loading logs:   6%|▌         | 1/17 [00:00<00:01,  8.57it/s][A[A[A[A[A[A[A
+
+Loading logs:  12%|█▏        | 2/17 [00:00<00:01,  9.38it/s][A[A
+
+
+
+
+Loading logs:   6%|▌         | 1/17 [00:00<00:03,  4.77it/s][A[A[A[A[A
+
+
+
+
+
+Loading logs:  12%|█▏        | 2/17 [00:00<00:01,  8.02it/s][A[A[A[A[A[A
+Loading logs:  18%|█▊        | 3/17 [00:00<00:01, 11.24it/s][A
+
+
+
+Loading logs:   6%|▌         | 1/17 [00:00<00:04,  3.70it/s][A[A[A[A
+
+
+
+
+
+
+Loading logs:  12%|█▏        | 2/17 [00:00<00:02,  7.01it/s][A[A[A[A[A[A[A
+
+
+Loading logs:  12%|█▏        | 2/17 [00:00<00:02,  5.47it/s][A[A[A
+
+Loading logs:  24%|██▎       | 4/17 [00:00<00:01, 10.19it/s][A[A
+
+
+
+
+Loading logs:  12%|█▏        | 2/17 [00:00<00:03,  4.14it/s][A[A[A[A[A
+
+
+
+
+
+Loading logs:  18%|█▊        | 3/17 [00:00<00:02,  5.80it/s][A[A[A[A[A[A
+
+
+
+
+
+
+Loading logs:  24%|██▎       | 4/17 [00:00<00:01,  7.67it/s][A[A[A[A[A[A[A
+
+
+Loading logs:  18%|█▊        | 3/17 [00:00<00:02,  5.30it/s][A[A[A
+Loading logs:  29%|██▉       | 5/17 [00:00<00:01,  7.85it/s][ALoading logs:   6%|▌         | 1/17 [00:00<00:10,  1.49it/s]
+
+
+
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:00<00:01,  9.52it/s][A[A[A[A[A[A[A
+
+
+
+Loading logs:  12%|█▏        | 2/17 [00:00<00:05,  2.65it/s][A[A[A[A
+
+Loading logs:  35%|███▌      | 6/17 [00:00<00:01,  7.66it/s][A[A
+
+
+
+
+
+Loading logs:  29%|██▉       | 5/17 [00:00<00:01,  6.94it/s][A[A[A[A[A[A
+
+
+Loading logs:  29%|██▉       | 5/17 [00:00<00:01,  6.66it/s][A[A[A
+
+
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:00<00:01,  7.53it/s][A[A[A[A[A[A
+
+
+
+
+Loading logs:  18%|█▊        | 3/17 [00:00<00:04,  3.25it/s][A[A[A[A[A
+
+Loading logs:  47%|████▋     | 8/17 [00:00<00:00,  9.45it/s][A[A
+
+
+Loading logs:  41%|████      | 7/17 [00:00<00:01,  9.28it/s][A[A[A
+Loading logs:  35%|███▌      | 6/17 [00:00<00:01,  5.54it/s][A
+
+
+
+
+
+
+Loading logs:  41%|████      | 7/17 [00:00<00:01,  6.46it/s][A[A[A[A[A[A[A
+
+
+
+Loading logs:  18%|█▊        | 3/17 [00:01<00:04,  2.99it/s][A[A[A[A
+
+
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:01<00:02,  3.48it/s][A[A[A[A[A[A
+
+
+
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:01<00:03,  2.99it/s][A[A[A[A[A[A[A
+
+
+
+
+
+Loading logs:  65%|██████▍   | 11/17 [00:01<00:01,  5.67it/s][A[A[A[A[A[A
+Loading logs:  47%|████▋     | 8/17 [00:02<00:03,  2.96it/s][A
+
+Loading logs:  59%|█████▉    | 10/17 [00:02<00:01,  3.58it/s][A[A
+
+
+
+
+Loading logs:  24%|██▎       | 4/17 [00:02<00:08,  1.52it/s][A[A[A[A[A
+
+
+Loading logs:  53%|█████▎    | 9/17 [00:02<00:02,  3.44it/s][A[A[A
+
+
+
+
+
+Loading logs:  71%|███████   | 12/17 [00:02<00:00,  6.03it/s][A[A[A[A[A[ALoading logs:  12%|█▏        | 2/17 [00:02<00:17,  1.15s/it]
+
+
+
+
+
+Loading logs:  76%|███████▋  | 13/17 [00:02<00:00,  6.47it/s][A[A[A[A[A[A
+
+
+
+
+
+
+Loading logs:  59%|█████▉    | 10/17 [00:02<00:01,  3.65it/s][A[A[A[A[A[A[A
+
+
+
+Loading logs:  24%|██▎       | 4/17 [00:02<00:09,  1.39it/s][A[A[A[A
+
+Loading logs:  71%|███████   | 12/17 [00:02<00:01,  4.30it/s][A[A
+Loading logs:  53%|█████▎    | 9/17 [00:02<00:02,  2.96it/s][A
+
+
+
+
+Loading logs:  29%|██▉       | 5/17 [00:02<00:06,  1.85it/s][A[A[A[A[A
+
+
+
+
+
+
+Loading logs:  65%|██████▍   | 11/17 [00:02<00:01,  3.90it/s][A[A[A[A[A[A[A
+
+Loading logs:  76%|███████▋  | 13/17 [00:02<00:00,  4.78it/s][A[A
+
+
+
+Loading logs:  29%|██▉       | 5/17 [00:02<00:06,  1.92it/s][A[A[A[A
+
+
+Loading logs:  65%|██████▍   | 11/17 [00:02<00:01,  3.76it/s][A[A[A
+
+
+
+
+
+
+Loading logs:  71%|███████   | 12/17 [00:02<00:01,  4.59it/s][A[A[A[A[A[A[A
+
+Loading logs:  82%|████████▏ | 14/17 [00:02<00:00,  5.28it/s][A[A
+Loading logs:  59%|█████▉    | 10/17 [00:02<00:02,  3.26it/s][A
+
+
+
+
+
+
+Loading logs:  82%|████████▏ | 14/17 [00:02<00:00,  6.68it/s][A[A[A[A[A[A[A
+
+Loading logs:  94%|█████████▍| 16/17 [00:02<00:00,  7.05it/s][A[A
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:02<00:04,  2.28it/s][A[A[A[A
+
+
+Loading logs:  71%|███████   | 12/17 [00:02<00:01,  3.53it/s][A[A[A
+
+
+
+
+
+
+Loading logs:  94%|█████████▍| 16/17 [00:02<00:00,  6.57it/s][A[A[A[A[A[A[ALoading logs: 100%|██████████| 17/17 [00:02<00:00,  5.70it/s]
+Loading logs: 100%|██████████| 17/17 [00:02<00:00,  5.71it/s]
+
+
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:03<00:06,  1.71it/s][A[A[A[A[A
+Loading logs:  71%|███████   | 12/17 [00:03<00:01,  3.50it/s][A
+                                                             [A                                                            
+
+
+                                                             [A[A[A
+
+
+
+                                                            [A[A[A[A
+
+
+
+
+                                                            [A[A[A[A[A
+
+
+
+
+
+                                                             [A[A[A[A[A[A2026-04-17 20:42:15,775 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+
+Loading logs:  71%|███████   | 12/17 [00:03<00:01,  3.50it/s][ALoading logs:  12%|█▏        | 2/17 [00:03<00:17,  1.15s/it]
+
+
+Loading logs:  71%|███████   | 12/17 [00:03<00:01,  3.53it/s][A[A[A
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:03<00:04,  2.28it/s][A[A[A[A
+
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:03<00:06,  1.71it/s][A[A[A[A[A
+
+
+
+
+
+Loading logs:  76%|███████▋  | 13/17 [00:03<00:00,  6.47it/s][A[A[A[A[A[A
+                                                             [A                                                            
+
+
+                                                             [A[A[A
+
+
+
+                                                            [A[A[A[A
+
+
+
+
+                                                            [A[A[A[A[A
+
+
+
+
+
+                                                             [A[A[A[A[A[A2026-04-17 20:42:15,779 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+
+Loading logs:  71%|███████   | 12/17 [00:03<00:01,  3.50it/s][ALoading logs:  18%|█▊        | 3/17 [00:03<00:15,  1.09s/it]
+
+
+Loading logs:  71%|███████   | 12/17 [00:03<00:01,  3.53it/s][A[A[A
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:03<00:04,  2.28it/s][A[A[A[A
+
+
+
+
+Loading logs:  35%|███▌      | 6/17 [00:03<00:06,  1.71it/s][A[A[A[A[A
+
+
+
+
+
+Loading logs:  76%|███████▋  | 13/17 [00:03<00:00,  6.47it/s][A[A[A[A[A[ALoading logs:  18%|█▊        | 3/17 [00:03<00:15,  1.09s/it]
+
+
+Loading logs:  76%|███████▋  | 13/17 [00:03<00:01,  3.44it/s][A[A[A
+Loading logs:  76%|███████▋  | 13/17 [00:03<00:00,  4.06it/s][A
+
+
+
+
+
+Loading logs:  82%|████████▏ | 14/17 [00:04<00:01,  1.80it/s][A[A[A[A[A[A
+
+
+Loading logs:  82%|████████▏ | 14/17 [00:04<00:01,  2.23it/s][A[A[A
+
+
+
+
+Loading logs:  41%|████      | 7/17 [00:04<00:07,  1.34it/s][A[A[A[A[A
+
+
+
+Loading logs:  41%|████      | 7/17 [00:04<00:07,  1.34it/s][A[A[A[A
+Loading logs:  82%|████████▏ | 14/17 [00:04<00:01,  2.32it/s][A
+
+
+Loading logs:  88%|████████▊ | 15/17 [00:04<00:00,  2.74it/s][A[A[ALoading logs:  24%|██▎       | 4/17 [00:04<00:14,  1.10s/it]
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:04<00:05,  1.72it/s][A[A[A[A
+Loading logs:  88%|████████▊ | 15/17 [00:04<00:00,  2.66it/s][A
+
+
+
+
+
+Loading logs:  88%|████████▊ | 15/17 [00:04<00:01,  1.98it/s][A[A[A[A[A[A
+
+
+
+
+
+Loading logs: 100%|██████████| 17/17 [00:04<00:00,  3.17it/s][A[A[A[A[A[ALoading logs: 100%|██████████| 17/17 [00:04<00:00,  3.75it/s]
+
+                                                             [A                                                            
+
+
+                                                             [A[A[A
+
+
+
+                                                            [A[A[A[A
+
+
+
+
+                                                            [A[A[A[A[A2026-04-17 20:42:17,187 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+
+Loading logs:  88%|████████▊ | 15/17 [00:04<00:00,  2.66it/s][ALoading logs:  24%|██▎       | 4/17 [00:04<00:14,  1.10s/it]
+
+
+Loading logs:  88%|████████▊ | 15/17 [00:04<00:00,  2.74it/s][A[A[A
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:04<00:05,  1.72it/s][A[A[A[A
+
+
+
+
+Loading logs:  41%|████      | 7/17 [00:04<00:07,  1.34it/s][A[A[A[A[A
+Loading logs:  94%|█████████▍| 16/17 [00:04<00:00,  3.11it/s][ALoading logs:  29%|██▉       | 5/17 [00:04<00:10,  1.20it/s]
+
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:04<00:06,  1.48it/s][A[A[A[A[ALoading logs: 100%|██████████| 17/17 [00:04<00:00,  3.63it/s]
+                                                            
+
+
+                                                             [A[A[A
+
+
+
+                                                            [A[A[A[A
+
+
+
+
+                                                            [A[A[A[A[A2026-04-17 20:42:17,324 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+Loading logs:  29%|██▉       | 5/17 [00:04<00:10,  1.20it/s]
+
+
+Loading logs:  88%|████████▊ | 15/17 [00:04<00:00,  2.74it/s][A[A[A
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:04<00:05,  1.72it/s][A[A[A[A
+
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:04<00:06,  1.48it/s][A[A[A[A[A
+
+
+
+Loading logs:  53%|█████▎    | 9/17 [00:04<00:04,  1.98it/s][A[A[A[A
+
+
+Loading logs:  94%|█████████▍| 16/17 [00:04<00:00,  2.51it/s][A[A[ALoading logs:  35%|███▌      | 6/17 [00:04<00:07,  1.55it/s]
+
+
+Loading logs: 100%|██████████| 17/17 [00:05<00:00,  2.71it/s][A[A[ALoading logs: 100%|██████████| 17/17 [00:05<00:00,  3.38it/s]
+                                                            
+
+
+
+                                                            [A[A[A[A
+
+
+
+
+                                                            [A[A[A[A[A2026-04-17 20:42:17,675 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+Loading logs:  35%|███▌      | 6/17 [00:05<00:07,  1.55it/s]
+
+
+
+Loading logs:  53%|█████▎    | 9/17 [00:05<00:04,  1.98it/s][A[A[A[A
+
+
+
+
+Loading logs:  47%|████▋     | 8/17 [00:05<00:06,  1.48it/s][A[A[A[A[A
+
+
+
+Loading logs:  59%|█████▉    | 10/17 [00:05<00:03,  2.18it/s][A[A[A[A
+
+
+
+
+Loading logs:  53%|█████▎    | 9/17 [00:05<00:04,  1.64it/s][A[A[A[A[ALoading logs:  41%|████      | 7/17 [00:05<00:05,  1.95it/s]
+
+
+
+Loading logs:  65%|██████▍   | 11/17 [00:05<00:02,  2.78it/s][A[A[A[ALoading logs:  47%|████▋     | 8/17 [00:06<00:07,  1.27it/s]
+
+
+
+
+Loading logs:  59%|█████▉    | 10/17 [00:06<00:06,  1.16it/s][A[A[A[A[ALoading logs:  53%|█████▎    | 9/17 [00:06<00:04,  1.70it/s]
+
+
+
+Loading logs:  76%|███████▋  | 13/17 [00:06<00:02,  1.84it/s][A[A[A[ALoading logs:  59%|█████▉    | 10/17 [00:06<00:03,  2.24it/s]
+
+
+
+
+Loading logs:  65%|██████▍   | 11/17 [00:06<00:04,  1.40it/s][A[A[A[A[ALoading logs:  65%|██████▍   | 11/17 [00:07<00:02,  2.67it/s]
+
+
+
+Loading logs:  82%|████████▏ | 14/17 [00:07<00:01,  1.91it/s][A[A[A[ALoading logs:  71%|███████   | 12/17 [00:07<00:01,  3.16it/s]
+
+
+
+Loading logs:  88%|████████▊ | 15/17 [00:07<00:00,  2.29it/s][A[A[A[ALoading logs:  76%|███████▋  | 13/17 [00:07<00:01,  3.60it/s]
+
+
+
+Loading logs:  94%|█████████▍| 16/17 [00:07<00:00,  2.86it/s][A[A[A[ALoading logs:  82%|████████▏ | 14/17 [00:07<00:00,  4.46it/s]
+
+
+
+Loading logs: 100%|██████████| 17/17 [00:07<00:00,  3.52it/s][A[A[A[ALoading logs: 100%|██████████| 17/17 [00:07<00:00,  2.24it/s]
+                                                             
+
+
+
+
+                                                             [A[A[A[A[A2026-04-17 20:42:20,238 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+Loading logs:  82%|████████▏ | 14/17 [00:07<00:00,  4.46it/s]
+
+
+
+
+Loading logs:  65%|██████▍   | 11/17 [00:07<00:04,  1.40it/s][A[A[A[A[A
+
+
+
+
+Loading logs:  71%|███████   | 12/17 [00:07<00:03,  1.41it/s][A[A[A[A[ALoading logs:  94%|█████████▍| 16/17 [00:07<00:00,  6.43it/s]Loading logs: 100%|██████████| 17/17 [00:07<00:00,  2.20it/s]
+
+
+
+
+
+                                                             [A[A[A[A[A2026-04-17 20:42:20,383 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+
+
+
+
+
+Loading logs:  71%|███████   | 12/17 [00:07<00:03,  1.41it/s][A[A[A[A[A
+
+
+
+
+Loading logs:  82%|████████▏ | 14/17 [00:08<00:01,  2.09it/s][A[A[A[A[A
+
+
+
+
+Loading logs:  94%|█████████▍| 16/17 [00:08<00:00,  3.25it/s][A[A[A[A[ALoading logs: 100%|██████████| 17/17 [00:08<00:00,  2.08it/s]
+2026-04-17 20:42:20,817 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 1 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/nuplan/common/maps/nuplan_map/utils.py:413: RuntimeWarning: invalid value encountered in cast
+  return elements.iloc[np.where(elements[column_label].to_numpy().astype(int) == int(desired_value))]
+/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/nuplan/common/maps/nuplan_map/utils.py:413: RuntimeWarning: invalid value encountered in cast
+  return elements.iloc[np.where(elements[column_label].to_numpy().astype(int) == int(desired_value))]
+2026-04-17 20:42:26,950 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:42:30,008 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:42:33,239 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:42:34,932 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:42:36,438 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:42:38,721 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:42:38,861 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:42:40,768 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:42:41,390 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:42:45,568 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:42:52,849 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:42:53,188 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:42:54,047 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:42:56,282 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:42:56,468 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:42:58,442 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:06,388 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:43:06,890 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:43:08,609 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:10,458 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:11,177 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:11,258 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:43:13,117 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:15,219 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:20,861 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:21,176 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:43:22,664 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:23,893 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:43:27,477 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:43:27,838 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:43:28,690 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:31,105 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:43:31,224 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:31,324 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:32,927 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:43:37,270 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 2 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:43:37,727 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:37,745 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:43:38,145 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:43:39,001 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:42,160 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:43,221 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:43:43,231 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:44,168 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:43:45,283 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:48,820 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:43:48,950 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:43:50,573 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:43:51,224 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:43:56,016 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:43:57,281 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:00,070 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:02,234 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:44:02,605 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:12,547 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:44:15,003 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:16,954 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:44:17,799 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:44:18,703 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:22,522 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:44:22,816 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:26,262 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:28,852 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 24 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:29,655 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:44:39,448 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:44:39,861 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:44:42,282 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 25 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:42,863 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 3 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:44:48,418 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:44:53,106 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 26 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:56,394 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 27 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:44:59,570 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:44:59,841 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:45:01,050 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 4 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:45:01,536 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:45:02,773 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:45:08,966 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 28 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:09,825 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:45:09,885 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:45:14,042 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 29 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:14,177 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:45:15,434 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:45:19,137 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:45:20,483 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:45:27,203 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 30 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:31,052 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:45:31,178 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 31 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:33,733 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:45:36,983 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 32 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:39,344 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 33 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:40,975 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:45:42,058 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:45:42,434 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:45:44,516 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 34 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:50,143 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 35 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:53,499 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 36 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:45:54,072 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:45:55,017 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:45:56,515 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 37 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:01,923 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:46:02,519 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 5 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:46:05,243 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 38 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:05,997 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:46:06,915 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:46:08,166 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:46:08,893 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:46:09,412 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 39 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:13,743 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 40 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:15,306 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:46:15,916 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:46:16,997 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:46:19,543 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:46:19,847 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:46:26,058 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:46:26,631 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 41 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:27,563 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:46:32,632 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 42 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:34,944 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:46:36,877 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 43 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:38,522 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:46:38,699 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 6 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:46:38,894 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:46:39,260 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:46:42,009 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:46:42,069 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 44 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:46:48,545 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:46:51,480 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:46:53,173 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:46:59,434 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:47:05,420 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:47:12,055 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:47:18,190 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 7 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:47:22,543 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:47:23,525 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:47:23,546 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:47:23,987 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:47:26,114 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 24 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:47:29,004 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 45 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:47:31,737 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 46 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:47:31,786 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 25 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:47:32,241 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:47:33,080 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:47:36,964 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 47 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:47:40,128 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 26 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:47:40,292 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 8 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:47:42,252 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:47:43,128 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:47:48,777 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:47:49,376 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 48 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:47:53,179 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 24 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:47:53,654 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 49 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:47:57,916 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 50 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:00,216 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:48:02,023 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 51 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:04,813 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 52 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:05,156 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 25 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:48:06,998 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:48:08,090 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 53 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:11,564 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:48:13,491 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 54 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:16,179 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 27 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:48:18,138 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 55 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:22,132 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 56 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:24,163 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:48:24,623 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:48:25,710 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 57 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:28,975 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 58 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:31,322 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:48:31,613 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 59 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:38,222 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 24 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:48:38,582 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 28 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:48:39,066 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 60 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:40,685 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 26 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:48:43,030 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 61 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:43,244 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 27 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:48:43,614 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:48:44,433 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 9 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:48:46,504 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 62 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:49,088 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 25 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:48:50,242 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 28 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:48:51,662 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 63 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:54,523 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 64 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:48:55,094 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:48:55,997 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:49:00,017 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:49:00,198 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 29 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:49:01,808 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 29 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:49:03,536 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 26 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:49:05,141 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:49:13,743 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:49:17,244 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 30 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:49:20,560 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 65 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:49:22,028 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 30 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:49:27,075 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 66 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:49:27,349 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:49:27,847 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 31 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:49:29,008 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 27 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:49:29,797 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 31 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:49:30,097 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 67 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:49:34,273 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 32 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:49:36,847 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 28 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:49:37,959 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 32 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:49:44,863 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 29 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:49:48,054 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 33 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:49:48,131 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 68 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:49:49,497 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 33 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:49:55,353 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 30 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:49:58,610 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:50:01,252 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 34 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:50:03,998 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 69 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:06,126 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:50:06,850 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 35 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:50:10,270 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 34 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:50:11,625 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 31 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:50:17,478 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 35 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:50:19,591 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 70 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:20,189 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:50:21,862 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 36 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:50:26,470 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 71 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:29,867 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 32 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:50:30,357 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 72 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:31,537 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:50:32,145 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 37 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:50:34,027 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 73 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:35,594 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 36 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:50:39,270 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 74 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:40,338 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 37 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:50:42,172 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 75 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:44,613 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 76 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:45,790 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:50:48,240 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 10 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:50:49,130 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 33 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:50:50,964 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 77 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:50:53,840 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:50:54,303 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 34 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:50:54,328 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:50:59,569 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 78 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:02,618 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 79 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:04,178 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 38 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:51:05,042 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 38 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:51:15,984 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 35 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:51:19,715 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 39 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:51:19,794 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:51:28,786 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 80 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:31,780 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:51:32,378 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 36 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:51:33,460 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 11 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:51:33,827 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 81 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:35,383 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 39 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:51:41,724 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 82 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:45,277 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 37 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:51:46,745 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 83 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:47,274 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 40 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:51:49,771 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:51:51,766 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 84 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:52,827 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:51:55,556 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 12 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:51:57,225 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 38 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:51:59,540 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 85 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:51:59,594 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 13 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:52:02,351 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 86 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:04,814 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 41 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:52:07,011 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 39 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:52:07,521 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 87 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:08,708 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 42 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:52:08,894 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:52:13,551 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:52:15,601 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 40 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:52:18,043 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 40 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:52:19,999 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 88 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:21,630 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 41 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:52:23,835 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 89 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:26,378 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 43 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:52:28,535 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 41 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:52:28,559 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 90 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:32,216 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 24 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:52:34,620 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 91 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:37,999 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 92 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:40,195 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 42 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:52:42,335 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 93 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:52:43,109 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 25 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:52:46,418 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 42 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:52:48,334 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 94 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:00,083 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 95 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:01,758 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 14 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:53:04,879 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 43 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:53:05,278 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 44 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:53:06,191 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 96 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:07,350 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 43 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:53:08,441 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 44 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:53:13,315 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:53:19,891 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 97 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:20,631 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 45 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:53:22,292 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:53:23,494 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 44 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:53:24,956 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 98 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:25,679 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 45 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:53:27,564 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:53:28,680 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 46 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:53:29,307 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 99 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:30,413 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 26 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:53:31,157 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 45 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:53:32,580 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 100 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:36,172 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 101 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:41,834 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 46 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:53:42,139 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 102 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:45,452 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 103 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:47,939 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 46 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:53:48,936 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 27 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:53:51,727 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 47 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:53:53,270 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:53:54,818 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 48 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:53:56,064 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 104 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:53:58,929 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 47 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:53:59,519 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 28 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:54:01,410 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:54:02,278 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 105 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:04,386 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 47 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:54:04,915 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 106 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:13,919 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 107 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:15,232 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 29 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:54:16,159 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 48 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:54:16,381 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 108 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:24,411 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 109 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:25,205 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 48 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:54:25,356 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 49 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:54:27,069 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 15 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:54:29,312 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 49 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:54:29,953 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 110 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:34,822 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:54:34,916 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:54:35,393 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 30 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:54:38,062 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 49 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:54:39,181 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:54:39,982 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 50 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:54:44,122 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 111 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:47,209 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 112 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:48,173 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 50 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:54:51,714 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 113 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:53,187 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 51 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:54:55,431 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 50 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:54:56,239 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 114 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:54:56,286 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 51 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:54:58,207 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 52 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:54:58,728 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 31 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:55:01,722 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 115 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:04,634 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 116 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:13,986 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 51 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:55:14,203 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 117 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:16,137 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 53 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:55:17,860 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:55:18,785 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 118 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:22,313 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 52 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:55:22,706 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 54 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:55:27,179 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 55 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:55:27,530 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 119 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:28,632 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 32 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:55:31,782 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 52 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:55:32,909 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 120 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:35,353 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 53 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:55:36,091 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 53 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:55:36,111 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 121 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:37,758 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 54 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:55:38,512 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 33 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:55:48,377 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 122 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:52,502 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 34 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:55:52,534 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 24 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:55:53,488 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 55 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:55:54,607 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:55:54,767 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 56 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:55:58,394 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 35 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:55:59,702 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 123 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:55:59,957 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 54 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:56:00,346 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 57 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:56:04,691 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 16 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:56:06,064 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 124 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:06,551 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 56 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:56:08,255 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 58 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:56:10,682 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:56:12,701 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 125 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:13,428 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:56:16,300 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 126 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:16,541 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 55 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:56:18,115 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 17 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:56:21,130 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 127 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:25,870 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 128 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:29,152 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 36 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:56:29,850 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 59 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:56:33,694 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 56 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:56:34,997 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 57 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:56:36,857 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 22 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:56:41,998 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 37 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:56:42,572 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 60 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:56:47,801 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 129 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:48,552 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 57 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:56:49,674 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 38 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:56:52,879 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 58 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:56:54,154 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 130 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:56:54,465 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 25 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:56:56,861 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 59 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:56:56,989 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 18 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:57:00,850 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 131 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:57:01,282 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 61 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:57:04,521 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 19 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:57:05,465 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 58 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:57:06,822 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 39 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:57:07,389 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 62 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:57:11,238 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 63 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:57:12,840 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 60 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:57:13,158 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 20 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:57:21,455 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 64 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:57:25,281 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 40 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:57:25,330 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 65 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:57:26,076 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 59 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:57:31,742 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 66 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:57:32,357 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 26 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:57:36,606 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 60 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:57:36,651 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 132 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:57:40,840 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 41 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:57:46,652 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 133 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:57:49,619 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 134 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:57:51,134 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 61 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:57:51,305 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 61 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:57:52,346 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 135 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:57:54,129 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 27 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:57:55,606 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 136 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:57:59,151 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 62 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:58:01,538 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 28 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:58:01,920 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 137 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:09,331 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 138 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:09,989 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 62 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:58:12,577 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 23 / 2135 in thread_id=cee1188d-29c1-490f-a353-215af9e2be26, node_id=0
+2026-04-17 20:58:16,214 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 42 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:58:21,482 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 63 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:58:22,176 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 21 / 1014 in thread_id=53075ced-6944-4260-a54e-89f619a4daff, node_id=0
+2026-04-17 20:58:23,022 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 67 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:58:23,388 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 139 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:24,382 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 63 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:58:26,127 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 64 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:58:28,185 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 64 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:58:31,874 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 140 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:37,440 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 65 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:58:38,798 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 65 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:58:39,928 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 141 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:43,642 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 142 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:46,125 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 29 / 992 in thread_id=0d9476de-936b-4c39-af41-1f4d8232a809, node_id=0
+2026-04-17 20:58:48,590 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 66 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:58:50,531 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 143 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:52,934 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 67 / 1315 in thread_id=da2edbb1-4dce-4713-b377-476033bc0b3b, node_id=0
+2026-04-17 20:58:53,389 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 144 / 2069 in thread_id=b8c835ce-dcbd-4a95-b89c-d16076a2a18c, node_id=0
+2026-04-17 20:58:53,903 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 66 / 1047 in thread_id=d3e15904-dbe5-452d-b8c5-b61417d53690, node_id=0
+2026-04-17 20:58:54,809 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 68 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0
+2026-04-17 20:58:57,390 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 43 / 1547 in thread_id=aaec60c4-cfe3-44e2-8ddc-908457c77e56, node_id=0
+2026-04-17 20:59:00,622 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score.py:85}  Processing stage one reactive scenario 69 / 2027 in thread_id=86df031d-0554-4b03-bfc4-030404824ab2, node_id=0

@@ -1,0 +1,17 @@
+Strategy: random
+Dropping 13/36 layers: [1, 2, 3, 4, 7, 14, 15, 17, 18, 21, 23, 29, 33]
+
+Loading model from /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B ...
+Keeping layers: [0, 5, 6, 8, 9, 10, 11, 12, 13, 16, 19, 20, 22, 24, 25, 26, 27, 28, 30, 31, 32, 34, 35]
+Dropping layers: [1, 2, 3, 4, 7, 14, 15, 17, 18, 21, 23, 29, 33]
+Model now has 23 text layers.
+
+Saving pruned model to /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B-pruned-random13 ...
+Done.
+Pruning metadata saved to /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B-pruned-random13/pruning_meta.json
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 75.65it/s]

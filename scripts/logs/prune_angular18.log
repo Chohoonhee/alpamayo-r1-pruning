@@ -1,0 +1,17 @@
+Strategy: angular
+Dropping 18/36 layers: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 25, 26, 27, 28, 29, 30, 34]
+
+Loading model from /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B ...
+Keeping layers: [0, 1, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 31, 32, 33, 35]
+Dropping layers: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 25, 26, 27, 28, 29, 30, 34]
+Model now has 18 text layers.
+
+Saving pruned model to /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B-pruned-angular18 ...
+Done.
+Pruning metadata saved to /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B-pruned-angular18/pruning_meta.json
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 69.36it/s]

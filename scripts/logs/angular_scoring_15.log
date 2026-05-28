@@ -1,0 +1,75 @@
+Loading nuScenes v1.0-trainval ...
+Val samples: 6019
+Loading 100 samples for scoring ...
+Prepared 100 samples
+
+Loading model from /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B ...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 69.14it/s]
+Model loaded.
+
+Scoring 36 layers on 100 samples ...
+  [10/100] layer scores so far (first 5): ['0.1216', '0.0367', '0.0112', '0.0105', '0.0322']
+  [20/100] layer scores so far (first 5): ['0.1216', '0.0369', '0.0113', '0.0103', '0.0317']
+  [30/100] layer scores so far (first 5): ['0.1222', '0.0370', '0.0113', '0.0104', '0.0320']
+  [40/100] layer scores so far (first 5): ['0.1229', '0.0375', '0.0113', '0.0104', '0.0321']
+  [50/100] layer scores so far (first 5): ['0.1232', '0.0377', '0.0114', '0.0104', '0.0320']
+  [60/100] layer scores so far (first 5): ['0.1231', '0.0379', '0.0114', '0.0104', '0.0319']
+  [70/100] layer scores so far (first 5): ['0.1232', '0.0380', '0.0113', '0.0104', '0.0320']
+  [80/100] layer scores so far (first 5): ['0.1234', '0.0381', '0.0113', '0.0104', '0.0321']
+  [90/100] layer scores so far (first 5): ['0.1233', '0.0380', '0.0113', '0.0104', '0.0321']
+  [100/100] layer scores so far (first 5): ['0.1249', '0.0390', '0.0114', '0.0104', '0.0323']
+
+Saved to /home/irteam/ws/alpamayo_pruning/scripts/angular_scores_15.json
+
+── Layer scores (layer: score) ──────────────────────────────────
+  Layer  0: 0.125135
+  Layer  1: 0.039159
+  Layer  2: 0.011384
+  Layer  3: 0.010371
+  Layer  4: 0.032328
+  Layer  5: 0.015016
+  Layer  6: 0.012236
+  Layer  7: 0.012004
+  Layer  8: 0.006720
+  Layer  9: 0.010832
+  Layer 10: 0.019987
+  Layer 11: 0.012286
+  Layer 12: 0.029894
+  Layer 13: 0.015196
+  Layer 14: 0.020356
+  Layer 15: 0.040055
+  Layer 16: 0.113708
+  Layer 17: 0.018854
+  Layer 18: 0.020762
+  Layer 19: 0.026154
+  Layer 20: 0.016780
+  Layer 21: 0.022261
+  Layer 22: 0.019038
+  Layer 23: 0.026082
+  Layer 24: 0.074718
+  Layer 25: 0.008002
+  Layer 26: 0.005106
+  Layer 27: 0.004698
+  Layer 28: 0.006392
+  Layer 29: 0.008611
+  Layer 30: 0.014620
+  Layer 31: 0.004428
+  Layer 32: 0.004273
+  Layer 33: 0.004732
+  Layer 34: 0.016798
+  Layer 35: 0.049134
+
+── Bottom-13 layers (drop candidates) ──────────────────────────
+  rank  1: layer 32  score=0.004273
+  rank  2: layer 31  score=0.004428
+  rank  3: layer 27  score=0.004698
+  rank  4: layer 33  score=0.004732
+  rank  5: layer 26  score=0.005106
+  rank  6: layer 28  score=0.006392
+  rank  7: layer  8  score=0.006720
+  rank  8: layer 25  score=0.008002
+  rank  9: layer 29  score=0.008611
+  rank 10: layer  3  score=0.010371
+  rank 11: layer  9  score=0.010832
+  rank 12: layer  2  score=0.011384
+  rank 13: layer  7  score=0.012004

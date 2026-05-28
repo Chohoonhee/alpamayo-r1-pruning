@@ -1,0 +1,80 @@
+Loading nuScenes v1.0-trainval ...
+Val samples: 6019
+Loading 100 samples for scoring ...
+Prepared 100 samples
+
+Loading model from /home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B ...
+Model loaded.
+
+Scoring 36 layers on 100 samples ...
+  [10/100] layer scores so far (first 5): ['0.1916', '0.0682', '0.0073', '0.0051', '0.0188']
+  [20/100] layer scores so far (first 5): ['0.1899', '0.0685', '0.0078', '0.0051', '0.0185']
+  [30/100] layer scores so far (first 5): ['0.1910', '0.0685', '0.0077', '0.0051', '0.0185']
+  [40/100] layer scores so far (first 5): ['0.1913', '0.0684', '0.0076', '0.0051', '0.0184']
+  [50/100] layer scores so far (first 5): ['0.1912', '0.0683', '0.0076', '0.0051', '0.0185']
+  [60/100] layer scores so far (first 5): ['0.1914', '0.0686', '0.0076', '0.0051', '0.0184']
+  [70/100] layer scores so far (first 5): ['0.1916', '0.0686', '0.0076', '0.0051', '0.0185']
+  [80/100] layer scores so far (first 5): ['0.1916', '0.0685', '0.0076', '0.0051', '0.0185']
+  [90/100] layer scores so far (first 5): ['0.1916', '0.0685', '0.0075', '0.0051', '0.0185']
+  [100/100] layer scores so far (first 5): ['0.1927', '0.0685', '0.0075', '0.0051', '0.0185']
+
+Saved to /home/irteam/ws/alpamayo_pruning/scripts/angular_scores_r1.json
+
+── Layer scores (layer: score) ──────────────────────────────────
+  Layer  0: 0.192910
+  Layer  1: 0.068492
+  Layer  2: 0.007493
+  Layer  3: 0.005061
+  Layer  4: 0.018492
+  Layer  5: 0.004129
+  Layer  6: 0.006170
+  Layer  7: 0.007042
+  Layer  8: 0.007281
+  Layer  9: 0.007289
+  Layer 10: 0.007529
+  Layer 11: 0.008016
+  Layer 12: 0.018862
+  Layer 13: 0.023336
+  Layer 14: 0.035669
+  Layer 15: 0.057567
+  Layer 16: 0.256927
+  Layer 17: 0.047856
+  Layer 18: 0.050940
+  Layer 19: 0.051271
+  Layer 20: 0.036043
+  Layer 21: 0.029217
+  Layer 22: 0.021583
+  Layer 23: 0.022475
+  Layer 24: 0.029224
+  Layer 25: 0.013244
+  Layer 26: 0.007384
+  Layer 27: 0.008753
+  Layer 28: 0.010869
+  Layer 29: 0.014501
+  Layer 30: 0.019011
+  Layer 31: 0.026324
+  Layer 32: 0.029129
+  Layer 33: 0.035629
+  Layer 34: 0.021027
+  Layer 35: 0.070855
+
+── Bottom-13 layers (drop candidates) ──────────────────────────
+  rank  1: layer  5  score=0.004129
+  rank  2: layer  3  score=0.005061
+  rank  3: layer  6  score=0.006170
+  rank  4: layer  7  score=0.007042
+  rank  5: layer  8  score=0.007281
+  rank  6: layer  9  score=0.007289
+  rank  7: layer 26  score=0.007384
+  rank  8: layer  2  score=0.007493
+  rank  9: layer 10  score=0.007529
+  rank 10: layer 11  score=0.008016
+  rank 11: layer 27  score=0.008753
+  rank 12: layer 28  score=0.010869
+  rank 13: layer 25  score=0.013244
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 65.32it/s]

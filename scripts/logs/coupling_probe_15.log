@@ -1,0 +1,141 @@
+Probing 1.5 on 10 nuScenes samples
+Prepared 10 samples
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 87.52it/s]
+VLM/Expert both have 36 layers
+  [base 1/10] pred_3s=(0.00,0.00)
+  [base 2/10] pred_3s=(0.01,0.00)
+  [base 3/10] pred_3s=(30.40,0.08)
+  [base 4/10] pred_3s=(6.42,0.79)
+  [base 5/10] pred_3s=(12.61,0.60)
+  [base 6/10] pred_3s=(17.71,-1.18)
+  [base 7/10] pred_3s=(22.14,0.38)
+  [base 8/10] pred_3s=(27.72,0.21)
+  [base 9/10] pred_3s=(11.89,0.33)
+  [base 10/10] pred_3s=(21.07,-0.19)
+Skipping ablation on critical layers: [0, 35] (angular score very high → not drop candidates anyway)
+  [layer  0] skipped (critical)
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+  [layer  1 / vlm_only   ] Δ3s=16.4671 m (n_ok=10/10)
+  [layer  1 / expert_only] Δ3s=1.1319 m (n_ok=10/10)
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+No <traj_future_start> token found in generated sequences for sequence 0
+  [layer  1 / both       ] Δ3s=19.9819 m (n_ok=10/10)
+  [layer  2 / vlm_only   ] Δ3s=1.6134 m (n_ok=10/10)
+  [layer  2 / expert_only] Δ3s=2.1840 m (n_ok=10/10)
+  [layer  2 / both       ] Δ3s=2.1131 m (n_ok=10/10)
+  [layer  3 / vlm_only   ] Δ3s=1.3551 m (n_ok=10/10)
+  [layer  3 / expert_only] Δ3s=1.5702 m (n_ok=10/10)
+  [layer  3 / both       ] Δ3s=1.0995 m (n_ok=10/10)
+  [layer  4 / vlm_only   ] Δ3s=1.3817 m (n_ok=10/10)
+  [layer  4 / expert_only] Δ3s=0.9156 m (n_ok=10/10)
+  [layer  4 / both       ] Δ3s=1.9089 m (n_ok=10/10)
+  [layer  5 / vlm_only   ] Δ3s=1.5603 m (n_ok=10/10)
+  [layer  5 / expert_only] Δ3s=0.8337 m (n_ok=10/10)
+  [layer  5 / both       ] Δ3s=2.4801 m (n_ok=10/10)
+  [layer  6 / vlm_only   ] Δ3s=1.2919 m (n_ok=10/10)
+  [layer  6 / expert_only] Δ3s=1.3038 m (n_ok=10/10)
+  [layer  6 / both       ] Δ3s=1.4242 m (n_ok=10/10)
+  [layer  7 / vlm_only   ] Δ3s=1.3467 m (n_ok=10/10)
+  [layer  7 / expert_only] Δ3s=1.4053 m (n_ok=10/10)
+  [layer  7 / both       ] Δ3s=1.3565 m (n_ok=10/10)
+  [layer  8 / vlm_only   ] Δ3s=1.5088 m (n_ok=10/10)
+  [layer  8 / expert_only] Δ3s=0.8816 m (n_ok=10/10)
+  [layer  8 / both       ] Δ3s=1.3492 m (n_ok=10/10)
+  [layer  9 / vlm_only   ] Δ3s=1.8306 m (n_ok=10/10)
+  [layer  9 / expert_only] Δ3s=1.9160 m (n_ok=10/10)
+  [layer  9 / both       ] Δ3s=1.6833 m (n_ok=10/10)
+  [layer 10 / vlm_only   ] Δ3s=1.1913 m (n_ok=10/10)
+  [layer 10 / expert_only] Δ3s=1.2008 m (n_ok=10/10)
+  [layer 10 / both       ] Δ3s=1.6629 m (n_ok=10/10)
+  [layer 11 / vlm_only   ] Δ3s=3.3621 m (n_ok=10/10)
+  [layer 11 / expert_only] Δ3s=1.5734 m (n_ok=10/10)
+  [layer 11 / both       ] Δ3s=1.5015 m (n_ok=10/10)
+  [layer 12 / vlm_only   ] Δ3s=2.7979 m (n_ok=10/10)
+  [layer 12 / expert_only] Δ3s=1.5647 m (n_ok=10/10)
+  [layer 12 / both       ] Δ3s=1.3185 m (n_ok=10/10)
+  [layer 13 / vlm_only   ] Δ3s=6.2037 m (n_ok=10/10)
+  [layer 13 / expert_only] Δ3s=1.3098 m (n_ok=10/10)
+  [layer 13 / both       ] Δ3s=1.7448 m (n_ok=10/10)
+  [layer 14 / vlm_only   ] Δ3s=2.3996 m (n_ok=10/10)
+  [layer 14 / expert_only] Δ3s=0.9927 m (n_ok=10/10)
+  [layer 14 / both       ] Δ3s=1.1596 m (n_ok=10/10)
+  [layer 15 / vlm_only   ] Δ3s=4.5136 m (n_ok=10/10)
+  [layer 15 / expert_only] Δ3s=1.6082 m (n_ok=10/10)
+  [layer 15 / both       ] Δ3s=1.5090 m (n_ok=10/10)
+  [layer 16 / vlm_only   ] Δ3s=1.7879 m (n_ok=10/10)
+  [layer 16 / expert_only] Δ3s=1.1017 m (n_ok=10/10)
+  [layer 16 / both       ] Δ3s=1.3529 m (n_ok=10/10)
+  [layer 17 / vlm_only   ] Δ3s=1.8134 m (n_ok=10/10)
+  [layer 17 / expert_only] Δ3s=1.3429 m (n_ok=10/10)
+  [layer 17 / both       ] Δ3s=1.1872 m (n_ok=10/10)
+  [layer 18 / vlm_only   ] Δ3s=1.6763 m (n_ok=10/10)
+  [layer 18 / expert_only] Δ3s=0.8148 m (n_ok=10/10)
+  [layer 18 / both       ] Δ3s=0.9389 m (n_ok=10/10)
+  [layer 19 / vlm_only   ] Δ3s=1.0912 m (n_ok=10/10)
+  [layer 19 / expert_only] Δ3s=1.1485 m (n_ok=10/10)
+  [layer 19 / both       ] Δ3s=1.1444 m (n_ok=10/10)
+  [layer 20 / vlm_only   ] Δ3s=1.0593 m (n_ok=10/10)
+  [layer 20 / expert_only] Δ3s=1.6056 m (n_ok=10/10)
+  [layer 20 / both       ] Δ3s=1.0355 m (n_ok=10/10)
+  [layer 21 / vlm_only   ] Δ3s=1.3032 m (n_ok=10/10)
+  [layer 21 / expert_only] Δ3s=1.1326 m (n_ok=10/10)
+  [layer 21 / both       ] Δ3s=1.5983 m (n_ok=10/10)
+  [layer 22 / vlm_only   ] Δ3s=0.7327 m (n_ok=10/10)
+  [layer 22 / expert_only] Δ3s=1.4741 m (n_ok=10/10)
+  [layer 22 / both       ] Δ3s=0.6287 m (n_ok=10/10)
+  [layer 23 / vlm_only   ] Δ3s=1.6134 m (n_ok=10/10)
+  [layer 23 / expert_only] Δ3s=1.7575 m (n_ok=10/10)
+  [layer 23 / both       ] Δ3s=1.5600 m (n_ok=10/10)
+  [layer 24 / vlm_only   ] Δ3s=3.3516 m (n_ok=10/10)
+  [layer 24 / expert_only] Δ3s=1.5277 m (n_ok=10/10)
+  [layer 24 / both       ] Δ3s=0.8924 m (n_ok=10/10)
+  [layer 25 / vlm_only   ] Δ3s=1.2126 m (n_ok=10/10)
+  [layer 25 / expert_only] Δ3s=1.7222 m (n_ok=10/10)
+  [layer 25 / both       ] Δ3s=1.3954 m (n_ok=10/10)
+  [layer 26 / vlm_only   ] Δ3s=0.9376 m (n_ok=10/10)
+  [layer 26 / expert_only] Δ3s=1.4129 m (n_ok=10/10)
+  [layer 26 / both       ] Δ3s=0.9338 m (n_ok=10/10)
+  [layer 27 / vlm_only   ] Δ3s=1.5423 m (n_ok=10/10)
+  [layer 27 / expert_only] Δ3s=1.3895 m (n_ok=10/10)
+  [layer 27 / both       ] Δ3s=2.0770 m (n_ok=10/10)
+  [layer 28 / vlm_only   ] Δ3s=1.4479 m (n_ok=10/10)
+  [layer 28 / expert_only] Δ3s=1.0714 m (n_ok=10/10)
+  [layer 28 / both       ] Δ3s=1.2249 m (n_ok=10/10)
+  [layer 29 / vlm_only   ] Δ3s=2.9307 m (n_ok=10/10)
+  [layer 29 / expert_only] Δ3s=1.4161 m (n_ok=10/10)
+  [layer 29 / both       ] Δ3s=1.1378 m (n_ok=10/10)
+  [layer 30 / vlm_only   ] Δ3s=1.3360 m (n_ok=10/10)
+  [layer 30 / expert_only] Δ3s=0.8644 m (n_ok=10/10)
+  [layer 30 / both       ] Δ3s=1.2327 m (n_ok=10/10)
+  [layer 31 / vlm_only   ] Δ3s=1.8622 m (n_ok=10/10)
+  [layer 31 / expert_only] Δ3s=1.2068 m (n_ok=10/10)
+  [layer 31 / both       ] Δ3s=1.1468 m (n_ok=10/10)
+  [layer 32 / vlm_only   ] Δ3s=1.8180 m (n_ok=10/10)
+  [layer 32 / expert_only] Δ3s=1.3460 m (n_ok=10/10)
+  [layer 32 / both       ] Δ3s=1.0275 m (n_ok=10/10)
+  [layer 33 / vlm_only   ] Δ3s=1.7138 m (n_ok=10/10)
+  [layer 33 / expert_only] Δ3s=1.2575 m (n_ok=10/10)
+  [layer 33 / both       ] Δ3s=0.9164 m (n_ok=10/10)
+  [layer 34 / vlm_only   ] Δ3s=1.7312 m (n_ok=10/10)
+  [layer 34 / expert_only] Δ3s=1.0874 m (n_ok=10/10)
+No <traj_future_start> token found in generated sequences for sequence 0
+  [layer 34 / both       ] Δ3s=1.5175 m (n_ok=10/10)
+  [layer 35] skipped (critical)
+Saved to /home/irteam/ws/alpamayo_pruning/scripts/coupling_probe_15.json
