@@ -5,9 +5,15 @@ Read this file fully before doing anything. It has the goal, the headline
 finding, current state, the active question to answer next, and decisions
 that should not be relitigated.
 
-After reading: confirm you've absorbed the state, surface the active blocker
-if relevant, and ask the user what they want to work on. Don't propose huge
-plans uninvited.
+**Also read [PAPER_DIRECTIONS.md](PAPER_DIRECTIONS.md) after this file.**
+That document carries forward cross-project synthesis with the sister ViPE
+project (`alpamayo-vipe-research`), paper-shape options, and concrete
+next-step recommendations that are NOT in CLAUDE.md / KEY_FINDING.md /
+NOTES.md. Both repos have an identical copy.
+
+After reading both, confirm you've absorbed the state, surface the active
+blocker if relevant, and ask the user what they want to work on. Don't
+propose huge plans uninvited.
 
 ---
 
