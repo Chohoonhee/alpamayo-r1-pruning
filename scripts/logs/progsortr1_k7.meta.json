@@ -1,0 +1,15 @@
+{
+  "dropped_layers": [
+    1,
+    6,
+    12,
+    17,
+    18,
+    28,
+    35
+  ],
+  "policy": "progressive_sorted",
+  "backbone": "r1",
+  "k": 7,
+  "source": "logs/pilotR1_merged.json"
+}

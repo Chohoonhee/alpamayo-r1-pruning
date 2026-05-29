@@ -1,0 +1,17 @@
+{
+  "dropped_layers": [
+    1,
+    6,
+    12,
+    17,
+    18,
+    28,
+    34,
+    35
+  ],
+  "policy": "alignment_grounded_harmful_only",
+  "backbone": "r1",
+  "source": "logs/pilotR1_merged.json",
+  "baseline_match_rate": 0.6825,
+  "epsilon": 0.02
+}
