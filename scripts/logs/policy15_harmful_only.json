@@ -1,0 +1,16 @@
+{
+  "dropped_layers": [
+    20,
+    21,
+    22,
+    26,
+    30,
+    32
+  ],
+  "policy": "alignment_grounded_harmful_only",
+  "backbone": "15",
+  "source": "logs/pilot15_merged.json",
+  "baseline_match_rate": 0.6325000000000001,
+  "epsilon": 0.02,
+  "rationale": "Drop ONLY layers with importance<-\u03b5. Isolation test."
+}

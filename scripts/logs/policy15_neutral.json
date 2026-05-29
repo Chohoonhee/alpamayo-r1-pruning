@@ -1,0 +1,17 @@
+{
+  "dropped_layers": [
+    17,
+    18,
+    19,
+    23,
+    27,
+    31,
+    34
+  ],
+  "policy": "alignment_grounded_neutral_only",
+  "backbone": "15",
+  "source": "logs/pilot15_merged.json",
+  "baseline_match_rate": 0.6325000000000001,
+  "epsilon": 0.02,
+  "rationale": "Drop layers whose CoT-Action alignment importance is within \u00b1\u03b5 of zero (no measurable effect on coherence)."
+}

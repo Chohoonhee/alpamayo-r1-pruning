@@ -115,37 +115,13 @@ def run_inference_with_cot(model, processor, frames_np, ego_xyz, ego_rot,
         "ego_history_rot": torch.from_numpy(ego_rot).float().to(device),
     }
     with torch.no_grad(), torch.autocast("cuda", dtype=torch.bfloat16):
-        out = model.sample_trajectories_from_data_with_vlm_rollout(
+        pred_xyz, pred_rot, extra = model.sample_trajectories_from_data_with_vlm_rollout(
             data=model_inputs, top_p=0.98, temperature=0.6,
-            num_traj_samples=1, max_generation_length=96, return_extra=True,
+            num_traj_samples=1, max_generation_length=256, return_extra=True,
         )
-    # `out` shape varies; with return_extra=True it should be
-    # (waypoints, extras) where extras contains generated ids.
-    if isinstance(out, tuple) and len(out) == 2:
-        pred_xyz, extras = out
-    else:
-        pred_xyz, extras = out, {}
-
-    pred_xyz_np = pred_xyz[0].detach().float().cpu().numpy()
-    pred_flat = pred_xyz_np.reshape(-1, pred_xyz_np.shape[-2], pred_xyz_np.shape[-1])
-    action_xy = pred_flat[0, :, :2]
-
-    # TODO: replace this with the real CoT extraction once `extras` surface
-    # is confirmed. For now, return empty string → CoT class falls back to
-    # 'cruise'. This makes the scaffold runnable end-to-end but the score
-    # only reflects action-vs-action drift until CoT extraction lands.
-    cot_text = ""
-    if isinstance(extras, dict):
-        ids = extras.get("generated_ids") or extras.get("vlm_tokens")
-        if ids is not None:
-            try:
-                cot_text = processor.tokenizer.decode(
-                    ids[0] if hasattr(ids, "__getitem__") else ids,
-                    skip_special_tokens=True,
-                )
-            except Exception:
-                cot_text = ""
-
+    # pred_xyz shape: [B=1, ns=1, nj=1, T, 3]; extra["cot"] shape [B, ns, nj]
+    action_xy = pred_xyz[0, 0, 0, :, :2].detach().float().cpu().numpy()
+    cot_text = str(extra["cot"][0, 0, 0])
     return cot_text, action_xy
 
 
