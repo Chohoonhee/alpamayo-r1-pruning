@@ -1,7 +1,9 @@
 # Paper directions & cross-project synthesis
 
-**Status:** Synthesis as of 2026-05-28. Reflects the state of both
-`alpamayo-vipe-research` and `alpamayo-r1-pruning` repos at that date.
+**Status:** Refined direction added 2026-05-29 (Section 0 below). Earlier
+synthesis (Sections 1-11, dated 2026-05-28) is preserved for context, but
+the **Recommended approach in Section 6 is superseded** by Section 0.
+
 Treat this as a **working hypothesis + recommendations**, not a frozen plan
 — if you find a stronger angle, override.
 
@@ -9,6 +11,147 @@ This document carries forward analysis that doesn't live in CLAUDE.md /
 KEY_FINDING.md / NOTES.md — namely the **cross-project narrative** and the
 **paper-shape options**. A new Claude session picking up either project
 should read this after CLAUDE.md.
+
+---
+
+## 0. Refined direction — alignment-grounded VLM pruning (2026-05-29)
+
+### One-line
+
+> **"In driving VLAs, some VLM layers actively hurt CoT-Action alignment.
+> We score layers by their alignment contribution and prune the harmful +
+> neutral ones, achieving lossless compression *and* improved
+> reasoning-action coherence — yielding a smaller model that fine-tunes
+> faster to new domains."**
+
+This unifies the two prior projects under a single methodology:
+- The pruning side keeps its R1 vs 1.5 contrast.
+- The ViPE side's CoT-Action gap measurement becomes the **scoring
+  signal** for pruning.
+- ViPE pseudo-GT becomes optional infrastructure for the SFT recovery
+  stage (still useful, no longer the headline).
+
+### Why this is sharper than the prior Option A/B/C
+
+| Prior framing | Issue | Refined framing |
+|---|---|---|
+| A — backbone training objective sensitivity | Analytic / descriptive, no clear action item for practitioners | Alignment-grounded scoring gives a tool, not just an observation |
+| B — ViPE GT-free SFT | Blocked on Step 1 NaN | Independent of ViPE Step 1; uses model's own CoT + action |
+| C — combined | Two separate stories duct-taped together | Single coherent methodology + AV-specific motivation |
+
+### Methodology
+
+Per-layer importance is the **change in CoT-Action alignment** when the
+layer is bypassed via runtime identity:
+
+```
+For each VLM layer ℓ in {1, ..., 36}:
+    For each sample s in calibration set S:
+        align_with(ℓ, s)    = match(cot_class(model, s), action_class(model, s))
+        align_without(ℓ, s) = match(cot_class(model_ℓ_bypassed, s),
+                                    action_class(model_ℓ_bypassed, s))
+    importance(ℓ) = mean_s [ align_with(ℓ, s) - align_without(ℓ, s) ]
+```
+
+- `cot_class` and `action_class` use the rule-based 4-class classifier
+  from `vipe_test/compute_reliable_v2.py` (cruise / left_any / right_any /
+  stop). No VLM judge needed.
+- `match(c, a)` = 1 if the classes agree else 0. Per-class breakdowns also
+  reported.
+- Calibration set: ~500 nuScenes val samples with the **no-prefix**
+  inference server.
+- Layer bypass: the project's existing `LayerListWithDropping` runtime
+  identity bypass (see `alpamayo_pruning_share/scripts/`).
+
+### Three layer categories
+
+| `importance(ℓ)` | Interpretation | Action |
+|---|---|---|
+| **+ (positive)**, > threshold | Layer helps CoT-Action coherence | **Keep** |
+| **0 (neutral)**, within noise band | Layer doesn't affect alignment | **Prune** — lossless compression |
+| **− (negative)**, < threshold | Layer hurts alignment | **Prune** — model improves |
+
+### Paper hook(s)
+
+- *"When reasoning hurts: some VLM layers actively misalign CoT and action
+  in driving VLAs."*
+- Compression result with a **gain**, not just retention: smaller model
+  AND better alignment.
+- Backbone analysis (R1 vs 1.5) recast: R1 has many neutral layers (big
+  compression headroom), 1.5 has more positive layers (each more
+  important, but harmful ones still removable).
+
+### Paper outline (replaces Section 6's outline)
+
+```
+§1 Intro — driving VLAs have a CoT-Action gap on OOD data; we show some
+   VLM layers are responsible; we identify and remove them.
+
+§2 Background — driving VLA arch (VLM + FM diffusion expert), prior
+   pruning (ShortGPT, SmolVLA), CoT-Action coherence in LLMs / VLAs.
+
+§3 Method — alignment-grounded layer importance
+   §3.1 CoT and action 4-class classifiers (rule-based, no VLM judge)
+   §3.2 Per-layer alignment-delta via runtime identity bypass
+   §3.3 Pruning policy: drop neutral + negative, keep positive
+
+§4 Lossless compression results
+   §4.1 1.5: K layers droppable, alignment + L2 maintained
+   §4.2 R1: K' layers droppable (expect K' > K from prior R1 dormancy)
+
+§5 Alignment improvement results (★ hero)
+   §5.1 Pruned vs full: CoT-Action agreement %, L2, NAVSIM PDMS
+   §5.2 Validation of "harmful layer" category: single-layer ablation
+        confirms negative-importance layers indeed hurt when present
+
+§6 Backbone analysis
+   §6.1 Per-layer importance distribution: R1 vs 1.5
+   §6.2 Discussion: what reasoning fine-tuning does to layer roles
+
+§7 Light SFT recovery
+   §7.1 Pruned model fine-tune (Expert-only LoRA, can use nuScenes GT)
+   §7.2 Domain adaptation cost vs full model
+
+§8 Discussion / Limitations / Future work
+   - Calibration set bias (val-only)
+   - Threshold choice for the 3 categories
+   - GT-free SFT via ViPE pseudo-GT — future work
+```
+
+### Experimental plan (priority order, ~3 weeks to draft)
+
+| # | Task | Effort | Status |
+|---|---|---|---|
+| 1 | Implement `measure_alignment_delta.py` (per-layer score) | 2-3 days | Scaffold being written now |
+| 2 | Run on 1.5, 500-sample calibration | 1 day compute | Not started |
+| 3 | Same on R1 | 1 day compute | Not started |
+| 4 | Layer-category histograms + paper Table 1 | 1 day | Not started |
+| 5 | Apply pruning policy to 1.5 → eval L2 + alignment | 1 day | Not started |
+| 6 | Same on R1 | 1 day | Not started |
+| 7 | Stage 2 v2 pilot on pruned model (Expert-only LoRA) | 2 days | Not started |
+| 8 | Single-layer ablation (validate "harmful" category) | 2 days | Not started |
+| 9 | Literature recon (refresh on cutoff) | 1 day | Not started |
+| 10 | Paper draft | ~2 weeks | Not started |
+
+ViPE Step 1 NaN unblock is no longer a critical-path dependency. ViPE
+pseudo-GT is reserved as future-work / Stage 7 SFT material.
+
+### Risk register
+
+| Risk | Mitigation |
+|---|---|
+| All layers come out positive (no compression headroom) | Fall back to "even within positive layers, ranking helps SFT recipe" |
+| All layers come out neutral (no signal) | Aggregate by maneuver class; positive layers might exist conditional on left/right/stop |
+| 4-class classifier is too coarse to detect alignment shifts | Add continuous metric (e.g. CoT-described direction angle vs action angle) |
+| Bypass-induced state-distribution shift (HybridCache) confound | Validated already in pruning project — known to work |
+
+### What to read next if implementing
+
+- `alpamayo_pruning_share/scripts/` — existing `LayerListWithDropping` and
+  zero-shot eval harness
+- `vipe_test/compute_reliable_v2.py` — rule-based 4-class classifiers
+- `vipe_test/nuscenes_alpamayo_infer_noprefix.json` — pre-computed
+  no-prefix inference samples that can serve as the calibration set
 
 ---
 
@@ -206,7 +349,7 @@ the remaining (now-light) model on a target OOD domain. This is the natural
 
 ---
 
-## 5. Paper direction options
+## 5. Paper direction options (SUPERSEDED by Section 0 above; kept for context)
 
 ### Option A — Pruning solo (recommended)
 
@@ -261,7 +404,9 @@ to be fully worked out.
 
 ---
 
-## 6. Recommended approach
+## 6. Recommended approach (SUPERSEDED by Section 0 above; kept for context)
+
+**[OLD recommendation — replaced 2026-05-29 with alignment-grounded pruning.]**
 
 **Option A (Pruning paper) first, ViPE follows as a sequel.**
 
