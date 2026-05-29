@@ -93,14 +93,17 @@ def main():
     ap.add_argument("--port", type=int, default=DEFAULT_PORT)
     ap.add_argument("--drop_layers_json", default=None,
                     help="Optional pruning_meta.json — runtime VLM identity bypass.")
+    ap.add_argument("--lora_checkpoint", default=None,
+                    help="Optional Stage 2 v2 LoRA checkpoint dir (lora_final).")
+    ap.add_argument("--lora_r", type=int, default=8)
+    ap.add_argument("--lora_alpha", type=int, default=16)
     args = ap.parse_args()
 
     print(f"[server] variant={VARIANT} loading {args.weights} on {DEVICE} ...", flush=True)
     t0 = time.time()
     model = ModelCls.from_pretrained(args.weights, dtype=torch.bfloat16).to(DEVICE)
     if args.drop_layers_json:
-        # Inline the identity-bypass logic so we don't import sft_phase_c here
-        # (which would force the 1.5 SFT-stack imports even for R1 servers).
+        # Inline identity-bypass so we avoid forcing sft_phase_c imports.
         import json
         with open(args.drop_layers_json) as f:
             meta = json.load(f)
@@ -113,6 +116,34 @@ def main():
         for i in drop_idx:
             vlm_layers[i].forward = _id_fwd()
         print(f"[prune] VLM-only drop {len(drop_idx)}/{len(vlm_layers)}: {drop_idx}", flush=True)
+
+    if args.lora_checkpoint:
+        # Match the Stage 2 v2 recipe: Expert-only LoRA (q,k,v,o projections).
+        # Load shards from safetensors and apply via load_state_dict.
+        from peft import LoraConfig, inject_adapter_in_model
+        from torch.nn import Linear
+        from safetensors.torch import load_file
+        import glob
+        real_targets = []
+        for name, mod in model.named_modules():
+            if not isinstance(mod, Linear):
+                continue
+            if not name.endswith((".q_proj", ".k_proj", ".v_proj", ".o_proj")):
+                continue
+            if name.startswith("expert.layers.") or ".expert.layers." in name:
+                real_targets.append(name)
+        for p in model.parameters():
+            p.requires_grad = False
+        print(f"[lora] {len(real_targets)} target projections (Expert-only)", flush=True)
+        cfg = LoraConfig(r=args.lora_r, lora_alpha=args.lora_alpha, lora_dropout=0.0,
+                         bias="none", target_modules=real_targets)
+        model = inject_adapter_in_model(cfg, model)
+        sd = {}
+        for shard in sorted(glob.glob(f"{args.lora_checkpoint}/model-*.safetensors")):
+            sd.update(load_file(shard, device=DEVICE))
+        missing, unexpected = model.load_state_dict(sd, strict=False)
+        print(f"[lora] loaded {len(sd)} tensors, missing={len(missing)} unexpected={len(unexpected)}", flush=True)
+
     model.eval()
     processor = helper.get_processor(model.tokenizer)
     print(f"[server] loaded in {time.time()-t0:.1f}s, VRAM={torch.cuda.memory_allocated()/1e9:.1f} GB", flush=True)

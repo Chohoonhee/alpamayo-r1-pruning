@@ -49,16 +49,17 @@ PICK_GPU() {
 }
 
 run_navsim_condition() {
-    local backbone=$1   # "1.5" or "r1"
+    local backbone=$1     # "1.5" or "r1"
     local label=$2
     local policy_meta=$3  # "" for baseline, path otherwise
+    local lora_ckpt=${4:-}  # "" or path to lora_final
     local gpu=$(PICK_GPU)
     local server_log=$LOGS/navsim_${backbone}_${label}_server.log
     local agent_log=$LOGS/navsim_${backbone}_${label}_agent.log
     local out_json=$LOGS/navsim_${backbone}_${label}_results.json
 
     echo "" | tee -a $QLOG
-    echo "[$(date +%H:%M:%S)] === NAVSIM: $backbone/$label  gpu=$gpu  policy=${policy_meta:-none}" | tee -a $QLOG
+    echo "[$(date +%H:%M:%S)] === NAVSIM: $backbone/$label  gpu=$gpu  policy=${policy_meta:-none}  lora=${lora_ckpt:-none}" | tee -a $QLOG
 
     # 1. Start the server (in alpamayo_b2d env)
     conda activate alpamayo_b2d
@@ -71,7 +72,10 @@ run_navsim_condition() {
 
     local extra_args=""
     if [ -n "$policy_meta" ]; then
-        extra_args="--drop_layers_json $policy_meta"
+        extra_args="$extra_args --drop_layers_json $policy_meta"
+    fi
+    if [ -n "$lora_ckpt" ]; then
+        extra_args="$extra_args --lora_checkpoint $lora_ckpt"
     fi
     nohup python alpamayo_server.py $extra_args > $server_log 2>&1 &
     local SERVER_PID=$!
