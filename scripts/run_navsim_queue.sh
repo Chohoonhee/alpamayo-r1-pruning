@@ -120,11 +120,13 @@ run_navsim_condition() {
 }
 
 # Sequence of conditions
-run_navsim_condition "1.5" "baseline"            ""
-run_navsim_condition "1.5" "plus_harmful"        "$LOGS/policy15_plus_harmful.json"
-run_navsim_condition "r1"  "baseline"            ""
-run_navsim_condition "r1"  "neutral_8"           "$LOGS/policyR1_neutral.json"
-run_navsim_condition "r1"  "plus_harmful_16"     "$LOGS/policyR1_plus_harmful.json"
+STAGE2_LORA=/home/irteam/ws/alpamayo_pruning/weights/sft_stage2_v2_plus_harmful/lora_final
+run_navsim_condition "1.5" "baseline"            "" ""
+run_navsim_condition "1.5" "plus_harmful"        "$LOGS/policy15_plus_harmful.json" ""
+run_navsim_condition "1.5" "plus_harmful_stage2v2" "$LOGS/policy15_plus_harmful.json" "$STAGE2_LORA"
+run_navsim_condition "r1"  "baseline"            "" ""
+run_navsim_condition "r1"  "neutral_8"           "$LOGS/policyR1_neutral.json" ""
+run_navsim_condition "r1"  "plus_harmful_16"     "$LOGS/policyR1_plus_harmful.json" ""
 
 echo "" | tee -a $QLOG
 echo "[$(date +%H:%M:%S)] === NAVSIM QUEUE DONE ===" | tee -a $QLOG
