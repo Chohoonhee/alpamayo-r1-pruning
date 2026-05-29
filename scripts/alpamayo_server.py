@@ -91,11 +91,28 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--weights", default=DEFAULT_WEIGHTS)
     ap.add_argument("--port", type=int, default=DEFAULT_PORT)
+    ap.add_argument("--drop_layers_json", default=None,
+                    help="Optional pruning_meta.json — runtime VLM identity bypass.")
     args = ap.parse_args()
 
     print(f"[server] variant={VARIANT} loading {args.weights} on {DEVICE} ...", flush=True)
     t0 = time.time()
     model = ModelCls.from_pretrained(args.weights, dtype=torch.bfloat16).to(DEVICE)
+    if args.drop_layers_json:
+        # Inline the identity-bypass logic so we don't import sft_phase_c here
+        # (which would force the 1.5 SFT-stack imports even for R1 servers).
+        import json
+        with open(args.drop_layers_json) as f:
+            meta = json.load(f)
+        drop_idx = sorted(set(meta["dropped_layers"]))
+        vlm_layers = model.vlm.language_model.layers
+        def _id_fwd():
+            def _f(hidden_states, *a, **kw):
+                return hidden_states
+            return _f
+        for i in drop_idx:
+            vlm_layers[i].forward = _id_fwd()
+        print(f"[prune] VLM-only drop {len(drop_idx)}/{len(vlm_layers)}: {drop_idx}", flush=True)
     model.eval()
     processor = helper.get_processor(model.tokenizer)
     print(f"[server] loaded in {time.time()-t0:.1f}s, VRAM={torch.cuda.memory_allocated()/1e9:.1f} GB", flush=True)
