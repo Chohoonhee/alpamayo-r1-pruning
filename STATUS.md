@@ -35,6 +35,7 @@ Figure: `scripts/logs/compare_r1_v15_per_layer.png`
 | label | drop | L2 avg | L2 3s | align | path |
 |---|---:|---:|---:|---:|---|
 | 1.5/baseline | 0 | 1.480 | 2.379 | 0.670 | `scripts/logs/eval15_baseline.json` |
+| 1.5/ea28_baseline_method | 28 | 1.550 | 2.500 | 0.500 | `scripts/logs/eval15_ea28_baseline_method.json` |
 | 1.5/harmful_only | 6 | 2.966 | 5.134 | 0.170 | `scripts/logs/eval15_harmful_only.json` |
 | 1.5/neutral | 7 | 2.148 | 3.570 | 0.290 | `scripts/logs/eval15_neutral.json` |
 | 1.5/plus_harmful | 13 | 1.869 | 3.111 | 0.640 | `scripts/logs/eval15_plus_harmful.json` |
