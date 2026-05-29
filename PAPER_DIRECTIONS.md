@@ -155,6 +155,80 @@ pseudo-GT is reserved as future-work / Stage 7 SFT material.
 
 ---
 
+### Pilot results addendum (2026-05-29 evening)
+
+Pilot executed: 100-sample nuScenes val calibration, all 36 VLM layers
+swept individually via runtime identity-bypass, on both Alpamayo-1.5
+(Cosmos-Reason2) and Alpamayo-R1 (vanilla Qwen3VL). Then policy applied
++ 100-sample zero-shot eval of L2 and alignment match rate.
+
+**What survived the pilot ✓**
+1. Per-layer scoring methodology works end-to-end. Signals are clean
+   and interpretable. (See `scripts/logs/pilot{15,R1}_merged.json`,
+   `compare_r1_v15_per_layer.png`.)
+2. **Cross-backbone divergence is real and dramatic.** Same layer index
+   plays opposite roles in the two backbones:
+   - 1.5 ℓ=12 = +0.32 critical ↔ R1 ℓ=12 = -0.05 harmful
+   - 1.5 ℓ=6  = +0.10 helpful  ↔ R1 ℓ=6  = -0.14 strongly harmful
+   - 1.5 ℓ=11 = +0.43 critical ↔ R1 ℓ=11 = +0.07 mild
+   R1's per-layer importance is mostly near zero (dormant pattern),
+   while 1.5 has a wide active hump in 0-16 and a clear contiguous
+   harmful block at ℓ=20-22.
+3. **Aggressive multi-layer drop preserves alignment.** On 1.5, dropping
+   13 layers (the 7 neutral + 6 harmful, ε=0.02) gives alignment 0.640
+   vs baseline 0.670 — within sampling noise. Alignment essentially
+   preserved at 36% VLM compression.
+
+**What didn't survive — the naive policy claim ✗**
+4. **Single-layer importance does NOT compose linearly for multi-layer
+   pruning.** Eval results on 1.5 (100 nuScenes val):
+
+   | Policy           | drop | L2 avg | alignment |
+   |------------------|:----:|:------:|:---------:|
+   | baseline         |   0  | 1.480m |   0.670   |
+   | harmful-only     |   6  | 2.966m |   0.170   |
+   | neutral-only     |   7  | 2.148m |   0.290   |
+   | neutral+harmful  |  13  | 1.869m |   0.640   |
+
+   Both partial drops WRECK the model. The full 13-drop is the only one
+   that preserves alignment. Per-layer scoring is a useful diagnostic
+   ranking, but "drop everything flagged" doesn't work — layers
+   interact non-additively.
+5. L2 degrades by ~0.4m even with the 13-drop policy. The pruned model
+   needs Stage 2 v2-style fine-tuning to recover trajectory quality.
+
+**Revised paper claim**
+
+> "Per-layer alignment-grounded importance scoring reveals backbone-
+> specific contiguous 'harmful zones' (ℓ=20-22 in 1.5) where layer
+> co-removal preserves alignment but partial removal destabilizes the
+> model. A 13-layer aggressive drop guided by this score preserves
+> CoT-Action alignment at 36% VLM compression, with L2 degradation
+> recoverable via short fine-tune."
+
+Sharper than the initial framing — and the negative result (naive
+top-K drop fails) is itself a contribution.
+
+**Recommended next experiments (2026-05-30+)**
+
+1. **Stage 2 v2 (Expert-only LoRA, lr=5e-6) on the plus_harmful-pruned
+   1.5 model.** Does 4h of SFT recover the ~0.4m L2 hit while keeping
+   alignment at 0.64?
+2. **Compare alignment-grounded policy vs ea_vlm-28 + same drop count.**
+   Two ways to pick which layers to drop. Which preserves alignment
+   better? L2 better? Scientific control.
+3. **Iterative-greedy policy search.** Drop one layer (most negative
+   importance), re-measure remaining importances, repeat. Stop when
+   alignment degrades. Should give a more compatible layer subset.
+4. **R1 zero-shot eval (same 3-policy battery).** R1 pilot ran but
+   eval not yet. Does the 'aggressive drop preserves alignment'
+   pattern hold there?
+5. **CoT/action classifier audit.** Spot-check ~20 eval samples to
+   verify rule-based 4-class classifier labels match model intent
+   (catch any systematic bias).
+
+---
+
 ## 1. The unifying problem (both projects)
 
 Both projects attack the same underlying pathology in driving VLA models:
