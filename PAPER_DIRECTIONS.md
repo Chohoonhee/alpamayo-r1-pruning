@@ -226,6 +226,40 @@ top-K drop fails) is itself a contribution.
 5. **CoT/action classifier audit.** Spot-check ~20 eval samples to
    verify rule-based 4-class classifier labels match model intent
    (catch any systematic bias).
+6. **Cross-domain robustness (★ paper-strength).** The current results
+   are nuScenes-only and reviewers will ask whether the per-layer
+   importance pattern is nuScenes-specific. Three concrete tests, in
+   priority order:
+
+   a. **Apply nuScenes-derived policy on NAVSIM.** Compute the pruning
+      mask from nuScenes calibration, apply to the pruned model, then
+      eval PDMS + trajectory on NAVSIM `navtest` split. If PDMS stays
+      within sampling noise of full model, the pruning generalizes
+      across domains — *strongest possible defense*. Existing infra:
+      `scripts/alpamayo_server.py` + `scripts/navsim_batch_mini.py`
+      under `navsim_workspace/navsim_venv` (Python 3.9). Prior baseline:
+      1.5 zero-shot PDMS = 0.7286 (sample500), R1 = 0.4901.
+
+   b. **Cross-dataset importance correlation.** Re-run the per-layer
+      bypass measurement on NAVSIM mini samples, compute Spearman
+      correlation of layer rankings between nuScenes and NAVSIM. If
+      correlation > 0.7, the importance is *backbone-architectural,
+      not dataset-specific* — recast the paper's headline finding as
+      a property of the model rather than the data.
+
+   c. **Mixed-calibration robustness.** Compute importance on
+      50% nuScenes + 50% NAVSIM calibration set. Compare the resulting
+      policy to the nuScenes-only policy. If they overlap heavily,
+      we've shown the method is data-source-robust.
+
+   Pre-paper, run (a) first — it's the result reviewers will demand
+   most. (b) and (c) are nice-to-have ablations.
+
+   Backup plan if NAVSIM ZMQ setup proves brittle: at minimum, drop
+   one B2D (Bench2Drive, CARLA simulation) zero-shot run on the pruned
+   models and report PDMS. Different distribution from both nuScenes
+   and NAVSIM. Even small-scale evidence (50 scenes) defuses the
+   "single-dataset claim" critique.
 
 ---
 
