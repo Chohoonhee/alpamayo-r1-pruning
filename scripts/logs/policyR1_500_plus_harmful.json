@@ -1,0 +1,17 @@
+{
+  "dropped_layers": [
+    18,
+    21,
+    22,
+    23,
+    26,
+    30,
+    31
+  ],
+  "policy": "alignment_grounded_neutral_plus_harmful",
+  "backbone": "r1",
+  "source": "logs/pilotR1_500_merged.json",
+  "baseline_match_rate": 0.66,
+  "epsilon": 0.02,
+  "rationale": "Drop neutral (importance\u22480) AND harmful (importance<-\u03b5) layers. Expectation: compression + improved alignment."
+}
