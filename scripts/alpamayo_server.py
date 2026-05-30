@@ -8,6 +8,7 @@ from __future__ import annotations
 from paths import (
     ALPAMAYO_15_WEIGHTS,
     ALPAMAYO_R1_WEIGHTS,
+    add_alpamayo_to_syspath,
 )
 import argparse
 import os
@@ -21,10 +22,12 @@ import zmq
 
 VARIANT = os.environ.get("ALPAMAYO_VARIANT", "1.5").lower()
 if VARIANT in ("1.5", "a1.5", "alpamayo1.5"):
+    add_alpamayo_to_syspath(v15=True)
     from alpamayo1_5.models.alpamayo1_5 import Alpamayo1_5 as ModelCls
     from alpamayo1_5 import helper
     DEFAULT_WEIGHTS = str(ALPAMAYO_15_WEIGHTS)
 else:
+    add_alpamayo_to_syspath(r1=True)
     from alpamayo_r1.models.alpamayo_r1 import AlpamayoR1 as ModelCls
     from alpamayo_r1 import helper
 
