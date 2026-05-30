@@ -10,3 +10,6 @@ venv/
 *venv*/
 *.ipynb_checkpoints
 .DS_Store
+
+# NAVSIM extracted scene cache — regenerate via scripts/extract_navsim_samples.py
+scripts/logs/navsim_samples_*.pkl
