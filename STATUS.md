@@ -38,6 +38,7 @@ Figure: `scripts/logs/compare_r1_v15_per_layer.png`
 | 1.5/500_plus_harmful | 5 | 1.562 | 2.512 | 0.510 | `scripts/logs/eval15_500_plus_harmful.json` |
 | 1.5/baseline | 0 | 1.480 | 2.379 | 0.670 | `scripts/logs/eval15_baseline.json` |
 | 1.5/ea28_baseline_method | 28 | 1.550 | 2.500 | 0.500 | `scripts/logs/eval15_ea28_baseline_method.json` |
+| 1.5/greedy | 12 | 1.707 | 2.806 | 0.620 | `scripts/logs/eval15_greedy.json` |
 | 1.5/harmful_only | 6 | 2.966 | 5.134 | 0.170 | `scripts/logs/eval15_harmful_only.json` |
 | 1.5/neutral | 7 | 2.148 | 3.570 | 0.290 | `scripts/logs/eval15_neutral.json` |
 | 1.5/plus_harmful | 13 | 1.869 | 3.111 | 0.640 | `scripts/logs/eval15_plus_harmful.json` |
@@ -49,6 +50,7 @@ Figure: `scripts/logs/compare_r1_v15_per_layer.png`
 | R1/500_neutral | 4 | 1.518 | 2.471 | 0.660 | `scripts/logs/evalR1_500_neutral.json` |
 | R1/500_plus_harmful | 7 | 1.484 | 2.385 | 0.680 | `scripts/logs/evalR1_500_plus_harmful.json` |
 | R1/baseline | 0 | 1.540 | 2.499 | 0.640 | `scripts/logs/evalR1_baseline.json` |
+| R1/greedy | 12 | 1.774 | 2.945 | 0.860 | `scripts/logs/evalR1_greedy.json` |
 | R1/harmful_only | 8 | 1.908 | 3.160 | 0.740 | `scripts/logs/evalR1_harmful_only.json` |
 | R1/neutral | 8 | 1.483 | 2.373 | 0.780 | `scripts/logs/evalR1_neutral.json` |
 | R1/plus_harmful | 16 | 1.567 | 2.510 | 0.700 | `scripts/logs/evalR1_plus_harmful.json` |
