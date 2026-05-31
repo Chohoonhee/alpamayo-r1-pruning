@@ -1,0 +1,10 @@
+{
+  "dropped_layers": [
+    21,
+    30,
+    33
+  ],
+  "policy": "greedy_peak_k3",
+  "backbone": "15",
+  "calibration_domain": "NAVSIM"
+}
