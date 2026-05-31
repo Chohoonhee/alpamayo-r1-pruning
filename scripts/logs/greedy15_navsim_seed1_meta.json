@@ -1,0 +1,15 @@
+{
+  "dropped_layers": [
+    1,
+    3,
+    19,
+    23,
+    24,
+    27,
+    29,
+    30
+  ],
+  "policy": "iterative_greedy_navsim",
+  "backbone": "15",
+  "source": "/home/irteam/ws/alpamayo_pruning_share/scripts/logs/greedy15_navsim_seed1.json"
+}
