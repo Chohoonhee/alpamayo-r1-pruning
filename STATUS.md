@@ -57,6 +57,7 @@ Figure: `scripts/logs/compare_r1_v15_per_layer.png`
 | R1/baseline_on_navsim_holdout | 0 | — | — | 0.460 | `scripts/logs/evalR1_baseline_on_navsim_holdout.json` |
 | R1/greedy | 12 | 1.774 | 2.945 | 0.860 | `scripts/logs/evalR1_greedy.json` |
 | R1/harmful_only | 8 | 1.908 | 3.160 | 0.740 | `scripts/logs/evalR1_harmful_only.json` |
+| R1/navsimgreedy_N10_on_navsim | 0 | — | — | 0.280 | `scripts/logs/evalR1_navsimgreedy_N10_on_navsim.json` |
 | R1/navsimgreedy_on_navsim | 0 | — | — | 0.400 | `scripts/logs/evalR1_navsimgreedy_on_navsim.json` |
 | R1/navsimgreedy_on_nuscenes | 12 | 1.489 | 2.386 | 0.800 | `scripts/logs/evalR1_navsimgreedy_on_nuscenes.json` |
 | R1/neutral | 8 | 1.483 | 2.373 | 0.780 | `scripts/logs/evalR1_neutral.json` |
