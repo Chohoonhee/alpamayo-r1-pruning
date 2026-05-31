@@ -1,0 +1,93 @@
+{
+  "backbone": "r1",
+  "weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-R1-10B",
+  "samples_pkl": "/home/irteam/ws/alpamayo_pruning_share/scripts/logs/navsim_samples_100.pkl",
+  "n_calibration": 50,
+  "baseline_align": 0.64,
+  "best_align": 0.84,
+  "best_K": 4,
+  "final_drop_set": [
+    17,
+    32,
+    21,
+    7
+  ],
+  "history": [
+    {
+      "round": 0,
+      "drop_set": [],
+      "best_layer": null,
+      "best_align": 0.64
+    },
+    {
+      "round": 1,
+      "drop_set": [
+        17
+      ],
+      "best_layer": 17,
+      "best_align": 0.8,
+      "round_elapsed_s": 1212.6547467708588
+    },
+    {
+      "round": 2,
+      "drop_set": [
+        17,
+        32
+      ],
+      "best_layer": 32,
+      "best_align": 0.8,
+      "round_elapsed_s": 1176.0307426452637
+    },
+    {
+      "round": 3,
+      "drop_set": [
+        17,
+        32,
+        21
+      ],
+      "best_layer": 21,
+      "best_align": 0.82,
+      "round_elapsed_s": 1124.5802755355835
+    },
+    {
+      "round": 4,
+      "drop_set": [
+        17,
+        32,
+        21,
+        7
+      ],
+      "best_layer": 7,
+      "best_align": 0.84,
+      "round_elapsed_s": 1079.3330118656158
+    },
+    {
+      "round": 5,
+      "drop_set": [
+        17,
+        32,
+        21,
+        7,
+        3
+      ],
+      "best_layer": 3,
+      "best_align": 0.84,
+      "round_elapsed_s": 1020.5501780509949
+    },
+    {
+      "round": 6,
+      "drop_set": [
+        17,
+        32,
+        21,
+        7,
+        3,
+        6
+      ],
+      "best_layer": 6,
+      "best_align": 0.84,
+      "round_elapsed_s": 1377.774634361267
+    }
+  ],
+  "early_stopped": true
+}
