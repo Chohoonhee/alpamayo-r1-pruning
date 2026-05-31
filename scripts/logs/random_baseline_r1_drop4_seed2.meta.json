@@ -1,0 +1,11 @@
+{
+  "dropped_layers": [
+    3,
+    5,
+    10,
+    23
+  ],
+  "policy": "random_baseline",
+  "backbone": "r1",
+  "seed": 2
+}
