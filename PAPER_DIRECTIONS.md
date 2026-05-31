@@ -226,10 +226,10 @@ top-K drop fails) is itself a contribution.
 5. **CoT/action classifier audit.** Spot-check ~20 eval samples to
    verify rule-based 4-class classifier labels match model intent
    (catch any systematic bias).
-6. **Cross-domain robustness (★ paper-strength).** The current results
-   are nuScenes-only and reviewers will ask whether the per-layer
-   importance pattern is nuScenes-specific. Three concrete tests, in
-   priority order:
+6. **Cross-domain robustness (★ paper-strength).** *(STATUS: done — see
+   Final results addendum below.)* The current results are nuScenes-only
+   and reviewers will ask whether the per-layer importance pattern is
+   nuScenes-specific. Three concrete tests, in priority order:
 
    a. **Apply nuScenes-derived policy on NAVSIM.** Compute the pruning
       mask from nuScenes calibration, apply to the pruned model, then
@@ -796,3 +796,111 @@ than the writer's gut feel.
   `## Superseded analysis (DATE)` heading so the history is preserved.
 - Don't let this doc become a graveyard — if you've decided some item
   here is wrong, delete it and note in CLAUDE.md why.
+
+---
+
+### Final results addendum (2026-05-31)
+
+All planned experiments completed: greedy-search policies (nuScenes-calib
+and NAVSIM-calib for both backbones), Stage 2 v2 LoRA, ea_vlm-28 baseline,
+random-pruning control, sample-efficiency probe, and the full cross-domain
+matrix. Numbers below come from `ANALYSIS.md` (auto-generated from
+`scripts/logs/*.json`).
+
+#### 1. Headline numbers (100 nuScenes val, alignment match rate)
+
+| Backbone | Policy                       | drop | L2 avg | alignment |
+|----------|------------------------------|:----:|:------:|:---------:|
+| R1       | baseline                     |   0  | 1.540  |  0.640    |
+| R1       | random (mean of 3 seeds)     |  12  | 1.503  |  0.690    |
+| R1       | **alignment greedy (nuS)**   |  12  | 1.774  | **0.860** |
+| R1       | alignment greedy (NAVSIM)    |  12  | 1.489  |  0.800    |
+| 1.5      | baseline                     |   0  | 1.480  |  0.670    |
+| 1.5      | **random (mean of 3 seeds)** |  12  | 1.743  | **0.363 ± 0.17** |
+| 1.5      | alignment greedy (nuS)       |  12  | 1.707  |  0.620    |
+| 1.5      | alignment greedy (NAVSIM)    |  12  | 1.636  |  0.650    |
+| 1.5      | Stage 2 v2 (LoRA on greedy)  |  13  | 1.825  |  0.610    |
+
+#### 2. Cross-domain matrix (alignment match rate)
+
+|                           | NAVSIM holdout (n=50) | nuScenes val (n=100) |
+|---------------------------|:---------------------:|:--------------------:|
+| **R1 baseline**           |        0.46           |        0.64          |
+| R1 greedy on nuScenes (12)|        0.72           |        0.86          |
+| R1 greedy on NAVSIM (12)  |        0.40           |        0.80          |
+| **1.5 baseline**          |        0.54           |        0.67          |
+| 1.5 greedy on nuScenes(12)|        0.66           |        0.62          |
+| 1.5 greedy on NAVSIM (12) |        0.70           |        0.65          |
+
+#### 3. What we actually learned
+
+**A. The strongest finding: random pruning destroys 1.5; greedy preserves it.**
+Random 12-layer drop on 1.5 collapses alignment from 0.67 → 0.36 ± 0.17.
+Our alignment-grounded greedy holds at 0.62–0.65. On R1, random already
+preserves alignment (0.69); greedy raises it further (0.86). The
+*method-necessity gap* is itself the publishable finding: alignment-grounded
+scoring matters most on reasoning-tuned (1.5) backbones where the VLM is
+actively used.
+
+**B. Cross-domain transfer is asymmetric, not catastrophic.**
+- nuScenes-derived policy → NAVSIM: works (R1: 0.72 vs 0.46 base, +0.26;
+  1.5: 0.66 vs 0.54, +0.12).
+- NAVSIM-derived policy → nuScenes: works (R1: 0.80 vs 0.64, +0.16;
+  1.5: 0.65 vs 0.67, ≈baseline).
+- NAVSIM-derived policy on NAVSIM holdout: collapses for R1 (cal peak 0.92,
+  holdout 0.40). 50-sample calibration overfits on R1.
+- Reframe: forget "training-free per-domain adaptation"; the policy is
+  actually mildly domain-portable, and the calibration domain choice
+  matters less than expected.
+
+**C. Greedy peak ≠ greedy final.**
+At small calibration size (N=50), greedy with 12 rounds drives past the
+useful k. R1 NAVSIM peak align=0.92 at k=3, drops to 0.76 at k=12.
+1.5 NAVSIM peak=0.82 at k=3, collapses to 0.54 at k=12. **An early-stopping
+criterion (e.g. stop when align stops improving) is needed for the paper
+recipe.**
+
+**D. Sample efficiency is severe.**
+R1 NAVSIM greedy with N=10 picks completely different layers from N=50
+(peak set [32,33,15] vs [12,6,13]) and fails on holdout (0.28 vs N=50's
+0.40). Below N=50 the search is too noisy. Above N=50 untested
+(too slow with greedy's quadratic cost in N×K).
+
+**E. Stage 2 v2 (Expert-only LoRA on pruned 1.5) did not recover L2.**
+L2 1.825 vs zero-shot 1.869 — essentially unchanged; alignment slightly
+worse (0.610 vs 0.640). Same regression pattern as prior project's
+Stage 2. Joint loss + LoRA recipe still seems to fight the pruned base.
+
+#### 4. Honest paper-shape recommendation
+
+Position as **analysis paper**, not method paper. Contributions:
+1. New evaluation: per-layer CoT-Action alignment delta (clean signal,
+   diagnostic, no labels needed).
+2. Empirical cross-backbone study: dramatic backbone-dependent
+   sensitivity to pruning (1.5 collapses under random, R1 robust).
+3. Negative finding: naive top-K based on per-layer score doesn't compose;
+   iterative greedy partially solves but has its own peak/sample issues.
+4. Cross-domain matrix: alignment-grounded policies are mildly portable
+   between nuScenes and NAVSIM; calibration domain matters less than
+   greedy round count or backbone choice.
+5. Honest limitations: L2-alignment trade-off (greedy hurts L2 to gain
+   alignment), Stage 2 v2 does not recover L2, sample-efficiency lower
+   bound around N=50.
+
+Target venues:
+- Workshop @ NeurIPS / CoRL (efficient VLA, OOD, analysis): high
+  acceptance probability with current data.
+- Analysis track of a main venue (NeurIPS analysis, ICLR blog/poster):
+  feasible with one more revision pass + L2 recovery study.
+- Main-venue method paper: would need a clean method that beats both
+  random and ea_vlm-28 simultaneously on L2 AND alignment — not yet.
+
+Concrete next steps if continuing:
+- Re-run greedy with **early stopping** (stop when align dips ≥ 0.05 from
+  best-so-far). Should give a paper-publishable "auto-determined k".
+- Stage 2 v2 with **lower lr (1e-6) + warmup** on the pruned 1.5 to try
+  L2 recovery one more time.
+- 200-sample R1 NAVSIM greedy to test if N=50 overfit on R1 NAVSIM
+  holdout was sample-noise.
+- Compute NAVSIM PDMS on existing trajectory JSONs (alignment is our
+  metric; PDMS is the field-standard).

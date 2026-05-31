@@ -51914,3 +51914,374 @@ GitHub에서 watch할 핵심 파일들:
 
 _[tool call: Bash]_
 
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+✅ Push 성공. R1 NAVSIM greedy round 1: align **0.66 → 0.76 (+0.10 첫 round만에)**! Training-free per-domain pruning 작동 신호.
+
+sister repo (vipe-research)에도 같은 safety push.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+✅ 이미 동기화됨. **모든 결과 + 스크립트 + 분석 + 대화 → GitHub 안전**.
+
+지금 시점 GitHub에 있는 것 (GPU 꺼져도 복구 가능):
+- 코드: 모든 스크립트 (pilot/eval/greedy/policy/navsim/random/analysis)
+- 데이터: 모든 eval/pilot/policy/greedy JSON 결과 (~3-4MB)
+- 플롯: per-layer importance bar charts (1.5/R1/compare)
+- 문서: STATUS.md, ANALYSIS.md, PAPER_DIRECTIONS.md, CONVERSATION.md (대화 1MB)
+- 제외: 844MB NAVSIM pickle (재생성 가능 — `python extract_navsim_samples.py -n 100`)
+
+**R1 NAVSIM greedy 첫 round positive sign**: 0.66→0.76. 자동 큐 chain 정상 작동 중. 자고 깨면 ANALYSIS.md에서 전체 결과 한 번에.
+
+### Assistant
+
+🔥 1.5 NAVSIM greedy round 1: drop=[30] **align 0.80 (+0.14!)**. 1.5 nuScenes round 1은 0.70 그대로였음. **NAVSIM-calib이 nuScenes-calib보다 1.5에서 훨씬 강한 개선** — per-domain calibration matters claim 첫 증거.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+R1 round 2 진행: best 0.84 (ℓ=26). 1.5는 second drop이 대부분 망가뜨림 (cal 0.18-0.46). 두 backbone 다르게 진행.
+
+### Assistant
+
+_[tool call: Monitor]_
+
+### Assistant
+
+Persistent monitor 재가동. 1시간씩 timeout 자동 갱신. 자고 와도 OK.
+
+### Assistant
+
+R1 NAVSIM round 2: drop=[12, 6] **align 0.84 (+0.18!)**. 2 layer drop만에 R1 nuScenes greedy의 round 12 final 결과(0.80)보다 이미 높음. **NAVSIM 데이터가 더 강한 layer 신호**.
+
+### Assistant
+
+1.5 NAVSIM round 2: drop=[30,21] **align 0.76**. baseline 0.66에서 +0.10. 1.5도 NAVSIM에서는 안정적.
+
+### Assistant
+
+1.5 NAVSIM round 3: drop=[30,21,33] **align 0.82** (+0.16). 1.5도 NAVSIM에서 진짜 작동. 1.5 nuScenes에서는 못 했던 일관성 있는 개선.
+
+### Assistant
+
+🚨🚨🚨 **R1 NAVSIM round 3: drop=[12, 6, 13] align 0.920!** 
+
+baseline 0.66 → **0.92 (+0.26 absolute, +39% relative)** — 3 layer drop만에. 
+
+Compare:
+- R1 baseline NAVSIM: 0.660
+- R1 NAVSIM-calib greedy (3 layers): **0.920** ⭐
+- R1 nuScenes-calib eval on NAVSIM: 0.580 ← cross-domain fail
+
+**Training-free per-domain pruning claim 압도적 증명**. +0.26 absolute. Cross-domain transfer (nuScenes→NAVSIM)는 -0.04 (fail), 같은 domain calibration은 +0.26. 차이 0.30. 진짜 paper hero result.
+
+### Assistant
+
+1.5 NAVSIM round 4: drop=[30,21,33,23] align 0.78. baseline 0.66 대비 +0.12 유지. 1.5도 NAVSIM에서 안정.
+
+### Assistant
+
+1.5 NAVSIM round 5: drop=[30,21,33,23,**4**] align 0.52 ← ℓ=4 추가가 crash. 1.5는 k=4까지 안정, k=5에서 깨짐. Paper에 "peak k" 보고 (r3 0.82) + stopping criterion 토론 필요.
+
+### Assistant
+
+1.5 NAVSIM round 6: 0.62 — 약간 회복 but still 0.66 baseline 미만. 1.5의 알고리즘적 한계 (greedy 강제 추가 모드).
+
+### Assistant
+
+R1 NAVSIM round 4: drop=[12, 6, 13, 5] **align 0.88** — baseline 0.66 대비 +0.22 유지. 곧 peak (0.92, r3) 회복 가능성.
+
+### Assistant
+
+1.5 NAVSIM round 7: 0.58. baseline 미만 — k=3 peak (0.82) 이후 점진적 손상. 1.5는 k=3-4 영역이 sweet spot.
+
+### Assistant
+
+🚀 R1 NAVSIM round 5: drop=[12, 6, 13, 5, 30] **align 0.920** — peak 회복! 5 layer drop에서도 0.92 유지. R1 NAVSIM-calib paper hero data 더 단단해짐.
+
+### Assistant
+
+R1 NAVSIM round 6: 0.90 (6 layer drop). 거의 peak. R1 견고함 지속.
+
+### Assistant
+
+1.5 NAVSIM round 8: 0.62. baseline 0.66 약간 미만. 1.5는 peak r3 (0.82, 3 drops) 이후 안정적으로 회복 못 함.
+
+### Assistant
+
+R1 NAVSIM round 7: 0.86 (7 drops). baseline +0.20 유지. 안정적 진행.
+
+### Assistant
+
+1.5 NAVSIM round 9: 0.52. 점점 손상. 1.5는 NAVSIM에서도 k>4면 깨짐.
+
+### Assistant
+
+🚀 R1 NAVSIM round 8: drop=8 layers **align 0.920** — peak 또 회복! **22% VLM compression + +0.26 alignment 안정 유지**. R1 paper hero result 압도적.
+
+### Assistant
+
+R1 NAVSIM round 9: 0.84 (9 drops). 약간 손해지만 baseline +0.18 유지.
+
+### Assistant
+
+1.5 NAVSIM round 10: 0.52 stable degraded zone. 1.5 peak는 확정적으로 r3 (0.82).
+
+### Assistant
+
+R1 NAVSIM round 10: 0.80 (10 drops). 점진적 손해 시작 but baseline +0.14 여전히. 2 round 남음.
+
+### Assistant
+
+R1 NAVSIM round 11: 0.78 (11 drops). +0.12 유지. 1 round 남음.
+
+### Assistant
+
+1.5 round 11: 0.52. final round 1개 남음, 결과 거의 확정.
+
+### Assistant
+
+🎉 R1 NAVSIM greedy 12 rounds **DONE**! Final 0.76 (still +0.10), peak 0.92 (r3,r5,r8). 1.5 곧 끝나면 자동 followup matrix 시작.
+
+### Assistant
+
+_[tool call: TodoWrite]_
+
+### Assistant
+
+🎉 1.5 NAVSIM greedy DONE! Peak 0.82 at r3 (3 drops), final 0.54 at r12.
+
+**둘 다 완료 → followup polling이 자동으로 8개 cross-domain eval 시작.**
+
+**1.5 NAVSIM 패턴 vs R1 NAVSIM:**
+| backbone | baseline | peak align | optimal k | final (k=12) |
+|---|---|---|---|---|
+| R1 | 0.66 | 0.92 | 3-8 | 0.76 (+0.10) |
+| 1.5 | 0.66 | 0.82 | 3 | 0.54 (-0.12) |
+
+R1는 wide stable region, 1.5는 narrow peak. **paper에 "early stopping criterion" 토론 필요**.
+
+### Assistant
+
+Followup eval 시작. 첫 결과 (R1 navsim-greedy on NAVSIM holdout) 저장됨.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+🚨 Surprising NAVSIM holdout numbers:
+- **R1 navsim-greedy (12 drop) holdout: 0.40** ← BIG overfit gap (cal final 0.76 → 0.40)
+- **1.5 navsim-greedy (12 drop) holdout: 0.70** ← cal final 0.54 → 0.70 (?)
+
+Cause: **12 drop이 너무 많음**. Peak k는 R1 r3 (0.92, drop=[12,6,13]), 1.5 r3 (0.82, drop=[30,21,33]). Final 12-drop은 overfit/random territory.
+
+Followup queue 끝나면 peak-k 정책 별도 eval 추가 필요. 일단 followup 진행 보고.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+🔥 **R1 navsim-greedy on nuScenes: L2 1.489 (baseline 1.540 ↓), align 0.800 (baseline 0.640 ↑)**!
+
+Asymmetric cross-domain:
+- nuScenes-policy → NAVSIM: FAIL (0.58 vs 0.62)
+- **NAVSIM-policy → nuScenes: WORKS (0.80 vs 0.64)** ⭐
+
+NAVSIM 데이터가 더 robust한 policy 발견하는 듯. paper claim 보강.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+1.5 navsim-greedy on nuScenes: L2 1.636, align 0.650 ≈ baseline 1.480/0.670 (slight 손해). R1만큼 transfer 안 됨. 
+
+전체 1.5 결과: NAVSIM에서 partial (k=3 peak 0.82), nuScenes에서는 base 부근. 1.5는 한 도메인 잘하면 다른 데서 약함 패턴.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+R1 nuScenes-greedy on NAVSIM: 0.72 (baseline NAVSIM 0.62보다 +0.10). Cross-domain matrix 나오고 있음:
+
+| R1 정책 | NAVSIM holdout | nuScenes val |
+|---|---|---|
+| baseline | 0.62 | 0.64 |
+| nuScenes-greedy (12 drop) | **0.72** | 0.86 |
+| NAVSIM-greedy (12 drop) | 0.40 ← strange | **0.80** |
+
+**Asymmetric**: nuScenes-policy는 양쪽 다 잘됨, NAVSIM-policy는 home (cal 0.92)에서 holdout으로 무너짐 (0.40). Sample noise or 진짜 overfit 추후 peak-k eval로 확인.
+
+### Assistant
+
+_[tool call: TodoWrite]_
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+1.5 nuScenes-greedy on NAVSIM: 0.66 (baseline와 동일) — neutral transfer. 1.5 cross-domain matrix:
+
+| 1.5 정책 | NAVSIM holdout | nuScenes val |
+|---|---|---|
+| baseline | ~0.66 (예상) | 0.670 |
+| nuScenes-greedy (12) | **0.66** | 0.620 |
+| NAVSIM-greedy (12) | 0.70 | 0.650 |
+
+1.5는 모든 시나리오에서 baseline 0.66-0.70 좁은 범위 — pruning effect 미미.
+
+baseline 두 개 곧.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+R1 baseline on NAVSIM holdout: **0.46** ← holdout (samples 50:100) 더 어려운 distribution. 이걸로 R1 cross-domain 다시:
+
+| R1 정책 | NAVSIM holdout (0.46 base) | nuScenes val (0.64 base) |
+|---|---|---|
+| baseline | **0.46** | 0.64 |
+| nuScenes-greedy (12) | **0.72 (+0.26)** ⭐ | 0.86 (+0.22) |
+| NAVSIM-greedy (12) | 0.40 (-0.06) | 0.80 (+0.16) |
+
+**놀랍게도 nuScenes-greedy가 NAVSIM 더 잘함!** NAVSIM-greedy 12-drop은 overfit. paper의 가장 흥미로운 finding은:
+- nuScenes-policy → 양쪽 다 잘함 (transfer 잘 됨)
+- NAVSIM-policy → home에서 cal 좋지만 holdout overfit
+
+→ **이 결론이 "training-free per-domain pruning" claim 약화**시킴. nuScenes에서 한 게 더 robust일 수 있음.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+🎉 Cross-domain FOLLOWUP MATRIX COMPLETE!
+
+**Full 2×2 cross-domain matrix:**
+
+| | NAVSIM holdout | nuScenes val |
+|---|---|---|
+| **R1 baseline** | 0.46 | 0.64 |
+| R1 nuS-greedy | **0.72** ⭐ | 0.86 |
+| R1 NAVSIM-greedy | 0.40 | 0.80 |
+| **1.5 baseline** | 0.54 | 0.67 |
+| 1.5 nuS-greedy | 0.66 | 0.62 |
+| 1.5 NAVSIM-greedy | **0.70** ⭐ | 0.65 |
+
+**핵심 발견:**
+- **R1**: nuS-greedy가 양쪽 다 잘함 → "better domain for calibration", per-domain claim 약화
+- **1.5**: NAVSIM-greedy가 NAVSIM에 약간 더 잘함 → per-domain claim 약하게 지지
+
+→ "Cross-domain transfer 가능"이 더 정직한 결론. **Per-domain calibration의 필요성은 backbone-dependent**.
+
+Extended queue (random baseline + sample efficiency) 자동 시작됨. 곧 random vs greedy 비교 + N=10 NAVSIM greedy 결과 옴.
+
+### Assistant
+
+Extended queue Phase B1 시작 — R1 random baseline 3 seed. ~15min.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+R1 random baseline (drop=12, 3 seeds): **L2 1.503±0.04, align 0.690±0.05**.
+
+| R1 (drop=12, 100 nuS val) | L2 | align |
+|---|---|---|
+| baseline (no drop) | 1.540 | 0.640 |
+| **random** (control) | **1.503** ✓ | **0.690** ✓ |
+| nuScenes-greedy | 1.774 | **0.860** |
+| NAVSIM-greedy | 1.489 | 0.800 |
+
+**중요한 nuance**: 
+- Random도 baseline보다 좋음 → "R1 VLM 자체에 redundancy 있음"
+- 우리 alignment-grounded greedy는 **alignment 측면에서 random보다 +0.17 우월** (구체적 objective 최적화)
+- L2는 random이 약간 더 좋음 (greedy는 alignment에 집중하니까)
+
+paper claim 조정: "greedy beats random on its target metric (alignment)" — 솔직하지만 약함. L2가 더 중요하다면 random으로 충분.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+🔥 **1.5 random baseline = paper key result**: drop=12 → **align 0.363±0.17** (collapsed from 0.670)!
+
+| 1.5 (drop=12, 100 nuS val) | L2 | align |
+|---|---|---|
+| baseline | 1.480 | **0.670** |
+| **random** (control) | 1.743 | **0.363 ± 0.17** 🚨 |
+| nuScenes-greedy | 1.707 | 0.620 |
+| NAVSIM-greedy | 1.636 | 0.650 |
+
+**핵심 paper claim 굳어짐:**
+- **1.5는 random pruning이 catastrophic** (alignment 절반 떨어짐) — greedy 필수
+- **R1은 random도 OK** (0.69) — backbone 자체가 redundant
+- → **"Method necessity is backbone-dependent"** — controlled comparison 강력
+
+이게 진짜 paper hero data. 이전 "backbone determines pruning sensitivity" claim 양적으로 입증.
+
+Phase C (N=10 sample efficiency) 시작.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+R1 N=10 greedy: baseline 0.20 (only 2/10!), peak r3=0.90 at [32,33,15] — **N=50 peak [12,6,13]과 완전 다른 layer!**
+
+→ **Sample efficiency 핵심 발견**: N=10은 너무 적어서 greedy가 다른 layer 선택. Calibration size가 policy 다르게 만듦. paper의 "N의 lower bound" 논의에 필수.
+
+Phase D (holdout eval) 곧.
+
+### Assistant
+
+_[tool call: Bash]_
+
+### Assistant
+
+🎉 **EXTENDED QUEUE DONE!** 모든 실험 완료. 최종 push + 분석.
+
+### Assistant
+
+_[tool call: Bash]_
+
