@@ -1,0 +1,16 @@
+{
+  "dropped_layers": [
+    17,
+    18,
+    19,
+    23,
+    26,
+    28,
+    30,
+    31
+  ],
+  "policy": "greedy_k8",
+  "backbone": "15",
+  "calibration_domain": "nusc",
+  "source_greedy": "logs/greedy15.json"
+}

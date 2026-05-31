@@ -1,0 +1,14 @@
+{
+  "dropped_layers": [
+    5,
+    6,
+    12,
+    13,
+    15,
+    30
+  ],
+  "policy": "greedy_k6",
+  "backbone": "r1",
+  "calibration_domain": "navsim",
+  "source_greedy": "logs/greedyR1_navsim.json"
+}
