@@ -86,6 +86,10 @@ def main():
     ap.add_argument("--orig_weights", default=str(ALPAMAYO_15_WEIGHTS))
     ap.add_argument("--policy_meta", default=None,
                     help="meta json with dropped_layers list. Omit to evaluate baseline.")
+    ap.add_argument("--full_set", action="store_true",
+                    help="evaluate the full val set in shards (use with --shard_idx/--n_shards)")
+    ap.add_argument("--shard_idx", type=int, default=0)
+    ap.add_argument("--n_shards", type=int, default=1)
     ap.add_argument("--n_samples", type=int, default=100)
     ap.add_argument("--out_json", required=True)
     ap.add_argument("--device", default="cuda:0")
@@ -111,9 +115,16 @@ def main():
             while t:
                 val_tokens.append(t)
                 t = nusc.get("sample", t)["next"]
-    stride = max(1, len(val_tokens) // args.n_samples)
-    samples = val_tokens[::stride][:args.n_samples]
-    print(f"[eval] {len(samples)} val tokens, stride={stride}", flush=True)
+    if args.full_set:
+        # Shard mode: take every n_shards-th token starting at shard_idx.
+        # Aggregating all shards reconstructs the full val set.
+        samples = val_tokens[args.shard_idx::args.n_shards]
+        print(f"[eval] full-set shard {args.shard_idx}/{args.n_shards}: "
+              f"{len(samples)} val tokens (of {len(val_tokens)})", flush=True)
+    else:
+        stride = max(1, len(val_tokens) // args.n_samples)
+        samples = val_tokens[::stride][:args.n_samples]
+        print(f"[eval] {len(samples)} val tokens, stride={stride}", flush=True)
 
     metric = PlanningMetric()
     cam_idx_np = np.array([0]*4 + [1]*4 + [2]*4, dtype=np.int64)

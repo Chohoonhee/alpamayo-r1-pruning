@@ -70,6 +70,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--orig_weights", default=str(ALPAMAYO_R1_WEIGHTS))
     ap.add_argument("--policy_meta", default=None)
+    ap.add_argument("--full_set", action="store_true")
+    ap.add_argument("--shard_idx", type=int, default=0)
+    ap.add_argument("--n_shards", type=int, default=1)
     ap.add_argument("--n_samples", type=int, default=100)
     ap.add_argument("--out_json", required=True)
     ap.add_argument("--device", default="cuda:0")
@@ -93,9 +96,14 @@ def main():
             while t:
                 val_tokens.append(t)
                 t = nusc.get("sample", t)["next"]
-    stride = max(1, len(val_tokens) // args.n_samples)
-    samples = val_tokens[::stride][:args.n_samples]
-    print(f"[eval] {len(samples)} val tokens, stride={stride}", flush=True)
+    if args.full_set:
+        samples = val_tokens[args.shard_idx::args.n_shards]
+        print(f"[eval] full-set shard {args.shard_idx}/{args.n_shards}: "
+              f"{len(samples)} val tokens (of {len(val_tokens)})", flush=True)
+    else:
+        stride = max(1, len(val_tokens) // args.n_samples)
+        samples = val_tokens[::stride][:args.n_samples]
+        print(f"[eval] {len(samples)} val tokens, stride={stride}", flush=True)
 
     metric = PlanningMetric()
     rows = []
