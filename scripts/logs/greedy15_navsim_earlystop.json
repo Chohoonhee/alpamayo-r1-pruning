@@ -1,0 +1,64 @@
+{
+  "backbone": "15",
+  "weights": "/home/irteam/ws/alpamayo_pruning/weights/Alpamayo-1.5-10B",
+  "samples_pkl": "/home/irteam/ws/alpamayo_pruning_share/scripts/logs/navsim_samples_100.pkl",
+  "n_calibration": 50,
+  "baseline_align": 0.68,
+  "best_align": 0.86,
+  "best_K": 2,
+  "final_drop_set": [
+    31,
+    23
+  ],
+  "history": [
+    {
+      "round": 0,
+      "drop_set": [],
+      "best_layer": null,
+      "best_align": 0.68
+    },
+    {
+      "round": 1,
+      "drop_set": [
+        31
+      ],
+      "best_layer": 31,
+      "best_align": 0.78,
+      "round_elapsed_s": 1573.0796246528625
+    },
+    {
+      "round": 2,
+      "drop_set": [
+        31,
+        23
+      ],
+      "best_layer": 23,
+      "best_align": 0.86,
+      "round_elapsed_s": 1519.1170101165771
+    },
+    {
+      "round": 3,
+      "drop_set": [
+        31,
+        23,
+        22
+      ],
+      "best_layer": 22,
+      "best_align": 0.6,
+      "round_elapsed_s": 1455.2094469070435
+    },
+    {
+      "round": 4,
+      "drop_set": [
+        31,
+        23,
+        22,
+        2
+      ],
+      "best_layer": 2,
+      "best_align": 0.54,
+      "round_elapsed_s": 1392.9029903411865
+    }
+  ],
+  "early_stopped": true
+}
