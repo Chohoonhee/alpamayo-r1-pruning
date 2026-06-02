@@ -1,0 +1,1 @@
+{"dropped_layers": [32, 31, 27], "policy": "angular_k3", "backbone": "15", "K": 3, "source": "lowest 3 angular distance"}

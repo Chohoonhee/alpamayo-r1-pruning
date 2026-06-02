@@ -1,0 +1,7 @@
+{
+  "dropped_layers": [31],
+  "policy": "single_layer_31",
+  "backbone": "15",
+  "K": 1,
+  "source": "early-stop round 1"
+}
