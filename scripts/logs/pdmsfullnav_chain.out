@@ -1,0 +1,31 @@
+[16:31:39] === R1 FULL NAVTEST PDMS CHAIN START (3 pairs × ~2h) ===
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 102: 1504222 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+[17:34:26]   WARN: no result CSV found under /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_fullnav_baseline
+[17:34:26] === PDMS DONE: fullnav_baseline ===
+2026-05-31 17:34:09,007 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 977 / 1014 in thread_id=dce13178-627e-4c17-b60a-1b82ba9bbee7, node_id=0
+2026-05-31 17:34:09,737 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 987 / 1315 in thread_id=0f528865-640a-49ab-b1d4-7faf5a2b36f8, node_id=0
+2026-05-31 17:34:10,373 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 990 / 2027 in thread_id=14c51ac3-b9e9-4c7c-9515-9a9fff2f093d, node_id=0
+2026-05-31 17:34:11,076 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 985 / 2135 in thread_id=a85a9a28-9ef0-4eb6-b85e-6df49073f152, node_id=0
+2026-05-31 17:34:12,666 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 978 / 1014 in thread_id=dce13178-627e-4c17-b60a-1b82ba9bbee7, node_id=0
+2026-05-31 17:34:12,703 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 989 / 2069 in thread_id=fa532976-8189-4ff2-8187-4756519d2e8c, node_id=0
+2026-05-31 17:34:12,907 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 988 / 1315 in thread_id=0f528865-640a-49ab-b1d4-7faf5a2b36f8, node_id=0
+2026-05-31 17:34:13,415 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 991 / 2027 in thread_id=14c51ac3-b9e9-4c7c-9515-9a9fff2f093d, node_id=0
+2026-05-31 17:34:14,763 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 986 / 2135 in thread_id=a85a9a28-9ef0-4eb6-b85e-6df49073f152, node_id=0
+2026-05-31 17:34:15,280 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 990 / 2069 in thread_id=fa532976-8189-4ff2-8187-4756519d2e8c, node_id=0
+2026-05-31 17:34:15,964 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 979 / 1014 in thread_id=dce13178-627e-4c17-b60a-1b82ba9bbee7, node_id=0
+2026-05-31 17:34:16,733 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 989 / 1315 in thread_id=0f528865-640a-49ab-b1d4-7faf5a2b36f8, node_id=0
+2026-05-31 17:34:18,033 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 992 / 2027 in thread_id=14c51ac3-b9e9-4c7c-9515-9a9fff2f093d, node_id=0
+2026-05-31 17:34:18,680 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 987 / 2135 in thread_id=a85a9a28-9ef0-4eb6-b85e-6df49073f152, node_id=0
+2026-05-31 17:34:19,901 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 991 / 2069 in thread_id=fa532976-8189-4ff2-8187-4756519d2e8c, node_id=0
+2026-05-31 17:34:20,483 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 980 / 1014 in thread_id=dce13178-627e-4c17-b60a-1b82ba9bbee7, node_id=0
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 96: 1506610 Killed                  $NAVSIM_VENV/bin/python navsim/planning/script/run_pdm_score_one_stage.py agent=alpamayo_agent "agent.server_addr='$SERVERS'" train_test_split=navtest train_test_split.scene_filter.max_scenes=$N metric_cache_path=$CACHE experiment_name=$EXPNAME worker=single_machine_thread_pool worker.max_workers=8 2>&1
+     1506611 Done                    | tee -a $QLOG
+[17:34:21]   PDMS scorer rc=137
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 102: 1505761 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 102: 1505765 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 102: 1505769 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 102: 1505773 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+[17:34:26]   WARN: no result CSV found under /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_fullnav_greedy_k3_nusc
+[17:34:26] === PDMS DONE: fullnav_greedy_k3_nusc ===
+[17:34:26] A rc=0  B rc=0
+[17:34:26] === FULL PDMS pair DONE ===

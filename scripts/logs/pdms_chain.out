@@ -1,0 +1,278 @@
+[14:53:43] === PDMS chain start (5 conditions × 500 scenes, ~1h total) ===
+[14:53:43] --- launching baseline_r1 (policy=baseline) ---
+2026-05-31 14:58:46,012 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:46,766 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 132 in thread_id=cfa88849-653f-436d-9f8b-b077a7eb129d, node_id=0
+2026-05-31 14:58:47,510 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:48,260 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 132 in thread_id=cfa88849-653f-436d-9f8b-b077a7eb129d, node_id=0
+2026-05-31 14:58:49,133 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:50,004 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 132 in thread_id=cfa88849-653f-436d-9f8b-b077a7eb129d, node_id=0
+2026-05-31 14:58:50,735 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:51,421 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 132 in thread_id=cfa88849-653f-436d-9f8b-b077a7eb129d, node_id=0
+2026-05-31 14:58:52,159 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:53,004 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 132 in thread_id=cfa88849-653f-436d-9f8b-b077a7eb129d, node_id=0
+2026-05-31 14:58:53,719 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 133 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:55,321 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 134 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:56,730 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 135 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:57,967 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 136 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:58:59,251 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 137 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:00,686 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 138 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:01,894 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 139 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:03,260 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 140 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:04,455 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 141 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:05,895 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 142 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:07,151 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 143 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:08,352 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 144 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:09,692 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 145 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:11,044 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 146 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:12,168 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 147 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:13,260 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 148 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:14,486 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 149 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:15,839 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 150 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:16,891 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 151 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:17,991 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 152 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:19,261 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 153 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:20,489 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 154 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:21,725 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 155 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:22,971 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 156 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:24,164 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 157 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:25,232 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 158 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:26,354 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 159 / 159 in thread_id=833e01cb-121f-470e-aca2-84e477212cee, node_id=0
+2026-05-31 14:59:28,571 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:305}  
+        Finished running evaluation.
+            Number of successful scenarios: 500.
+            Number of failed scenarios: 0.
+            Final average score of valid results: 0.47945076905699213.
+            Results are stored in: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_baseline_r1/2026.05.31.14.54.04/2026.05.31.14.59.28.csv.
+        
+[14:59:29]   PDMS scorer rc=0
+[14:59:34]   result CSV: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_baseline_r1/2026.05.31.14.54.04/2026.05.31.14.59.28.csv
+[14:59:34]   aggregate row:
+500,average_all_frames,True,0.713,0.708,0.949,0.99,0.7975091508456725,0.678,0.856,0.618,0.16267942583732056,0.47945076905699213
+[14:59:34]   saved to /home/irteam/ws/alpamayo_pruning_share/scripts/logs/pdms_baseline_r1_result.csv
+[14:59:34] === PDMS DONE: baseline_r1 ===
+[14:59:34] --- baseline_r1 done ---
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   3397464..d544e24  master -> master
+[14:59:35] --- launching greedy_k3_nusc (policy=/home/irteam/ws/alpamayo_pruning_share/scripts/logs/ksweep_r1_nusc_k3.meta.json) ---
+2026-05-31 15:03:24,661 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 132 in thread_id=501f5abb-d687-4f0e-8708-3295f895d4d7, node_id=0
+2026-05-31 15:03:25,029 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:25,928 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 132 in thread_id=501f5abb-d687-4f0e-8708-3295f895d4d7, node_id=0
+2026-05-31 15:03:26,378 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:27,367 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 132 in thread_id=501f5abb-d687-4f0e-8708-3295f895d4d7, node_id=0
+2026-05-31 15:03:27,523 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:28,689 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 132 in thread_id=501f5abb-d687-4f0e-8708-3295f895d4d7, node_id=0
+2026-05-31 15:03:28,721 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:29,942 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 132 in thread_id=501f5abb-d687-4f0e-8708-3295f895d4d7, node_id=0
+2026-05-31 15:03:29,949 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:31,380 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 133 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:32,420 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 134 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:33,360 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 135 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:34,503 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 136 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:35,465 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 137 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:36,764 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 138 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:37,915 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 139 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:38,954 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 140 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:40,534 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 141 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:41,520 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 142 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:42,740 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 143 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:43,616 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 144 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:44,659 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 145 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:46,204 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 146 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:47,821 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 147 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:48,865 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 148 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:49,729 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 149 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:50,611 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 150 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:51,583 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 151 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:52,891 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 152 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:54,509 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 153 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:55,399 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 154 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:56,725 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 155 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:57,625 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 156 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:58,502 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 157 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:03:59,632 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 158 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:04:01,477 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 159 / 159 in thread_id=6dee5c77-e83b-48c8-b9c4-91fde13246bc, node_id=0
+2026-05-31 15:04:03,496 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:305}  
+        Finished running evaluation.
+            Number of successful scenarios: 500.
+            Number of failed scenarios: 0.
+            Final average score of valid results: 0.3781265562305202.
+            Results are stored in: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_greedy_k3_nusc/2026.05.31.14.59.56/2026.05.31.15.04.03.csv.
+        
+[15:04:04]   PDMS scorer rc=0
+[15:04:09]   result CSV: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_greedy_k3_nusc/2026.05.31.14.59.56/2026.05.31.15.04.03.csv
+[15:04:09]   aggregate row:
+500,average_all_frames,True,0.604,0.72,0.897,0.936,0.9470694203614685,0.576,0.928,0.984,0.6267942583732058,0.3781265562305202
+[15:04:09]   saved to /home/irteam/ws/alpamayo_pruning_share/scripts/logs/pdms_greedy_k3_nusc_result.csv
+[15:04:09] === PDMS DONE: greedy_k3_nusc ===
+[15:04:09] --- greedy_k3_nusc done ---
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   d544e24..9750974  master -> master
+[15:04:10] --- launching early_stop_k4 (policy=/home/irteam/ws/alpamayo_pruning_share/scripts/logs/greedyR1_navsim_earlystop_meta.json) ---
+2026-05-31 15:08:22,219 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:22,909 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 132 in thread_id=940ec7af-88cd-41a6-8ee2-c7ab77206ab9, node_id=0
+2026-05-31 15:08:23,776 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:24,504 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 132 in thread_id=940ec7af-88cd-41a6-8ee2-c7ab77206ab9, node_id=0
+2026-05-31 15:08:25,407 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:26,113 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 132 in thread_id=940ec7af-88cd-41a6-8ee2-c7ab77206ab9, node_id=0
+2026-05-31 15:08:26,985 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:28,006 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 132 in thread_id=940ec7af-88cd-41a6-8ee2-c7ab77206ab9, node_id=0
+2026-05-31 15:08:28,832 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:29,569 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 132 in thread_id=940ec7af-88cd-41a6-8ee2-c7ab77206ab9, node_id=0
+2026-05-31 15:08:30,368 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 133 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:32,107 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 134 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:33,338 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 135 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:34,722 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 136 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:35,817 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 137 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:37,146 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 138 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:38,357 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 139 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:39,812 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 140 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:41,015 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 141 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:42,107 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 142 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:43,467 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 143 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:44,670 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 144 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:46,058 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 145 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:47,308 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 146 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:48,450 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 147 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:49,678 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 148 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:50,967 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 149 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:52,229 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 150 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:53,420 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 151 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:54,577 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 152 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:55,712 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 153 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:57,102 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 154 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:58,259 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 155 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:08:59,393 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 156 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:09:00,921 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 157 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:09:02,209 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 158 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:09:03,455 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 159 / 159 in thread_id=9ed02716-6d87-4aa2-b2ea-f1113ba9e644, node_id=0
+2026-05-31 15:09:05,804 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:305}  
+        Finished running evaluation.
+            Number of successful scenarios: 500.
+            Number of failed scenarios: 0.
+            Final average score of valid results: 0.3265299916969739.
+            Results are stored in: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_early_stop_k4/2026.05.31.15.04.31/2026.05.31.15.09.05.csv.
+        
+[15:09:06]   PDMS scorer rc=0
+[15:09:11]   result CSV: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_early_stop_k4/2026.05.31.15.04.31/2026.05.31.15.09.05.csv
+[15:09:11]   aggregate row:
+500,average_all_frames,True,0.621,0.66,0.884,0.936,0.9202403042999813,0.59,0.916,0.984,0.6889952153110048,0.3265299916969739
+[15:09:11]   saved to /home/irteam/ws/alpamayo_pruning_share/scripts/logs/pdms_early_stop_k4_result.csv
+[15:09:11] === PDMS DONE: early_stop_k4 ===
+[15:09:11] --- early_stop_k4 done ---
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   9750974..66ef357  master -> master
+[15:09:12] --- launching greedy_k7_nusc (policy=/home/irteam/ws/alpamayo_pruning_share/scripts/logs/ksweep_r1_nusc_k7.meta.json) ---
+2026-05-31 15:16:44,751 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 123 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:47,907 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 124 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:48,960 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 125 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:51,669 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 126 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:52,828 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 127 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:54,508 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:55,537 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:16:58,373 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:01,446 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:04,444 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:05,988 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 133 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:09,220 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 134 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:11,718 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 135 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:12,867 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 136 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:15,251 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 137 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:16,185 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 138 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:17,196 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 139 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:18,340 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 140 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:19,246 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 141 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:22,073 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 142 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:25,006 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 143 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:26,730 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 144 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:29,834 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 145 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:31,214 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 146 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:32,212 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 147 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:34,904 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 148 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:37,839 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 149 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:38,999 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 150 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:40,690 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 151 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:42,544 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 152 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:45,594 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 153 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:47,761 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 154 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:50,901 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 155 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:51,976 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 156 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:53,683 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 157 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:55,364 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 158 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:57,615 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 159 / 159 in thread_id=bfbd7e6e-f917-4c05-a3c6-d1b939bf9e46, node_id=0
+2026-05-31 15:17:59,541 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:305}  
+        Finished running evaluation.
+            Number of successful scenarios: 500.
+            Number of failed scenarios: 0.
+            Final average score of valid results: 0.24170150513318134.
+            Results are stored in: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_greedy_k7_nusc/2026.05.31.15.09.33/2026.05.31.15.17.59.csv.
+        
+[15:18:00]   PDMS scorer rc=0
+[15:18:05]   result CSV: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_greedy_k7_nusc/2026.05.31.15.09.33/2026.05.31.15.17.59.csv
+[15:18:05]   aggregate row:
+500,average_all_frames,True,0.515,0.666,0.857,0.93,0.9262211352278916,0.472,0.898,0.984,0.7799043062200957,0.24170150513318134
+[15:18:05]   saved to /home/irteam/ws/alpamayo_pruning_share/scripts/logs/pdms_greedy_k7_nusc_result.csv
+[15:18:05] === PDMS DONE: greedy_k7_nusc ===
+[15:18:05] --- greedy_k7_nusc done ---
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   66ef357..77be0eb  master -> master
+[15:18:06] --- launching random_k3_seed0 (policy=/home/irteam/ws/alpamayo_pruning_share/scripts/logs/random_baseline_r1_drop3_seed0.meta.json) ---
+2026-05-31 15:23:23,708 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 132 in thread_id=6de43888-8777-40db-b530-26dcce8e8312, node_id=0
+2026-05-31 15:23:24,400 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 128 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:25,130 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 132 in thread_id=6de43888-8777-40db-b530-26dcce8e8312, node_id=0
+2026-05-31 15:23:25,985 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 129 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:26,832 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 132 in thread_id=6de43888-8777-40db-b530-26dcce8e8312, node_id=0
+2026-05-31 15:23:27,609 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 130 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:28,490 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 132 in thread_id=6de43888-8777-40db-b530-26dcce8e8312, node_id=0
+2026-05-31 15:23:29,268 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 131 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:29,981 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 132 in thread_id=6de43888-8777-40db-b530-26dcce8e8312, node_id=0
+2026-05-31 15:23:30,810 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 132 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:32,521 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 133 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:33,603 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 134 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:34,777 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 135 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:36,313 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 136 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:37,809 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 137 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:39,051 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 138 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:40,255 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 139 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:41,730 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 140 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:43,095 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 141 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:44,497 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 142 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:45,869 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 143 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:47,347 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 144 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:48,449 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 145 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:49,635 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 146 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:50,885 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 147 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:52,245 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 148 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:53,424 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 149 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:54,505 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 150 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:55,673 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 151 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:57,118 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 152 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:58,312 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 153 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:23:59,519 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 154 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:24:01,186 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 155 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:24:02,302 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 156 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:24:03,668 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 157 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:24:04,880 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 158 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:24:06,091 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 159 / 159 in thread_id=7f609d39-e4a4-4c51-974c-40da39c7f881, node_id=0
+2026-05-31 15:24:08,433 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:305}  
+        Finished running evaluation.
+            Number of successful scenarios: 500.
+            Number of failed scenarios: 0.
+            Final average score of valid results: 0.3064581760843498.
+            Results are stored in: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_random_k3_seed0/2026.05.31.15.18.27/2026.05.31.15.24.08.csv.
+        
+[15:24:08]   PDMS scorer rc=0
+[15:24:13]   result CSV: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_random_k3_seed0/2026.05.31.15.18.27/2026.05.31.15.24.08.csv
+[15:24:13]   aggregate row:
+500,average_all_frames,True,0.569,0.498,0.863,0.99,0.5912808795503449,0.506,0.908,0.354,0.028708133971291867,0.3064581760843498
+[15:24:13]   saved to /home/irteam/ws/alpamayo_pruning_share/scripts/logs/pdms_random_k3_seed0_result.csv
+[15:24:13] === PDMS DONE: random_k3_seed0 ===
+[15:24:13] --- random_k3_seed0 done ---
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   77be0eb..c5dcf3c  master -> master
+[15:24:15] === PDMS chain COMPLETE ===
+[auto-commit] nothing to commit

@@ -1,0 +1,30 @@
+[11:42:04] waiting for 1.5 NAVSIM k=7 full-set (last step of previous chain) ...
+[12:43:04] previous chain done, starting early-stop full-set evals
+[12:43:04] launching 6 shards of r1_greedy_earlystop (eval_zeroshot_alignment_r1.py)
+[12:43:04] [launched] 6 shards for r1_greedy_earlystop
+[12:56:52] r1_greedy_earlystop: all shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.583 / 1.237 / 2.104  (avg 1.308)
+Col 1s/2s/3s: 0.70 / 0.87 / 1.33 %
+Alignment:    0.716
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_r1_greedy_earlystop.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   054a3ec..f5ea462  master -> master
+[12:56:55] launching 6 shards of 15_greedy_earlystop (eval_zeroshot_alignment.py)
+[12:56:55] [launched] 6 shards for 15_greedy_earlystop
+[13:11:27] 15_greedy_earlystop: all shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.579 / 1.216 / 2.042  (avg 1.279)
+Col 1s/2s/3s: 0.76 / 0.99 / 1.59 %
+Alignment:    0.672
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_15_greedy_earlystop.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   f5ea462..3397464  master -> master
+[13:11:30] === EARLY-STOP FULLSET CHAIN COMPLETE ===
+[auto-commit] nothing to commit

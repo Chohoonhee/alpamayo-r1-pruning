@@ -1,0 +1,444 @@
+[02:58:48] === 1.5 8-SAMPLE RESTORE TEST ===
+[02:58:48]   target: April reference 0.7286
+[02:58:48] launched 4 servers, waiting for ready...
+[02:59:03] all 4 servers ready
+2026-06-01 02:59:09,457 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/builders/worker_pool_builder.py:19}  Building WorkerPool...
+2026-06-01 02:59:09,459 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/nuplan/planning/utils/multithreading/worker_pool.py:101}  Worker: SingleMachineParallelExecutor
+2026-06-01 02:59:09,459 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/nuplan/planning/utils/multithreading/worker_pool.py:102}  Number of nodes: 1
+Number of CPUs per node: 8
+Number of GPUs per node: 0
+Number of threads across all nodes: 8
+2026-06-01 02:59:09,459 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/builders/worker_pool_builder.py:27}  Building WorkerPool...DONE!
+Loading logs:   0%|          | 0/136 [00:00<?, ?it/s]Loading logs:   2%|▏         | 3/136 [00:00<00:06, 21.47it/s]Loading logs:   4%|▎         | 5/136 [00:00<00:04, 26.45it/s]
+2026-06-01 02:59:09,958 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:256}  Unused metric cache for 11646 tokens. Skipping these tokens.
+2026-06-01 02:59:09,958 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:257}  Starting pdm scoring of 500 scenarios...
+2026-06-01 02:59:09,960 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:46}  Starting worker in thread_id=0ede7799-e9f3-47c5-a199-711ed3a406ba, node_id=0
+2026-06-01 02:59:09,960 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:46}  Starting worker in thread_id=c469ab4a-3161-4b71-8580-37c632633a21, node_id=0
+2026-06-01 02:59:09,961 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:46}  Starting worker in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+2026-06-01 02:59:09,970 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:46}  Starting worker in thread_id=96d005fc-8d9e-4a6e-b3ed-3817492d4932, node_id=0
+2026-06-01 02:59:09,977 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:46}  Starting worker in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:09,982 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:46}  Starting worker in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s]
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A
+
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A[ALoading logs: 100%|██████████| 1/1 [00:00<00:00, 10.38it/s]
+
+                                                   [A
+
+                                                   [A[A
+
+
+                                                   [A[A[A
+
+
+
+                                                   [A[A[A[A
+
+
+
+
+                                                   [A[A[A[A[A2026-06-01 02:59:12,833 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 1 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A
+
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A[A
+Loading logs: 100%|██████████| 1/1 [00:00<00:00,  9.12it/s][ALoading logs: 100%|██████████| 1/1 [00:00<00:00,  9.11it/s]
+
+
+                                                   [A[A
+
+
+                                                   [A[A[A
+
+
+
+                                                   [A[A[A[A
+
+
+
+
+                                                   [A[A[A[A[A2026-06-01 02:59:12,846 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 1 / 25 in thread_id=96d005fc-8d9e-4a6e-b3ed-3817492d4932, node_id=0
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A
+
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A[A
+
+
+
+
+Loading logs: 100%|██████████| 1/1 [00:00<00:00,  7.32it/s][A[A[A[A[ALoading logs: 100%|██████████| 1/1 [00:00<00:00,  7.31it/s]
+
+
+                                                   [A[A
+
+
+                                                   [A[A[A
+
+
+
+                                                   [A[A[A[A2026-06-01 02:59:12,875 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 1 / 66 in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A[A
+
+
+
+Loading logs: 100%|██████████| 1/1 [00:00<00:00,  4.85it/s][A[A[A[ALoading logs: 100%|██████████| 1/1 [00:00<00:00,  4.77it/s]
+
+
+                                                   [A[A
+
+
+                                                   [A[A[A2026-06-01 02:59:12,951 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 1 / 159 in thread_id=c469ab4a-3161-4b71-8580-37c632633a21, node_id=0
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A
+
+Loading logs: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s][A[ALoading logs: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s]
+
+
+
+                                                   [A[A[A2026-06-01 02:59:12,960 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 1 / 79 in thread_id=0ede7799-e9f3-47c5-a199-711ed3a406ba, node_id=0
+
+
+
+Loading logs:   0%|          | 0/1 [00:00<?, ?it/s][A[A[A
+
+
+Loading logs: 100%|██████████| 1/1 [00:00<00:00,  3.86it/s][A[A[ALoading logs: 100%|██████████| 1/1 [00:00<00:00,  3.86it/s]
+2026-06-01 02:59:13,000 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 1 / 132 in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+2026-06-01 02:59:19,201 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 741ee8b9ea3059a5:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 157.12 MiB is free. Including non-PyTorch memory, this process has 139.64 GiB memory in use. Of the allocated memory 137.14 GiB is allocated by PyTorch, and 1.83 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:19,204 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 2 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:19,260 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 2649dcc8a1725fb2:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 193.06 MiB is free. Including non-PyTorch memory, this process has 139.60 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.67 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:19,262 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 61e0ce212ed75a50:
+2026-06-01 02:59:19,262 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 2 / 132 in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 193.06 MiB is free. Including non-PyTorch memory, this process has 139.60 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.67 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:19,264 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 2 / 159 in thread_id=c469ab4a-3161-4b71-8580-37c632633a21, node_id=0
+2026-06-01 02:59:23,273 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token b9e5b11ac3745f8c:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:23,276 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 2 / 66 in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+2026-06-01 02:59:23,286 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 24d02c4c2a325f01:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:23,288 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 2 / 79 in thread_id=0ede7799-e9f3-47c5-a199-711ed3a406ba, node_id=0
+2026-06-01 02:59:23,775 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 697882c22eb65ca7:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.71 GiB is allocated by PyTorch, and 1.35 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:23,777 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 3 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:27,259 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 064018bfafb05f56:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:27,262 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 3 / 132 in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+2026-06-01 02:59:27,306 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 317f5b44a4615e30:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.38 GiB is allocated by PyTorch, and 1.65 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:27,308 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 2 / 25 in thread_id=96d005fc-8d9e-4a6e-b3ed-3817492d4932, node_id=0
+2026-06-01 02:59:28,149 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 4064f2ec7a2f56ef:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.47 GiB is allocated by PyTorch, and 1.59 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:28,152 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 4 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:31,223 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token a8c150e293ac5bd3:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:31,226 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 3 / 66 in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+2026-06-01 02:59:31,266 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 153af25086535f35:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:31,269 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 3 / 159 in thread_id=c469ab4a-3161-4b71-8580-37c632633a21, node_id=0
+2026-06-01 02:59:32,168 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token fd9b227cec3d5c3f:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.79 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:32,169 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 5 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:35,189 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token b23f49937a48507e:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:35,191 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 4 / 132 in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+2026-06-01 02:59:35,221 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 5d3e45ad38ef5b9c:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:35,226 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 3 / 79 in thread_id=0ede7799-e9f3-47c5-a199-711ed3a406ba, node_id=0
+2026-06-01 02:59:36,515 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token e7cfffa4e8dd53a8:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.58 GiB is allocated by PyTorch, and 1.48 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:36,517 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 6 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:39,177 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token b667e90bf3055cea:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:39,180 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 3 / 25 in thread_id=96d005fc-8d9e-4a6e-b3ed-3817492d4932, node_id=0
+2026-06-01 02:59:39,182 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token a0b67d1ac0c35d26:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:39,185 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 4 / 66 in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+2026-06-01 02:59:40,798 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token bb73caa6692856bf:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.79 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:40,800 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 7 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:42,939 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 8560e670c7865e3f:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.76 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:42,940 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 5 / 132 in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+2026-06-01 02:59:43,244 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 4a919f7ea2f65200:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:43,247 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 4 / 159 in thread_id=c469ab4a-3161-4b71-8580-37c632633a21, node_id=0
+2026-06-01 02:59:44,819 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 3e77b33549485e34:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.79 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:44,821 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 8 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:46,816 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 2d357ffc1fdd5c89:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.76 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:46,818 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 5 / 66 in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+2026-06-01 02:59:47,092 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 901722c88ebf50ea:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.57 GiB is allocated by PyTorch, and 1.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:47,094 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 4 / 79 in thread_id=0ede7799-e9f3-47c5-a199-711ed3a406ba, node_id=0
+2026-06-01 02:59:49,073 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 7b263d7980f55503:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.47 GiB is allocated by PyTorch, and 1.59 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:49,075 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 9 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:50,549 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token a6da1090aa335503:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.76 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:50,551 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 6 / 132 in thread_id=1b900620-0e2e-4dbd-a673-961856cd98c7, node_id=0
+2026-06-01 02:59:51,227 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 63266bfd8e1f5f15:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.58 GiB is allocated by PyTorch, and 1.45 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:51,229 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 4 / 25 in thread_id=96d005fc-8d9e-4a6e-b3ed-3817492d4932, node_id=0
+2026-06-01 02:59:53,107 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 95448c5ace9e5a22:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 59.12 MiB is free. Including non-PyTorch memory, this process has 139.73 GiB memory in use. Of the allocated memory 137.27 GiB is allocated by PyTorch, and 1.79 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:53,109 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 10 / 39 in thread_id=6d17a1bb-8da6-46d9-bba3-a21f171fe863, node_id=0
+2026-06-01 02:59:54,682 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 375d03a139615179:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.62 GiB is allocated by PyTorch, and 1.41 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:54,683 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 6 / 66 in thread_id=5d82ab8c-e6a8-46f0-8108-35697660f3d6, node_id=0
+2026-06-01 02:59:55,029 WARNING {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:119}  ----------- Agent failed for token 865033089cfd5288:
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 92, in run_pdm_score
+    trajectory = agent.compute_trajectory(agent_input)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 250, in compute_trajectory
+    predictions = self.forward(features)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/agents/alpamayo_agent.py", line 226, in forward
+    raise RuntimeError(f"Alpamayo server error: {resp.get('error')}")
+RuntimeError: Alpamayo server error: OutOfMemoryError: CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 139.80 GiB of which 95.06 MiB is free. Including non-PyTorch memory, this process has 139.70 GiB memory in use. Of the allocated memory 137.37 GiB is allocated by PyTorch, and 1.66 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2026-06-01 02:59:55,032 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 5 / 159 in thread_id=c469ab4a-3161-4b71-8580-37c632633a21, node_id=0

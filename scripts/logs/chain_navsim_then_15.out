@@ -1,0 +1,66 @@
+[09:57:30] stage1: waiting for R1 NAVSIM 6 shards
+[10:40:31] stage1: all 6 shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.626 / 1.365 / 2.357  (avg 1.449)
+Col 1s/2s/3s: 0.70 / 0.83 / 1.41 %
+Alignment:    0.905
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_r1_greedy_k7_navsim.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   fcf08e5..e394699  master -> master
+[10:40:33] stage2: launching 6 shards of 15_greedy_k3_nusc
+[10:40:33] [launched] 6 shards for 15_greedy_k3_nusc
+[10:55:36] stage2: 15_greedy_k3_nusc all shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.602 / 1.294 / 2.216  (avg 1.371)
+Col 1s/2s/3s: 0.74 / 1.20 / 2.45 %
+Alignment:    0.715
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_15_greedy_k3_nusc.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   e394699..5d62eed  master -> master
+[10:55:38] stage2: launching 6 shards of 15_greedy_k5_nusc
+[10:55:38] [launched] 6 shards for 15_greedy_k5_nusc
+[11:09:28] stage2: 15_greedy_k5_nusc all shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.654 / 1.456 / 2.565  (avg 1.558)
+Col 1s/2s/3s: 0.70 / 0.86 / 1.64 %
+Alignment:    0.625
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_15_greedy_k5_nusc.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   5d62eed..a92da0d  master -> master
+[11:09:30] stage2: launching 6 shards of 15_greedy_k7_nusc
+[11:09:30] [launched] 6 shards for 15_greedy_k7_nusc
+[11:23:39] stage2: 15_greedy_k7_nusc all shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.730 / 1.714 / 3.104  (avg 1.849)
+Col 1s/2s/3s: 0.69 / 0.98 / 2.19 %
+Alignment:    0.591
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_15_greedy_k7_nusc.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   a92da0d..e2a23fb  master -> master
+[11:23:41] stage2: launching 6 shards of 15_greedy_k7_navsim
+[11:23:41] [launched] 6 shards for 15_greedy_k7_navsim
+[12:42:52] stage2: 15_greedy_k7_navsim all shards done, aggregating
+
+=== aggregated full-set (n=6019, 6 shards) ===
+L2 1s/2s/3s:  0.696 / 1.596 / 2.867  (avg 1.720)
+Col 1s/2s/3s: 0.70 / 1.02 / 2.16 %
+Alignment:    0.599
+Saved → /home/irteam/ws/alpamayo_pruning_share/scripts/logs/fullset_15_greedy_k7_navsim.json
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+Wrote /home/irteam/ws/alpamayo_pruning_share/ANALYSIS.md (5429 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   358edf1..054a3ec  master -> master
+[12:42:54] === CHAIN COMPLETE ===
+[auto-commit] nothing to commit

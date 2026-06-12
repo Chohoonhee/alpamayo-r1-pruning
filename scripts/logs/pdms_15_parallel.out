@@ -1,0 +1,26 @@
+[09:50:39] === launching 5 parallel servers (GPU 1-5, ports 5558-5562) ===
+[09:50:39]   k1_layer31 on GPU 1 port 5558 pid=1933939
+[09:50:39]   angular_k1 on GPU 2 port 5559 pid=1933943
+[09:50:39]   angular_k2 on GPU 3 port 5560 pid=1933947
+[09:50:39]   angular_k3 on GPU 4 port 5561 pid=1933951
+[09:50:39]   angular_k5 on GPU 5 port 5562 pid=1933955
+[09:50:39] waiting for all servers ready...
+[09:50:54]   k1_layer31 ready (15s)
+[09:50:54]   angular_k1 ready (0s)
+[09:50:54]   angular_k2 ready (0s)
+[09:50:54]   angular_k3 ready (0s)
+[09:50:54]   angular_k5 ready (0s)
+[09:50:54] === launching 5 parallel scorers ===
+[09:50:54]   k1_layer31 scorer pid=1934730
+[09:50:54]   angular_k1 scorer pid=1934735
+[09:50:54]   angular_k2 scorer pid=1934740
+[09:50:54]   angular_k3 scorer pid=1934745
+[09:50:54]   angular_k5 scorer pid=1934750
+[09:50:54] waiting for all scorers...
+[10:48:57] all scorers done
+[10:49:02] RESULT k1_layer31: 500,average_all_frames,True,0.888,0.834,0.964,0.994,0.765043991094987,0.902,0.932,0.98,0.5143540669856459,0.6305561132214811
+[10:49:02] RESULT angular_k1: 500,average_all_frames,True,0.495,0.606,0.848,0.96,0.8511120137846611,0.4,0.752,0.896,0.44019138755980863,0.24237181847046532
+[10:49:02] RESULT angular_k2: 500,average_all_frames,True,0.486,0.21,0.559,0.95,0.7368582258157057,0.416,0.646,0.822,0.24880382775119617,0.05604997907349371
+[10:49:02] RESULT angular_k3: 500,average_all_frames,True,0.368,0.29,0.677,0.976,0.37705491785589557,0.202,0.498,0.122,0.0,0.03826122944224264
+[10:49:02] RESULT angular_k5: 500,average_all_frames,True,0.541,0.354,0.735,0.982,0.5554176624135597,0.432,0.57,0.608,0.1076555023923445,0.1096318709293057
+[10:49:02] === parallel chain DONE ===

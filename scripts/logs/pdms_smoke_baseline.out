@@ -1,0 +1,44 @@
+[14:45:18] === PDMS run: smoke_baseline  policy=baseline  gpus=0..3  ports=5557..5560  max_scenes=50 ===
+[14:45:18]   server port=5557 gpu=0 policy=none
+[14:45:18]   server port=5558 gpu=1 policy=none
+[14:45:18]   server port=5559 gpu=2 policy=none
+[14:45:18]   server port=5560 gpu=3 policy=none
+[14:45:18]   server PIDs: 1434795 1434799 1434803 1434807
+[14:45:18]   waiting for servers to be ready...
+[14:45:33]   server 5557 ready (15s)
+[14:45:33]   server 5558 ready (0s)
+[14:45:33]   server 5559 ready (0s)
+[14:45:33]   server 5560 ready (0s)
+[14:45:33]   starting PDMS scorer (servers=tcp://127.0.0.1:5557,tcp://127.0.0.1:5558,tcp://127.0.0.1:5559,tcp://127.0.0.1:5560)
+Traceback (most recent call last):
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 332, in <module>
+    main()
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/main.py", line 90, in decorated_main
+    _run_hydra(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 389, in _run_hydra
+    _run_app(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 452, in _run_app
+    run_and_report(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 216, in run_and_report
+    raise ex
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 213, in run_and_report
+    return func()
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 453, in <lambda>
+    lambda: hydra.run(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/hydra.py", line 105, in run
+    cfg = self.compose_config(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/hydra.py", line 594, in compose_config
+    cfg = self.config_loader.load_configuration(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/config_loader_impl.py", line 141, in load_configuration
+    return self._load_configuration_impl(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/config_loader_impl.py", line 238, in _load_configuration_impl
+    self.validate_sweep_overrides_legal(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/config_loader_impl.py", line 79, in validate_sweep_overrides_legal
+    raise ConfigCompositionException(msg)
+hydra.errors.ConfigCompositionException: Ambiguous value for argument 'agent.server_addr=tcp://127.0.0.1:5557,tcp://127.0.0.1:5558,tcp://127.0.0.1:5559,tcp://127.0.0.1:5560'
+1. To use it as a list, use key=[value1,value2]
+2. To use it as string, quote the value: key=\'value1,value2\'
+3. To sweep over it, add --multirun to your command line
+[14:45:37]   PDMS scorer rc=1
+[14:45:42]   WARN: no result CSV found under /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_r1_smoke_baseline
+[14:45:42] === PDMS DONE: smoke_baseline ===

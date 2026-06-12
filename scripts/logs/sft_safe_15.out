@@ -1,0 +1,76 @@
+[11:46:39] === SAFE FT: 1.5 + K=2 [23,31] + ONLY action_proj MLPs + 1k samples + 1 epoch ===
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+W0602 11:46:44.420000 3029817 site-packages/torch/distributed/run.py:774] 
+W0602 11:46:44.420000 3029817 site-packages/torch/distributed/run.py:774] *****************************************
+W0602 11:46:44.420000 3029817 site-packages/torch/distributed/run.py:774] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0602 11:46:44.420000 3029817 site-packages/torch/distributed/run.py:774] *****************************************
+[W602 11:46:44.784222254 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/irteam/miniconda/envs/alpamayo_b2d/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.8.0+cu128).
+[W602 11:46:59.786939597 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[W602 11:47:03.455219948 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[W602 11:47:03.236835180 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[W602 11:47:03.257101199 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[W602 11:47:03.277746242 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[load] Alpamayo 1.5 base + runtime VLM identity bypass ...
+[W602 11:47:03.329061011 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[W602 11:47:03.340524722 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+[W602 11:47:04.405672019 socket.cpp:755] [c10d] The client socket cannot be initialized to connect to [::ffff:127.0.0.1]:29504 (errno: 97 - Address family not supported by protocol).
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00, 25.76it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 26.29it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00, 32.26it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 32.73it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00, 18.12it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00, 15.00it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 24.39it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 23.37it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 22.05it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 20.83it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00, 24.30it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 24.30it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00, 18.87it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 20.51it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 20.21it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:00,  9.32it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00, 17.04it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 16.49it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:00<00:00, 24.40it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 23.99it/s]
+[prune] VLM-only drop 2/36: [23, 31]
+[prune] VLM-only drop 2/36: [23, 31]
+[prune] VLM-only drop 2/36: [23, 31]
+[prune] VLM-only drop 2/36: [23, 31]
+[prune] VLM-only drop 2/36: [23, 31]
+[prune] VLM-only drop 2/36: [23, 31]
+[safe] trainable 1.35M / total 11.08B (0.0122%)
+[safe] training ONLY action_in_proj + action_out_proj (no LoRA, no VLM, no Expert layer FT)
+[prune] VLM-only drop 2/36: [23, 31]
+[prune] VLM-only drop 2/36: [23, 31]
+[data] loading nuScenes train ...
+[NuScenesSFTDataset] split=train, samples=973
+[NuScenesSFTDataset] split=train, samples=973
+[NuScenesSFTDataset] split=train, samples=973
+[NuScenesSFTDataset] split=train, samples=973
+[NuScenesSFTDataset] split=train, samples=973
+[data] size 973
+NCCL version 2.27.3+cuda12.9
+[NuScenesSFTDataset] split=train, samples=973
+[NuScenesSFTDataset] split=train, samples=973
+[NuScenesSFTDataset] split=train, samples=973
+[ep1/1] step 5/15 loss=23.1223 (vlm=16.5127 diff=6.6096) lr=7.75e-05
+[ep1/1] step 10/15 loss=31.1925 (vlm=16.3247 diff=14.8678) lr=3.25e-05
+[ep1/1] step 15/15 loss=21.0375 (vlm=16.4047 diff=4.6328) lr=1.00e-05
+[done] /home/irteam/ws/alpamayo_pruning/weights/sft_safe_15_k2/final
+[rank0]:[W602 11:53:16.046324686 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[11:53:21] === SAFE FT training DONE ===

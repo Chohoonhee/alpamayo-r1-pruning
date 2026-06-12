@@ -1,0 +1,746 @@
+[11:53:40] === FT recipe sweep START ===
+[11:53:40] === safe_lr4_1k ===
+[11:53:40]   TRAIN safe_lr4_1k: sft_stage2_safe.py lr=1e-4 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3035623)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:53:47
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3035624)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:53:47
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3035625)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:53:47
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3035626)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:53:47
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3035627)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:53:47
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3035628)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:53:47
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3035621)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:53:53]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr4_1k/lora_final
+[11:53:53] === expert_only_lr5e6_1k ===
+[11:53:53]   TRAIN expert_only_lr5e6_1k: sft_stage2_expert_only.py lr=5e-6 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3035834)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:54:01
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3035835)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:54:01
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3035836)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:54:01
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3035837)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:54:01
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3035838)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:54:01
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3035839)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:54:01
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3035832)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:54:07]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_expert_only_lr5e6_1k/lora_final
+[11:54:07] === expert_only_lr1e6_1k ===
+[11:54:07]   TRAIN expert_only_lr1e6_1k: sft_stage2_expert_only.py lr=1e-6 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3036067)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:54:15
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3036068)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:54:15
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3036069)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:54:15
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3036070)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:54:15
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3036071)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:54:15
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3036072)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:54:15
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3036065)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:54:22]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_expert_only_lr1e6_1k/lora_final
+[11:54:22] === expert_only_lr1e7_1k ===
+[11:54:22]   TRAIN expert_only_lr1e7_1k: sft_stage2_expert_only.py lr=1e-7 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3036284)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:54:30
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3036285)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:54:30
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3036286)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:54:30
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3036287)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:54:30
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3036288)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:54:30
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3036289)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:54:30
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3036282)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:54:36]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_expert_only_lr1e7_1k/lora_final
+[11:54:36] === safe_lr1e5_1k ===
+[11:54:36]   TRAIN safe_lr1e5_1k: sft_stage2_safe.py lr=1e-5 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3036505)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:54:43
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3036507)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:54:43
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3036511)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:54:43
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3036513)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:54:43
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3036514)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:54:43
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3036515)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:54:43
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3036503)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:54:49]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e5_1k/lora_final
+[11:54:49] === safe_lr1e6_1k ===
+[11:54:49]   TRAIN safe_lr1e6_1k: sft_stage2_safe.py lr=1e-6 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3036724)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:54:57
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3036725)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:54:57
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3036726)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:54:57
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3036727)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:54:57
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3036728)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:54:57
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3036729)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:54:57
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3036722)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:55:03]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e6_1k/lora_final
+[11:55:03] === safe_lr1e3_1k ===
+[11:55:03]   TRAIN safe_lr1e3_1k: sft_stage2_safe.py lr=1e-3 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3036942)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:55:11
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3036943)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:55:11
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3036944)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:55:11
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3036945)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:55:11
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3036946)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:55:11
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3036947)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:55:11
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3036940)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:55:17]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e3_1k/lora_final
+[11:55:17] === safe_lr1e4_5k ===
+[11:55:17]   TRAIN safe_lr1e4_5k: sft_stage2_safe.py lr=1e-4 ntrain=5000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3037169)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:55:25
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3037170)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:55:25
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3037171)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:55:25
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3037172)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:55:25
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3037173)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:55:25
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3037174)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:55:25
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3037167)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:55:31]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e4_5k/lora_final
+[11:55:31] === safe_lr1e4_10k ===
+[11:55:31]   TRAIN safe_lr1e4_10k: sft_stage2_safe.py lr=1e-4 ntrain=10000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3037641)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:55:39
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3037642)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:55:39
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3037643)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:55:39
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3037644)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:55:39
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3037645)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:55:39
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3037646)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:55:39
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3037639)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:55:45]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e4_10k/lora_final
+[11:55:45] === safe_lr1e4_28k ===
+[11:55:45]   TRAIN safe_lr1e4_28k: sft_stage2_safe.py lr=1e-4 ntrain=28000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3038015)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:55:53
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3038016)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:55:53
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3038017)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:55:53
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3038018)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:55:53
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3038019)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:55:53
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3038020)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:55:53
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3038013)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:55:59]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e4_28k/lora_final
+[11:55:59] === vlmexp_lr1e7_1k ===
+[11:55:59]   TRAIN vlmexp_lr1e7_1k: sft_stage2.py lr=1e-7 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3038524)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:56:07
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3038525)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:56:07
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3038526)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:56:07
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3038527)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:56:07
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3038528)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:56:07
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3038529)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:56:07
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3038522)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:56:13]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_vlmexp_lr1e7_1k/lora_final
+[11:56:13] === vlmexp_lr1e6_1k ===
+[11:56:13]   TRAIN vlmexp_lr1e6_1k: sft_stage2.py lr=1e-6 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3038970)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:56:21
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3038971)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:56:21
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3038972)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:56:21
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3038973)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:56:21
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3038974)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:56:21
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3038975)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:56:21
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3038968)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:56:27]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_vlmexp_lr1e6_1k/lora_final
+[11:56:27] === vlmexp_lr1e5_1k ===
+[11:56:27]   TRAIN vlmexp_lr1e5_1k: sft_stage2.py lr=1e-5 ntrain=1000 epoch=1
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3039376)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:56:35
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3039377)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:56:35
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3039378)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:56:35
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3039379)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:56:35
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3039380)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:56:35
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3039381)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:56:35
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3039374)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:56:41]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_vlmexp_lr1e5_1k/lora_final
+[11:56:41] === safe_lr1e4_5k_3ep ===
+[11:56:41]   TRAIN safe_lr1e4_5k_3ep: sft_stage2_safe.py lr=1e-4 ntrain=5000 epoch=3
+  host      : vla2-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3039705)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-06-02_11:56:49
+  host      : vla2-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3039706)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-06-02_11:56:49
+  host      : vla2-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 3039707)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-06-02_11:56:49
+  host      : vla2-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 3039708)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-06-02_11:56:49
+  host      : vla2-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 3039709)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-06-02_11:56:49
+  host      : vla2-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 3039710)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-06-02_11:56:49
+  host      : vla2-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3039703)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[11:56:55]   [skip-eval] no /home/irteam/ws/alpamayo_pruning/weights/sft_sweep_safe_lr1e4_5k_3ep/lora_final
+[11:56:55] === FT recipe sweep DONE ===
+[11:56:55] results: /home/irteam/ws/alpamayo_pruning_share/scripts/logs/ft_sweep_results.csv
+recipe,trainer,trainable_M,lr,n_train,n_epoch,token_ok,pdms,ncc,dac,ttc,ep,comfort_2f

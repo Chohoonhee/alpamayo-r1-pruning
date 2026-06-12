@@ -66,6 +66,9 @@ def run_inference(model, processor, req: dict) -> dict:
     }
     model_inputs = helper.to_device(model_inputs, DEVICE)
 
+    # Match official test_inference.py — deterministic seed per request
+    torch.cuda.manual_seed_all(42)
+    torch.manual_seed(42)
     with torch.autocast("cuda", dtype=torch.bfloat16):
         out = model.sample_trajectories_from_data_with_vlm_rollout(
             data=model_inputs,
@@ -104,7 +107,8 @@ def main():
 
     print(f"[server] variant={VARIANT} loading {args.weights} on {DEVICE} ...", flush=True)
     t0 = time.time()
-    model = ModelCls.from_pretrained(args.weights, dtype=torch.bfloat16).to(DEVICE)
+    # Force eager attention (April-style) — avoid SDPA/FlashAttention numerical drift
+    model = ModelCls.from_pretrained(args.weights, dtype=torch.bfloat16, attn_implementation="eager").to(DEVICE)
     if args.drop_layers_json:
         # Inline identity-bypass so we avoid forcing sft_phase_c imports.
         import json

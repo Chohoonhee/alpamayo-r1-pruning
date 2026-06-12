@@ -1,0 +1,25 @@
+[15:49:40] === FULL PDMS run: smoke_full_baseline  policy=baseline  8-way shard ===
+[15:49:40] launched 8 servers on ports 6000..6007
+[15:50:00] all 8 servers ready
+[15:50:00]   scorer shard 0 → port 6000  yaml=navtest_shard0of8
+[15:50:00]   scorer shard 1 → port 6001  yaml=navtest_shard1of8
+[15:50:00]   scorer shard 2 → port 6002  yaml=navtest_shard2of8
+[15:50:00]   scorer shard 3 → port 6003  yaml=navtest_shard3of8
+[15:50:00]   scorer shard 4 → port 6004  yaml=navtest_shard4of8
+[15:50:00]   scorer shard 5 → port 6005  yaml=navtest_shard5of8
+[15:50:00]   scorer shard 6 → port 6006  yaml=navtest_shard6of8
+[15:50:00]   scorer shard 7 → port 6007  yaml=navtest_shard7of8
+[15:50:00] launched 8 parallel scorers
+[16:15:45] all scorers done
+[16:15:50]   WARN: no CSV for shard 0 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard0)
+[16:15:50]   WARN: no CSV for shard 1 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard1)
+[16:15:50]   WARN: no CSV for shard 2 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard2)
+[16:15:50]   WARN: no CSV for shard 3 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard3)
+[16:15:50]   WARN: no CSV for shard 4 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard4)
+[16:15:50]   WARN: no CSV for shard 5 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard5)
+[16:15:50]   WARN: no CSV for shard 6 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard6)
+[16:15:50]   WARN: no CSV for shard 7 (exp=alpamayo_pdmsfull_r1_smoke_full_baseline_shard7)
+[16:15:50] collected 0 shard CSVs, aggregating
+usage: aggregate_pdms_shards.py [-h] --out OUT csvs [csvs ...]
+aggregate_pdms_shards.py: error: the following arguments are required: csvs
+[16:15:50] === FULL PDMS DONE: smoke_full_baseline ===

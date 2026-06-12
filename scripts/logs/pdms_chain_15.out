@@ -1,0 +1,67 @@
+[16:21:42] === 1.5 PDMS sample500 chain start (6 conditions × ~5min) ===
+[16:21:42] --- launching baseline_15 () ---
+2026-05-31 16:26:14,175 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 143 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:15,454 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 144 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:16,932 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 145 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:18,213 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 146 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:19,656 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 147 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:20,929 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 148 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:22,197 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 149 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:23,439 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 150 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:24,770 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 151 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:26,126 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 152 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:27,273 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 153 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:28,581 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 154 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:29,836 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 155 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:31,158 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 156 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:32,486 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 157 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:34,071 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 158 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:35,283 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:82}  Processing scenario 159 / 159 in thread_id=aa0a56d0-0ee9-4635-abd4-923d9a74c4bd, node_id=0
+2026-05-31 16:26:37,664 INFO {/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py:305}  
+        Finished running evaluation.
+            Number of successful scenarios: 500.
+            Number of failed scenarios: 0.
+            Final average score of valid results: 0.4693861365293728.
+            Results are stored in: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_15_baseline_15/2026.05.31.16.22.03/2026.05.31.16.26.37.csv.
+        
+[16:26:38]   PDMS scorer rc=0
+[16:26:43]   result CSV: /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_15_baseline_15/2026.05.31.16.22.03/2026.05.31.16.26.37.csv
+[16:26:43]   aggregate row:
+500,average_all_frames,True,0.714,0.696,0.943,0.99,0.7996039749213409,0.666,0.852,0.628,0.18899521531100477,0.4693861365293728
+[16:26:43]   saved to /home/irteam/ws/alpamayo_pruning_share/scripts/logs/pdms_baseline_15_result.csv
+[16:26:43] === PDMS DONE: baseline_15 ===
+[16:26:43] --- baseline_15 done ---
+Wrote /home/irteam/ws/alpamayo_pruning_share/STATUS.md (7444 bytes)
+To https://github.com/Chohoonhee/alpamayo-r1-pruning.git
+   c5dcf3c..0d5785f  master -> master
+[16:26:44] --- launching early_stop_k2 (/home/irteam/ws/alpamayo_pruning_share/scripts/logs/greedy15_navsim_earlystop_meta.json) ---
+    _run_app(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 452, in _run_app
+    run_and_report(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 216, in run_and_report
+    raise ex
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 213, in run_and_report
+    return func()
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/utils.py", line 453, in <lambda>
+    lambda: hydra.run(
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 274, in main
+    pdm_score_df = compute_final_scores(pdm_score_df)
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim/planning/script/run_pdm_score_one_stage.py", line 174, in compute_final_scores
+    weighted_metrics = np.stack(df["weighted_metrics"].to_numpy())  # shape: (N, M)
+  File "<__array_function__ internals>", line 200, in stack
+  File "/home/irteam/ws/alpamayo_pruning/navsim_workspace/navsim/navsim_venv/lib/python3.9/site-packages/numpy/core/shape_base.py", line 464, in stack
+    raise ValueError('all input arrays must have the same shape')
+ValueError: all input arrays must have the same shape
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 96: 1500355 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 96: 1500359 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 96: 1500363 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+/home/irteam/ws/alpamayo_pruning_share/scripts/run_pdms_condition.sh: line 96: 1500367 Killed                  ALPAMAYO_VARIANT=$VARIANT CUDA_VISIBLE_DEVICES=$GPU nohup python $SCRIPTS/alpamayo_server.py --port $PORT $EXTRA > $SLOG 2>&1  (wd: ~/ws/alpamayo_pruning_share/scripts)
+[16:39:27]   PDMS scorer rc=1
+[16:39:32]   WARN: no result CSV found under /home/irteam/ws/alpamayo_pruning/navsim_workspace/exp/alpamayo_pdms_15_early_stop_k2
+[16:39:32] === PDMS DONE: early_stop_k2 ===
